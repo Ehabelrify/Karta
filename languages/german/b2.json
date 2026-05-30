@@ -1,0 +1,1813 @@
+{
+  "language": "german",
+  "level": "B2",
+  "words": [
+    {
+      "id": "de_b2_288",
+      "target": "die Identität",
+      "native": "identity",
+      "pronunciation": "dee i-den-ti-TAYT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die kulturelle Identität ist wichtig.",
+          "native": "Cultural identity is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_289",
+      "target": "die Generation",
+      "native": "generation",
+      "pronunciation": "dee ge-ne-ra-TSYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Jede Generation hat andere Werte.",
+          "native": "Each generation has different values."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_290",
+      "target": "das Erbe",
+      "native": "heritage / inheritance",
+      "pronunciation": "das AIR-be",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das kulturelle Erbe ist wertvoll.",
+          "native": "The cultural heritage is valuable."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_291",
+      "target": "die Vorurteile",
+      "native": "prejudices",
+      "pronunciation": "dee FOR-oor-ty-le",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Vorurteile kann man überwinden.",
+          "native": "Prejudices can be overcome."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_292",
+      "target": "die Gleichberechtigung",
+      "native": "equality",
+      "pronunciation": "dee GLYSH-be-rekh-ti-goong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Gleichberechtigung ist ein Grundrecht.",
+          "native": "Equality is a fundamental right."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_293",
+      "target": "die Emanzipation",
+      "native": "emancipation",
+      "pronunciation": "dee e-man-tsi-pa-TSYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Emanzipation der Frauen war wichtig.",
+          "native": "The emancipation of women was important."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_294",
+      "target": "die Gastronomie",
+      "native": "gastronomy",
+      "pronunciation": "dee gas-tro-no-MEE",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Gastronomie leidet unter der Krise.",
+          "native": "The gastronomy suffers from the crisis."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_295",
+      "target": "nachhaltig",
+      "native": "sustainable",
+      "pronunciation": "NAKH-hal-tikh",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Nachhaltige Lebensmittel sind teurer.",
+          "native": "Sustainable food is more expensive."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_296",
+      "target": "die Lebensmittelverschwendung",
+      "native": "food waste",
+      "pronunciation": "dee LAY-bens-mi-tel-fer-shven-doong",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Lebensmittelverschwendung muss reduziert werden.",
+          "native": "Food waste must be reduced."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_297",
+      "target": "der Genuss",
+      "native": "enjoyment / pleasure",
+      "pronunciation": "dair ge-NOOS",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Genuss guten Essens ist ein Vergnügen.",
+          "native": "The enjoyment of good food is a pleasure."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_298",
+      "target": "die Epoche",
+      "native": "era / epoch",
+      "pronunciation": "dee e-PO-khe",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In der modernen Epoche hat sich viel verändert.",
+          "native": "In the modern era much has changed."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_299",
+      "target": "das Jahrhundert",
+      "native": "century",
+      "pronunciation": "das yahr-HOON-dert",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Im 20. Jahrhundert gab es zwei Kriege.",
+          "native": "In the 20th century there were two wars."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_300",
+      "target": "die Phase",
+      "native": "phase / stage",
+      "pronunciation": "dee FAH-ze",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir sind in einer schwierigen Phase.",
+          "native": "We are in a difficult phase."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_301",
+      "target": "rückwirkend",
+      "native": "retrospectively",
+      "pronunciation": "ROOK-veer-kent",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Die Änderung gilt rückwirkend.",
+          "native": "The change applies retrospectively."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_302",
+      "target": "absehbar",
+      "native": "foreseeable",
+      "pronunciation": "AP-zay-bar",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In absehbarer Zeit wird es besser.",
+          "native": "In the foreseeable future it will improve."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_303",
+      "target": "die Statistik",
+      "native": "statistics",
+      "pronunciation": "dee shta-TIS-tik",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Statistik zeigt einen Trend.",
+          "native": "The statistics show a trend."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_304",
+      "target": "der Durchschnitt",
+      "native": "average",
+      "pronunciation": "dair DOORKH-shnit",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Durchschnitt liegt bei 50.",
+          "native": "The average is 50."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_305",
+      "target": "die Steigerung",
+      "native": "increase / rise",
+      "pronunciation": "dee SHTY-ge-roong",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Eine Steigerung von 10 Prozent.",
+          "native": "An increase of 10 percent."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_306",
+      "target": "die Verringerung",
+      "native": "decrease / reduction",
+      "pronunciation": "dee fer-RING-er-oong",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Eine Verringerung der Kosten ist nötig.",
+          "native": "A reduction of costs is necessary."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_307",
+      "target": "das Immunsystem",
+      "native": "immune system",
+      "pronunciation": "das i-MOON-zis-taym",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ein starkes Immunsystem schützt uns.",
+          "native": "A strong immune system protects us."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_308",
+      "target": "chronisch",
+      "native": "chronic",
+      "pronunciation": "KHRO-nish",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Er hat eine chronische Krankheit.",
+          "native": "He has a chronic illness."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_309",
+      "target": "die Vorsorge",
+      "native": "prevention / precaution",
+      "pronunciation": "dee FOR-zor-ge",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Vorsorge ist wichtiger als Nachsorge.",
+          "native": "Prevention is more important than aftercare."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_310",
+      "target": "die Rehabilitation",
+      "native": "rehabilitation",
+      "pronunciation": "dee re-ha-bil-i-ta-TSYOHN",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Rehabilitation dauert Monate.",
+          "native": "The rehabilitation takes months."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_311",
+      "target": "die Nachhaltigkeit",
+      "native": "sustainability",
+      "pronunciation": "dee NAKH-hal-tikh-kite",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Nachhaltigkeit ist ein Schlüsselthema.",
+          "native": "Sustainability is a key topic."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_312",
+      "target": "die Artenvielfalt",
+      "native": "biodiversity",
+      "pronunciation": "dee AR-ten-feel-falt",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Artenvielfalt ist bedroht.",
+          "native": "Biodiversity is threatened."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_313",
+      "target": "die Ressourcen",
+      "native": "resources",
+      "pronunciation": "dee re-SOOR-tsen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Ressourcen sind begrenzt.",
+          "native": "Resources are limited."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_314",
+      "target": "der Klimawandel",
+      "native": "climate change",
+      "pronunciation": "dair KLEE-ma-van-del",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Klimawandel betrifft alle.",
+          "native": "Climate change affects everyone."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_315",
+      "target": "die Erosion",
+      "native": "erosion",
+      "pronunciation": "dee e-roh-ZYOHN",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Erosion gefährdet die Küste.",
+          "native": "Erosion threatens the coast."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_316",
+      "target": "die Metropole",
+      "native": "metropolis",
+      "pronunciation": "dee me-tro-POH-le",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Berlin ist eine lebendige Metropole.",
+          "native": "Berlin is a vibrant metropolis."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_317",
+      "target": "die Infrastruktur",
+      "native": "infrastructure",
+      "pronunciation": "dee in-fra-shtroock-TOOR",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Infrastruktur muss erneuert werden.",
+          "native": "The infrastructure must be renewed."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_318",
+      "target": "die Urbanisierung",
+      "native": "urbanization",
+      "pronunciation": "dee oor-ba-ni-ZEE-roong",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Urbanisierung schreitet voran.",
+          "native": "Urbanization is advancing."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_319",
+      "target": "die Grenze",
+      "native": "border / limit",
+      "pronunciation": "dee GREN-tse",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Grenze ist offen.",
+          "native": "The border is open."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_320",
+      "target": "das Denkmal",
+      "native": "monument / memorial",
+      "pronunciation": "das DENK-mal",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Denkmal erinnert an die Geschichte.",
+          "native": "The monument reminds us of history."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_321",
+      "target": "die Unternehmenskultur",
+      "native": "corporate culture",
+      "pronunciation": "dee OON-ter-nay-mens-kool-toor",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Unternehmenskultur ist entscheidend.",
+          "native": "Corporate culture is crucial."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_322",
+      "target": "das Netzwerk",
+      "native": "network",
+      "pronunciation": "das NETS-vairk",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ein gutes Netzwerk ist wertvoll.",
+          "native": "A good network is valuable."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_323",
+      "target": "die Innovation",
+      "native": "innovation",
+      "pronunciation": "dee in-no-va-TSYOHN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Innovation treibt das Unternehmen voran.",
+          "native": "Innovation drives the company forward."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_324",
+      "target": "die Effizienz",
+      "native": "efficiency",
+      "pronunciation": "dee e-fi-TSYENTS",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Effizienz ist wichtig für den Erfolg.",
+          "native": "Efficiency is important for success."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_325",
+      "target": "die Führung",
+      "native": "leadership",
+      "pronunciation": "dee FOO-roong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Gute Führung motiviert die Mitarbeiter.",
+          "native": "Good leadership motivates employees."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_326",
+      "target": "das Gehalt verhandeln",
+      "native": "to negotiate salary",
+      "pronunciation": "das ge-HALT fer-HAN-deln",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Gehalt wurde erfolgreich verhandelt.",
+          "native": "The salary was successfully negotiated."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_327",
+      "target": "die Fachkompetenz",
+      "native": "professional competence",
+      "pronunciation": "dee FAKH-kom-pe-tents",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Fachkompetenz wird im Beruf erwartet.",
+          "native": "Professional competence is expected at work."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_328",
+      "target": "die Ambivalenz",
+      "native": "ambivalence",
+      "pronunciation": "dee am-bi-va-LENTS",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie fühlt Ambivalenz gegenüber dem Plan.",
+          "native": "She feels ambivalence towards the plan."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_329",
+      "target": "die Melancholie",
+      "native": "melancholy",
+      "pronunciation": "dee me-lan-kho-LEE",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Eine tiefe Melancholie erfasste ihn.",
+          "native": "A deep melancholy gripped him."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_330",
+      "target": "die Gelassenheit",
+      "native": "composure / serenity",
+      "pronunciation": "dee ge-LAS-sen-hite",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie zeigt Gelassenheit in der Krise.",
+          "native": "She shows composure in the crisis."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_331",
+      "target": "das Wohlbefinden",
+      "native": "well-being",
+      "pronunciation": "das VOHL-be-fin-den",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Mein Wohlbefinden hat sich verbessert.",
+          "native": "My well-being has improved."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_332",
+      "target": "die Frustration",
+      "native": "frustration",
+      "pronunciation": "dee froos-tra-TSYOHN",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die Frustration wächst mit der Zeit.",
+          "native": "The frustration grows over time."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_333",
+      "target": "der Kulturaustausch",
+      "native": "cultural exchange",
+      "pronunciation": "dair kool-TOOR-ows-towsh",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Kulturaustausch bereichert das Leben.",
+          "native": "Cultural exchange enriches life."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_334",
+      "target": "die Einreisebestimmungen",
+      "native": "entry requirements",
+      "pronunciation": "dee EYN-rye-ze-be-shtim-mong-en",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Einreisebestimmungen haben sich geändert.",
+          "native": "The entry requirements have changed."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_335",
+      "target": "die Unterkunft buchen",
+      "native": "to book accommodation",
+      "pronunciation": "dee OON-ter-koonft BOO-khen",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich habe die Unterkunft früh gebucht.",
+          "native": "I booked the accommodation early."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_466",
+      "target": "die Gesellschaft",
+      "native": "society",
+      "pronunciation": "dee ge-ZEL-shaft",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Gesellschaft verändert sich.",
+          "native": "Society is changing."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_467",
+      "target": "die Demokratie",
+      "native": "democracy",
+      "pronunciation": "dee de-mo-kra-TEE",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Demokratie braucht aktive Bürger.",
+          "native": "Democracy needs active citizens."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_468",
+      "target": "die Wirtschaft",
+      "native": "economy",
+      "pronunciation": "dee VIRT-shaft",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Wirtschaft wächst langsam.",
+          "native": "The economy grows slowly."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_469",
+      "target": "die Globalisierung",
+      "native": "globalization",
+      "pronunciation": "dee glo-ba-li-ZEE-roong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Globalisierung hat Vor- und Nachteile.",
+          "native": "Globalization has advantages and disadvantages."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_470",
+      "target": "die Technologie",
+      "native": "technology",
+      "pronunciation": "dee tekh-no-lo-GEE",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Technologie entwickelt sich schnell.",
+          "native": "Technology develops quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_471",
+      "target": "die Digitalisierung",
+      "native": "digitalization",
+      "pronunciation": "dee di-gi-ta-li-ZEE-roong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Digitalisierung verändert die Arbeitswelt.",
+          "native": "Digitalization changes the working world."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_472",
+      "target": "das Bewusstsein",
+      "native": "awareness / consciousness",
+      "pronunciation": "das be-VOOST-zyne",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Bewusstsein für Umwelt wächst.",
+          "native": "Environmental awareness is growing."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_473",
+      "target": "die Transparenz",
+      "native": "transparency",
+      "pronunciation": "dee trans-pa-RENTS",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Transparenz schafft Vertrauen.",
+          "native": "Transparency creates trust."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_474",
+      "target": "der Kompromiss",
+      "native": "compromise",
+      "pronunciation": "dair kom-pro-MIS",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ein Kompromiss ist nötig.",
+          "native": "A compromise is necessary."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_475",
+      "target": "die Herausforderung",
+      "native": "challenge",
+      "pronunciation": "dee hair-OWS-for-der-oong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist eine große Herausforderung.",
+          "native": "That is a big challenge."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_476",
+      "target": "die Auswirkung",
+      "native": "impact / effect",
+      "pronunciation": "dee OWS-veer-koong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Auswirkungen sind erheblich.",
+          "native": "The impacts are significant."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_477",
+      "target": "das Konzept",
+      "native": "concept",
+      "pronunciation": "das kon-TSEPT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Konzept ist innovativ.",
+          "native": "The concept is innovative."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_478",
+      "target": "die Perspektive",
+      "native": "perspective",
+      "pronunciation": "dee pair-shpek-TEE-ve",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Eine andere Perspektive ist nötig.",
+          "native": "A different perspective is needed."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_479",
+      "target": "nachweisen",
+      "native": "to prove / demonstrate",
+      "pronunciation": "NAKH-vy-zen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er kann das nachweisen.",
+          "native": "He can prove that."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_480",
+      "target": "berücksichtigen",
+      "native": "to consider / take into account",
+      "pronunciation": "be-ROOK-zikh-ti-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir müssen alle Faktoren berücksichtigen.",
+          "native": "We must take all factors into account."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_546",
+      "target": "optimieren",
+      "native": "to optimize",
+      "pronunciation": "op-ti-MEE-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir müssen den Prozess optimieren.",
+          "native": "We must optimize the process."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_547",
+      "target": "implementieren",
+      "native": "to implement",
+      "pronunciation": "im-ple-men-TEE-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die neue Strategie wird implementiert.",
+          "native": "The new strategy is being implemented."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_548",
+      "target": "koordinieren",
+      "native": "to coordinate",
+      "pronunciation": "ko-or-di-NEE-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Sie koordiniert das Team.",
+          "native": "She coordinates the team."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_549",
+      "target": "integrieren",
+      "native": "to integrate",
+      "pronunciation": "in-te-GREE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir integrieren alle Mitglieder.",
+          "native": "We integrate all members."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_550",
+      "target": "kommunizieren",
+      "native": "to communicate",
+      "pronunciation": "ko-moo-ni-ZEE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir müssen besser kommunizieren.",
+          "native": "We must communicate better."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_571",
+      "target": "die Ressource",
+      "native": "resource",
+      "pronunciation": "dee re-SOOR-tse",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ressourcen werden effizient eingesetzt.",
+          "native": "Resources are used efficiently."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_572",
+      "target": "die Priorität",
+      "native": "priority",
+      "pronunciation": "dee pri-o-ri-TAYT",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Was ist die Priorität?",
+          "native": "What is the priority?"
+        }
+      ]
+    },
+    {
+      "id": "de_b2_575",
+      "target": "der Gewinn",
+      "native": "profit / gain",
+      "pronunciation": "dair ge-VIN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Gewinn ist gestiegen.",
+          "native": "The profit has increased."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_576",
+      "target": "der Verlust",
+      "native": "loss",
+      "pronunciation": "dair fer-LOOST",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Verlust war erheblich.",
+          "native": "The loss was significant."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_578",
+      "target": "der Markt",
+      "native": "market",
+      "pronunciation": "dair markt",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Markt ist gesättigt.",
+          "native": "The market is saturated."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_579",
+      "target": "der Wettbewerb",
+      "native": "competition",
+      "pronunciation": "dair VET-be-vairp",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Wettbewerb ist hart.",
+          "native": "The competition is tough."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_585",
+      "target": "die Toleranz",
+      "native": "tolerance",
+      "pronunciation": "dee to-le-RANTS",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Toleranz ist eine Tugend.",
+          "native": "Tolerance is a virtue."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_586",
+      "target": "die Integration",
+      "native": "integration",
+      "pronunciation": "dee in-te-gra-TSYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Integration erfordert Geduld.",
+          "native": "Integration requires patience."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_589",
+      "target": "das Argument",
+      "native": "argument",
+      "pronunciation": "das ar-goo-MENT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sein Argument ist überzeugend.",
+          "native": "His argument is convincing."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_590",
+      "target": "die Überzeugung",
+      "native": "conviction / belief",
+      "pronunciation": "dee OO-ber-tsoy-goong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist meine Überzeugung.",
+          "native": "That is my conviction."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_592",
+      "target": "die Werte",
+      "native": "values",
+      "pronunciation": "dee VAIR-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Unsere Werte leiten uns.",
+          "native": "Our values guide us."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_594",
+      "target": "die Norm",
+      "native": "norm / standard",
+      "pronunciation": "dee norm",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Soziale Normen ändern sich.",
+          "native": "Social norms change."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_595",
+      "target": "das Vorurteil",
+      "native": "prejudice",
+      "pronunciation": "das FOR-oor-tyle",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Vorurteile überwinden ist schwer.",
+          "native": "Overcoming prejudices is difficult."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_599",
+      "target": "der Treibhauseffekt",
+      "native": "greenhouse effect",
+      "pronunciation": "dair TRYP-hows-ef-fekt",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Treibhauseffekt erwärmt die Erde.",
+          "native": "The greenhouse effect warms the earth."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_600",
+      "target": "erneuerbare Energien",
+      "native": "renewable energies",
+      "pronunciation": "air-NOY-er-ba-re e-nair-GEE-en",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Erneuerbare Energien sind die Zukunft.",
+          "native": "Renewable energies are the future."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_665",
+      "target": "die Abfindung",
+      "native": "severance pay",
+      "pronunciation": "dee AP-fin-doong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er erhielt eine Abfindung.",
+          "native": "He received severance pay."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_670",
+      "target": "der Betriebsrat",
+      "native": "works council",
+      "pronunciation": "dair be-TREEPS-raht",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Betriebsrat vertritt die Arbeitnehmer.",
+          "native": "The works council represents the employees."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_674",
+      "target": "die Linguistik",
+      "native": "linguistics",
+      "pronunciation": "dee lin-GWIS-tik",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie studiert Linguistik.",
+          "native": "She studies linguistics."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_681",
+      "target": "die Sehnsucht",
+      "native": "longing / yearning",
+      "pronunciation": "dee ZAYN-zoohkt",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er verspürt Sehnsucht nach Hause.",
+          "native": "He feels a longing for home."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_682",
+      "target": "die Reue",
+      "native": "remorse / regret",
+      "pronunciation": "dee ROY-e",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er fühlt tiefe Reue.",
+          "native": "He feels deep remorse."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_693",
+      "target": "die Atmosphäre",
+      "native": "atmosphere",
+      "pronunciation": "dee at-mo-SHFAY-re",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Atmosphäre schützt die Erde.",
+          "native": "The atmosphere protects the earth."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_695",
+      "target": "die Biodiversität",
+      "native": "biodiversity",
+      "pronunciation": "dee bi-oh-di-ver-zi-TAYT",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Biodiversität schützen ist wichtig.",
+          "native": "Protecting biodiversity is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_700",
+      "target": "der Jetlag",
+      "native": "jet lag",
+      "pronunciation": "dair JET-lag",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich leide unter Jetlag.",
+          "native": "I suffer from jet lag."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_722",
+      "target": "charismatisch",
+      "native": "charismatic",
+      "pronunciation": "kha-riz-MAH-tish",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Führungskraft ist charismatisch.",
+          "native": "The leader is charismatic."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_723",
+      "target": "empathisch",
+      "native": "empathetic",
+      "pronunciation": "em-PA-tish",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Eine empathische Person hilft gut.",
+          "native": "An empathetic person helps well."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_758",
+      "target": "der Unternehmer",
+      "native": "entrepreneur (male)",
+      "pronunciation": "dair OON-ter-nay-mer",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Unternehmer gründet ein Start-up.",
+          "native": "The entrepreneur founds a startup."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_768",
+      "target": "die Gleichgültigkeit",
+      "native": "indifference",
+      "pronunciation": "dee GLYSH-gool-tikh-kite",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Seine Gleichgültigkeit enttäuscht mich.",
+          "native": "His indifference disappoints me."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_797",
+      "target": "die Minderheit",
+      "native": "minority",
+      "pronunciation": "dee MIN-der-hite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Minderheiten haben Rechte.",
+          "native": "Minorities have rights."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_798",
+      "target": "die Mehrheit",
+      "native": "majority",
+      "pronunciation": "dee MAIR-hite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Mehrheit hat abgestimmt.",
+          "native": "The majority has voted."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_799",
+      "target": "der Bürger",
+      "native": "citizen",
+      "pronunciation": "dair BOOR-ger",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Jeder Bürger hat Pflichten.",
+          "native": "Every citizen has duties."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_800",
+      "target": "die Menschenrechte",
+      "native": "human rights",
+      "pronunciation": "dee MEN-shen-rekh-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Menschenrechte sind universell.",
+          "native": "Human rights are universal."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_804",
+      "target": "die Zertifizierung",
+      "native": "certification",
+      "pronunciation": "dee tsair-ti-fi-TSEE-roong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Eine Zertifizierung erhöht die Chancen.",
+          "native": "A certification increases chances."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_819",
+      "target": "inspirieren",
+      "native": "to inspire",
+      "pronunciation": "in-shpi-REE-ren",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die Rede inspiriert viele.",
+          "native": "The speech inspires many."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_820",
+      "target": "motivieren",
+      "native": "to motivate",
+      "pronunciation": "mo-ti-VEE-ren",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ein guter Trainer motiviert das Team.",
+          "native": "A good trainer motivates the team."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_826",
+      "target": "das Rezept",
+      "native": "prescription",
+      "pronunciation": "das re-TSEPT",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das Rezept vom Arzt.",
+          "native": "The prescription from the doctor."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_848",
+      "target": "die Gehaltserhöhung",
+      "native": "pay rise",
+      "pronunciation": "dee ge-HALTS-air-hoe-oong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich bitte um eine Gehaltserhöhung.",
+          "native": "I am asking for a pay rise."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_849",
+      "target": "das Homeoffice",
+      "native": "working from home",
+      "pronunciation": "das HOME-o-fis",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich arbeite im Homeoffice.",
+          "native": "I work from home."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_850",
+      "target": "die Work-Life-Balance",
+      "native": "work-life balance",
+      "pronunciation": "dee VORK-lyfe-ba-lans",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Work-Life-Balance ist wichtig.",
+          "native": "Work-life balance is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_868",
+      "target": "beeinflussen",
+      "native": "to influence",
+      "pronunciation": "be-EYN-floo-ssen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das beeinflusst meine Entscheidung.",
+          "native": "That influences my decision."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_869",
+      "target": "unterschätzen",
+      "native": "to underestimate",
+      "pronunciation": "OON-ter-shet-tsen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Man sollte ihn nicht unterschätzen.",
+          "native": "One should not underestimate him."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_870",
+      "target": "überschätzen",
+      "native": "to overestimate",
+      "pronunciation": "OO-ber-shet-tsen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er überschätzt seine Fähigkeiten.",
+          "native": "He overestimates his abilities."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_873",
+      "target": "schützen",
+      "native": "to protect",
+      "pronunciation": "SHOO-tsen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Wir schützen die Umwelt.",
+          "native": "We protect the environment."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_874",
+      "target": "verschmutzen",
+      "native": "to pollute",
+      "pronunciation": "fer-SHMOOT-tsen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Nicht die Umwelt verschmutzen!",
+          "native": "Don't pollute the environment!"
+        }
+      ]
+    },
+    {
+      "id": "de_b2_889",
+      "target": "analysieren",
+      "native": "to analyze",
+      "pronunciation": "a-na-ly-ZEE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir analysieren das Ergebnis.",
+          "native": "We analyze the result."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_890",
+      "target": "evaluieren",
+      "native": "to evaluate",
+      "pronunciation": "e-va-loo-EE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir evaluieren den Fortschritt.",
+          "native": "We evaluate the progress."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_896",
+      "target": "verzweifeln",
+      "native": "to despair",
+      "pronunciation": "fer-TSVY-feln",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie verzweifelt an der Lage.",
+          "native": "She despairs at the situation."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_898",
+      "target": "sich hingeben",
+      "native": "to devote oneself",
+      "pronunciation": "zikh HIN-gay-ben",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie gibt sich ihrer Kunst hin.",
+          "native": "She devotes herself to her art."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_900",
+      "target": "aufgeben",
+      "native": "to give up / abandon",
+      "pronunciation": "OWF-gay-ben",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich gebe nie auf.",
+          "native": "I never give up."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_909",
+      "target": "die Evaluation",
+      "native": "evaluation",
+      "pronunciation": "dee e-va-loo-a-TSYOHN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Evaluation der Ergebnisse.",
+          "native": "The evaluation of the results."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_910",
+      "target": "das Feedback",
+      "native": "feedback",
+      "pronunciation": "das FEED-bek",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Feedback ist wertvoll.",
+          "native": "Feedback is valuable."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_914",
+      "target": "der Verbündete",
+      "native": "ally",
+      "pronunciation": "dair fer-BOON-de-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist ein wichtiger Verbündeter.",
+          "native": "He is an important ally."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_920",
+      "target": "der Stoffwechsel",
+      "native": "metabolism",
+      "pronunciation": "dair SHTOF-vek-sel",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ein schneller Stoffwechsel ist vorteilhaft.",
+          "native": "A fast metabolism is advantageous."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_932",
+      "target": "die Farbpalette",
+      "native": "color palette",
+      "pronunciation": "dee FARB-pa-let-te",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Farbpalette ist vielfältig.",
+          "native": "The color palette is varied."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_935",
+      "target": "die Zeitspanne",
+      "native": "time span / period",
+      "pronunciation": "dee TSYTE-shpan-ne",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In dieser Zeitspanne viel passiert.",
+          "native": "A lot happened in this time span."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_940",
+      "target": "die Wahrscheinlichkeit",
+      "native": "probability",
+      "pronunciation": "dee VAR-shyne-likh-kite",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Wahrscheinlichkeit ist hoch.",
+          "native": "The probability is high."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_943",
+      "target": "die Arbeitnehmerrechte",
+      "native": "employee rights",
+      "pronunciation": "dee AR-byt-nay-mer-rekh-te",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Arbeitnehmerrechte sind wichtig.",
+          "native": "Employee rights are important."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_945",
+      "target": "die Demut",
+      "native": "humility",
+      "pronunciation": "dee DAY-moot",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Demut ist eine wichtige Tugend.",
+          "native": "Humility is an important virtue."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_947",
+      "target": "der Kulturschock",
+      "native": "culture shock",
+      "pronunciation": "dair kool-TOOR-shok",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Kulturschock ist real.",
+          "native": "Culture shock is real."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_949",
+      "target": "der Lebenslauf",
+      "native": "CV / résumé",
+      "pronunciation": "dair LAY-bens-lowf",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Lebenslauf ist aktuell.",
+          "native": "My CV is up to date."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_950",
+      "target": "das Anschreiben",
+      "native": "cover letter",
+      "pronunciation": "das AN-shry-ben",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Anschreiben muss überzeugend sein.",
+          "native": "The cover letter must be convincing."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_964",
+      "target": "die Ausdauer",
+      "native": "endurance / stamina",
+      "pronunciation": "dee OWS-dow-er",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ausdauer ist beim Laufen wichtig.",
+          "native": "Endurance is important when running."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_969",
+      "target": "die Euphorie",
+      "native": "euphoria",
+      "pronunciation": "dee oy-fo-REE",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Nach dem Sieg herrscht Euphorie.",
+          "native": "After the victory euphoria reigns."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_970",
+      "target": "die Nostalgie",
+      "native": "nostalgia",
+      "pronunciation": "dee nos-tal-GEE",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er empfindet Nostalgie.",
+          "native": "He feels nostalgia."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_979",
+      "target": "eintauchen in",
+      "native": "to immerse oneself in",
+      "pronunciation": "EYN-tow-khen in",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich tauche in die Kultur ein.",
+          "native": "I immerse myself in the culture."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_980",
+      "target": "die Unterkunft checken",
+      "native": "to check into accommodation",
+      "pronunciation": "dee OON-ter-koonft CHEK-en",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir checken in das Hotel ein.",
+          "native": "We check into the hotel."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_986",
+      "target": "repräsentieren",
+      "native": "to represent",
+      "pronunciation": "rep-ray-zen-TEE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er repräsentiert seine Firma.",
+          "native": "He represents his company."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_987",
+      "target": "delegieren",
+      "native": "to delegate",
+      "pronunciation": "de-le-GEE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie delegiert Aufgaben effektiv.",
+          "native": "She delegates tasks effectively."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_988",
+      "target": "moderieren",
+      "native": "to moderate / host",
+      "pronunciation": "mo-de-REE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er moderiert die Diskussion.",
+          "native": "He moderates the discussion."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_997",
+      "target": "der Algorithmus",
+      "native": "algorithm",
+      "pronunciation": "dair al-go-RITH-moos",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Algorithmus löst das Problem.",
+          "native": "The algorithm solves the problem."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_999",
+      "target": "zeitgleich",
+      "native": "simultaneous / at the same time",
+      "pronunciation": "TSYTE-glysh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Beide Ereignisse fanden zeitgleich statt.",
+          "native": "Both events took place simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "de_b2_1000",
+      "target": "die Zugehörigkeit",
+      "native": "belonging / affiliation",
+      "pronunciation": "dee TSOO-ge-hoe-rikh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Gefühl der Zugehörigkeit ist wichtig.",
+          "native": "The feeling of belonging is important."
+        }
+      ]
+    }
+  ]
+}

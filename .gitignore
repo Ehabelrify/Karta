@@ -14,3 +14,23 @@ Thumbs.db
 # Archives (don't commit zips)
 *.zip
 *.tar.gz
+
+# Plan documents (local development only)
+plan.md
+
+
+# Node modules (future-proofing)
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+dist/
+build/
+
+# Scripts
+scripts/
+

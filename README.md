@@ -1,77 +1,75 @@
 # 📚 Language Flashcards PWA
 
-A lightweight, offline-first flashcard Progressive Web App for vocabulary learning — built with vanilla HTML, CSS, and JavaScript. No frameworks, no accounts, no ads, no subscriptions.
+A lightweight, offline-first flashcard Progressive Web App for vocabulary learning, built with vanilla HTML, CSS, and JavaScript. No frameworks, no accounts, no ads, and no subscriptions.
 
-Designed from the ground up to support multiple languages. Currently includes **German** with 1,000 words (A1–B2 CEFR). Additional languages can be added through contributions and updates.
+The project is designed to support multiple languages. It currently includes **German** with over **1,000 words** across **A1–B2 CEFR** levels, stored in JSON files for maintainability and future expansion.
 
 ---
 
 ## ✨ Features
 
-- **Smart spaced repetition** — SM-2 algorithm (same as Anki): intervals grow based on how well you know each word
-- **CEFR levels** — A1 · A2 · B1 · B2, all unlocked from the start
-- **Categories** — People & Family · Food & Drink · Travel · Work · Body · Nature · Emotions · Colors · Places · Numbers · Time
-- **Intelligent review mix** — ~70% due/overdue words, ~30% new words per session
-- **Phonetic pronunciation** — every word has an English-letter approximation
-- **Example sentences** — in target language + English translation, with the target word highlighted
-- **Tap to peek** — tap/hover the word to reveal the translation without flipping the card
-- **Add custom words** — add your own vocabulary with full SRS tracking
-- **Offline support** — works with no internet after first load (Service Worker)
-- **Installable** — add to iPhone/Android home screen, behaves like a native app
-- **Multi-language ready** — add Spanish, Arabic, Japanese, etc. by dropping in one file
-- **No backend** — all data stored locally on-device via `localStorage`
-- **No account required**
-- **Free, open source**
+- **Spaced repetition learning** — powered by an SM-2 style review system
+- **Offline-first PWA** — works without an internet connection after the first load
+- **Installable** — add it to your phone or desktop like a native app
+- **CEFR-based study levels** — A1, A2, B1, and B2 are available from the start
+- **Category filtering** — study by topic or mix categories together
+- **Pronunciation support** — phonetic hints plus browser-based text-to-speech
+- **Example sentences** — target-language examples with English translations
+- **Translation peek** — reveal the meaning without flipping the card
+- **Custom vocabulary** — add your own words with local progress tracking
+- **Multi-language ready** — structured to support additional languages
+- **Local-first storage** — progress and custom words are stored in `localStorage`
+- **No backend required** — simple static deployment on GitHub Pages or any web server
 
 ---
 
 ## 📁 Project Structure
 
-```
-flashcard-app/
-│
-├── index.html                  # App shell (single page)
+```text
+.
+├── index.html                  # Main app shell
 ├── manifest.json               # PWA manifest
-├── sw.js                       # Service worker (offline)
-│
+├── sw.js                       # Service worker for offline support
+├── README.md                   # Project documentation
+├── LICENSE
+├── assets/
+│   └── icons/
+│       ├── icon-192.svg
+│       └── icon-512.svg
 ├── core/
-│   ├── app.js                  # UI logic — language-agnostic
-│   ├── srs.js                  # Spaced repetition engine (SM-2)
-│   └── languages.js            # Language registry — configure languages here
-│
-├── languages/
-│   └── german/
-│       └── words.js            # 1,000 German words (A1–B2)
-│   └── spanish/                # ← drop a words.js here to add Spanish
-│   └── arabic/                 # ← drop a words.js here to add Arabic
-│
-└── assets/
-    └── icons/
-        ├── icon-192.svg
-        └── icon-512.svg
+│   ├── app.js                  # UI and application logic
+│   ├── languages.js            # Language registry and configuration
+│   └── srs.js                  # Spaced repetition logic
+└── languages/
+    └── german/
+        ├── README.md           # German dataset notes
+        ├── a1.json             # A1 vocabulary
+        ├── a2.json             # A2 vocabulary
+        ├── b1.json             # B1 vocabulary
+        └── b2.json             # B2 vocabulary
 ```
 
 ---
 
-## 🚀 Try Live
+## 🚀 Live Demo
 
-**No installation needed** — use the app right now on GitHub Pages:
+Use the app directly on GitHub Pages:
 
-[**→ Open Live Demo**](https://ehabelrify.github.io/karta)
+[**→ Open Live Demo**](https://ehabelrify.github.io/Karta/)
 
-The app works fully offline after the first load and can be installed on your phone home screen.
+After the first load, the app can work offline and can be installed on supported devices.
 
 ---
 
-## 🏃 Quick Start
+## 🏃 Getting Started
 
 ### Run Locally
 
-Open `index.html` directly in your browser, or use a static file server:
+You can open `index.html` directly in a browser, but using a local static server is recommended for full PWA behavior.
 
 ```bash
 # Python 3
-python3 -m http.server 8080
+python -m http.server 8080
 
 # Node.js
 npx serve .
@@ -79,124 +77,165 @@ npx serve .
 
 Then open `http://localhost:8080` in your browser.
 
-**Note:** The service worker (offline mode) requires HTTPS or `localhost`. On a plain `file://` URL, offline mode won't activate, but the app works fine otherwise.
+> **Note:** Service workers require `https://` or `localhost`. If you open the app with `file://`, the core interface still works, but offline support will not be enabled.
 
 ### Install as an App
 
 After opening the app in your browser:
 
-- **Android:** Click the install prompt that appears, or tap the menu → "Install app"
-- **iPhone:** Tap **Share** (box with arrow) → **"Add to Home Screen"** → **Add**
-
-The app icon appears on your home screen and works fully offline.
+- **Android:** Use the browser install prompt or the browser menu → **Install app**
+- **iPhone/iPad:** Tap **Share** → **Add to Home Screen**
+- **Desktop browsers:** Use the install icon in the address bar when available
 
 ---
 
 ## 🎯 How to Use
 
-1. **Open the app** — available languages are ready to study (see [Available Languages](#-available-languages) below)
-2. **Select a language** — switch between available languages anytime
-3. **Choose a level** — A1, A2, B1, or B2 (pick any level, no progression lock)
-4. **Choose a category** — or mix all categories together
-5. **Study** — flip cards, rate your knowledge (Again / Good / Easy)
-6. **Add custom words** — click "Add Word" to add your own vocabulary
-7. **Track progress** — the app remembers what you know and schedules reviews
+1. Open the app
+2. Select a language
+3. Choose a CEFR level
+4. Filter by category, or study all categories together
+5. Review cards and rate your recall using **Again**, **Good**, or **Easy**
+6. Add custom words if you want to study personal vocabulary
+7. Return regularly to review due cards and build long-term retention
 
-Your progress is saved automatically in your browser and persists offline.
+Progress is saved automatically in your browser.
 
 ---
 
 ## 📚 Available Languages
 
-| Language | Level | Availability |
-|----------|-------|---------------|
+| Language | Levels | Status |
+|----------|--------|--------|
 | German 🇩🇪 | A1–B2 | ✅ Included (1,000 words) |
-| Spanish 🇪🇸 | A1–B2 | ⏳ Planned — contributions welcome |
-| French 🇫🇷 | A1–B2 | ⏳ Planned — contributions welcome |
-| More languages | — | 🔄 Open for community contributions |
+| Additional languages | Varies | 🔄 Planned / contribution-friendly |
 
-**Want to add a language?** See the [Add a New Language](#-add-a-new-language) section below. Community contributions are welcome!
+If you want to add another language, see [Adding a New Language](#-adding-a-new-language).
 
 ---
 
-## 🔄 How the Review Algorithm Works
+## 🔄 Review System
 
-The app uses **SM-2** (the same algorithm as Anki and SuperMemo):
+The app uses an **SM-2 style spaced repetition system** similar to the approach popularized by Anki and SuperMemo.
 
-| Button | Meaning | Next Review |
-|--------|---------|-------------|
-| **Again** | Didn't know it | 10 minutes |
-| **Good** | Knew it with effort | Interval × ease factor |
-| **Easy** | Knew it instantly | Interval × ease × 1.3 |
+| Rating | Meaning | Effect |
+|--------|---------|--------|
+| **Again** | You did not remember the word | Resets or shortens the interval significantly |
+| **Good** | You remembered with some effort | Increases the interval normally |
+| **Easy** | You remembered immediately | Increases the interval more aggressively |
 
-**How it works:**
-- Cards start with an ease factor of 2.5
-- "Again" lowers the ease (hard cards get reviewed more)
-- "Easy" raises the ease (easy cards get reviewed less)
-- A word is "mastered" at ≥3 successful reps and ≥7-day interval
-- Each session mixes ~70% due/overdue words with ~30% new words
+In general:
+
+- Cards become less frequent as you answer them correctly
+- Difficult cards return sooner
+- Review sessions prioritize due and overdue cards
+- Progress is tracked separately in local storage
 
 ---
 
-## ➕ Add a New Language
+## 🔊 Pronunciation
 
-To add a language that's not yet available:
+The app supports browser-native pronunciation through the **Web Speech API**.
 
-### 1. Create the word list
+- Use the speaker icon to hear the target word
+- Pronunciation depends on browser and device voice support
+- No external API key or backend service is required
+- Works especially well on modern mobile and desktop browsers
 
-Create `languages/spanish/words.js` (replace `spanish` with your language code).
+Language voice mappings are configured in [`core/app.js`](core/app.js).
 
-Each word needs this structure:
+---
 
-```js
-const WORDS = [
-  {
-    id: 1,                          // unique integer
-    level: "A1",                    // A1 | A2 | B1 | B2
-    category: "People & Family",    // any category
-    es: "la madre",                 // target language (field name matches targetField in registry)
-    en: "mother",                   // translation
-    pronunciation: "la MAH-dre",    // phonetic pronunciation
-    example: "Mi madre cocina bien.", // example sentence
-    exampleEn: "My mother cooks well." // English translation
-  },
-  // ... more words
-];
+## ➕ Adding a New Language
+
+The repository is structured so additional languages can be added without changing the overall app architecture.
+
+### 1. Create a language directory
+
+Add a new folder under `languages/`, for example:
+
+```text
+languages/spanish/
 ```
 
-### 2. Register the language
+### 2. Add level-based JSON files
 
-Open `core/languages.js` and add a new entry:
+Create one or more JSON files such as:
 
-```js
+```text
+languages/spanish/a1.json
+languages/spanish/a2.json
+languages/spanish/b1.json
+languages/spanish/b2.json
+```
+
+Each file should follow the same general structure used by the German dataset:
+
+```json
 {
-  code: 'spanish',
-  name: 'Spanish',
-  nativeName: 'Español',
-  flag: '🇪🇸',
-  script: 'languages/spanish/words.js',
-  dir: 'ltr',
-  targetField: 'es',       // must match the field in words.js
-  nativeField: 'en',
-  levels: ['A1', 'A2', 'B1', 'B2'],
-  levelSystem: 'CEFR',
-  levelNames: { A1: 'Beginner', A2: 'Elementary', B1: 'Intermediate', B2: 'Upper-Intermediate' },
-  wordCount: 1000,
-},
+  "language": "spanish",
+  "level": "A1",
+  "words": [
+    {
+      "id": "es_a1_001",
+      "target": "la madre",
+      "native": "mother",
+      "pronunciation": "la MAH-dreh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mi madre cocina bien.",
+          "native": "My mother cooks well."
+        }
+      ]
+    }
+  ]
+}
 ```
 
-### 3. Link the script
+### 3. Register the language
 
-Add this line to `index.html` before `<script src="core/app.js"></script>`:
+Update `core/languages.js` with the new language configuration so the app can load and display it.
 
-```html
-<script src="languages/spanish/words.js"></script>
-```
+### 4. Test the dataset
 
-Done. The app automatically shows a language picker when you have multiple languages. Progress for each language is tracked separately.
+Verify that:
+- IDs are unique
+- Levels are correct
+- Required fields are present
+- JSON is valid
+- The language appears correctly in the app
+
+For a concrete reference, see [`languages/german/README.md`](languages/german/README.md).
+
+---
+
+## 🛠️ Technology
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Service Worker API
+- Web App Manifest
+- Web Speech API
+- `localStorage`
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome, especially for:
+
+- New language datasets
+- Content improvements
+- UX and accessibility enhancements
+- Documentation refinements
+- Testing and validation improvements
+
+If you contribute a language dataset, keep the structure consistent with the existing JSON-based format.
 
 ---
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE)
+MIT — see [LICENSE](LICENSE).

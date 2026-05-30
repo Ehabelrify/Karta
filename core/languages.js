@@ -11,13 +11,19 @@ const LANGUAGE_REGISTRY = [
     name: 'German',
     nativeName: 'Deutsch',
     flag: '🇩🇪',
-    script: 'languages/german/words.js',
+    // JSON files for each level
+    dataFiles: [
+      'languages/german/a1.json',
+      'languages/german/a2.json',
+      'languages/german/b1.json',
+      'languages/german/b2.json'
+    ],
     // Direction: 'ltr' or 'rtl'
     dir: 'ltr',
     // The field in each word object that holds the target language text
-    targetField: 'de',
+    targetField: 'target',
     // The field for the native language (translation)
-    nativeField: 'en',
+    nativeField: 'native',
     // Levels used in this language's word list
     levels: ['A1', 'A2', 'B1', 'B2'],
     levelSystem: 'CEFR', // e.g. 'CEFR', 'JLPT', 'HSK', 'Custom'

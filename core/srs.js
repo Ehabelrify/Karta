@@ -7,18 +7,44 @@ const SRS = (() => {
   function customKey(langCode)   { return `custom_v1_${langCode}`; }
 
   function load(langCode) {
-    try { return JSON.parse(localStorage.getItem(storageKey(langCode)) || '{}'); }
-    catch { return {}; }
+    try {
+      return JSON.parse(localStorage.getItem(storageKey(langCode)) || '{}');
+    }
+    catch (error) {
+      console.error(`[SRS] Failed to load data for ${langCode}:`, error);
+      return {};
+    }
   }
   function save(data, langCode) {
-    localStorage.setItem(storageKey(langCode), JSON.stringify(data));
+    try {
+      localStorage.setItem(storageKey(langCode), JSON.stringify(data));
+    } catch (error) {
+      console.error(`[SRS] Failed to save data for ${langCode}:`, error);
+      // Handle quota exceeded or other localStorage errors
+      if (error.name === 'QuotaExceededError') {
+        alert('Storage quota exceeded. Please clear some data or use a different browser.');
+      }
+    }
   }
   function loadCustom(langCode) {
-    try { return JSON.parse(localStorage.getItem(customKey(langCode)) || '[]'); }
-    catch { return []; }
+    try {
+      return JSON.parse(localStorage.getItem(customKey(langCode)) || '[]');
+    }
+    catch (error) {
+      console.error(`[SRS] Failed to load custom words for ${langCode}:`, error);
+      return [];
+    }
   }
   function saveCustom(words, langCode) {
-    localStorage.setItem(customKey(langCode), JSON.stringify(words));
+    try {
+      localStorage.setItem(customKey(langCode), JSON.stringify(words));
+    } catch (error) {
+      console.error(`[SRS] Failed to save custom words for ${langCode}:`, error);
+      if (error.name === 'QuotaExceededError') {
+        alert('Storage quota exceeded. Cannot save custom word.');
+      }
+      throw error; // Re-throw so caller knows save failed
+    }
   }
 
   function defaultCard() {
@@ -71,13 +97,14 @@ const SRS = (() => {
 
   function buildQueue(wordIds, langCode, maxCards = 40) {
     const data = load(langCode);
-    const due = [], newW = [], notDue = [];
+    const due = [], reviewed = [];
 
     for (const id of wordIds) {
       const c = data[id];
-      if (isNew(c))       newW.push(id);
-      else if (isDue(c))  due.push(id);
-      else                notDue.push(id);
+      if (!isNew(c)) {
+        if (isDue(c))  due.push(id);
+        else           reviewed.push(id);
+      }
     }
 
     const shuffle = arr => {
@@ -88,19 +115,16 @@ const SRS = (() => {
       return arr;
     };
 
-    shuffle(newW);
-    shuffle(notDue);
+    shuffle(reviewed);
     due.sort((a, b) => (data[a]?.due || 0) - (data[b]?.due || 0));
 
-    const total    = Math.min(maxCards, due.length + newW.length + Math.min(5, notDue.length));
-    const newCount = Math.max(1, Math.round(total * 0.3));
-    const dueCount = total - newCount;
+    // Smart review: ~70% due/overdue, ~30% reviewed-but-waiting
+    // Excludes brand-new words entirely
+    const total        = Math.min(maxCards, due.length + reviewed.length);
+    const reviewedCount = Math.max(0, Math.round(total * 0.3));
+    const dueCount     = total - reviewedCount;
 
-    const queue = [...due.slice(0, dueCount), ...newW.slice(0, newCount)];
-
-    if (queue.length < Math.min(10, wordIds.length)) {
-      queue.push(...notDue.slice(0, Math.min(10, wordIds.length) - queue.length));
-    }
+    const queue = [...due.slice(0, dueCount), ...reviewed.slice(0, reviewedCount)];
 
     return shuffle(queue);
   }
@@ -132,5 +156,20 @@ const SRS = (() => {
 
   function getCustomWords(langCode) { return loadCustom(langCode); }
 
-  return { load, answer, buildQueue, getStats, getCardState, addCustomWord, getCustomWords, isNew, isDue };
+  function validateStats(wordIds, langCode) {
+    const data = load(langCode);
+    let seen = 0, mastered = 0, due = 0, newCount = 0;
+    for (const id of wordIds) {
+      const c = data[id];
+      if (isNew(c)) newCount++;
+      else seen++;
+      if (c && c.reps >= 3 && c.interval >= 7) mastered++;
+      if (isDue(c)) due++;
+    }
+    const calculated = { seen, mastered, due, newCount, total: wordIds.length };
+    console.log(`[SRS Audit] ${langCode}:`, calculated);
+    return calculated;
+  }
+
+  return { load, answer, buildQueue, getStats, getCardState, addCustomWord, getCustomWords, isNew, isDue, validateStats };
 })();

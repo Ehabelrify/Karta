@@ -163,10 +163,20 @@
   .new-tag { background: #e8f4ee !important; color: #1a5c35 !important; }
 
   .card-front { display: flex; flex-direction: column; gap: 6px; }
+  .german-word-container { display: flex; align-items: center; gap: 12px; }
   .german-word {
     font-size: 32px; font-weight: 700; letter-spacing: -0.5px;
     line-height: 1.2; cursor: pointer; display: inline-block;
   }
+  .speak-btn {
+    background: var(--accent-light); color: var(--accent); border: none;
+    width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.15s; flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .speak-btn:active { background: var(--accent); color: #fff; transform: scale(0.95); }
+  .speak-btn svg { width: 22px; height: 22px; }
   .pronunciation { font-size: 14px; color: var(--text3); font-style: italic; }
 
   .example-box { background: var(--surface2); border-radius: var(--radius-sm); padding: 12px 14px; margin-top: 4px; }
@@ -208,9 +218,11 @@
   }
   .reveal-btn:active { background: var(--accent-hover); }
 
-  /* ── ADD WORD ── */
-  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-section-title { font-size: 12px; font-weight: 700; text-transform: uppercase; color: var(--text3); letter-spacing: 0.5px; margin-top: 12px; margin-bottom: 8px; }
+  .form-section-title:first-child { margin-top: 0; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 4px; }
   .form-label { font-size: 13px; font-weight: 600; color: var(--text2); }
+  .form-hint { font-size: 12px; color: var(--text3); margin-top: 2px; }
   .form-input, .form-select, .form-textarea {
     background: var(--surface); border: 1px solid var(--border-med);
     border-radius: var(--radius-sm); padding: 12px 14px;
@@ -314,17 +326,24 @@
 
   <!-- ADD WORD -->
   <div class="screen" id="add-view">
+    <!-- Required Fields Section -->
+    <div class="form-section-title">📝 Word & Translation (Required)</div>
     <div class="form-group">
       <label class="form-label" id="inp-target-label">Target Language Word</label>
       <input class="form-input" id="inp-de" placeholder="e.g. der Hund" autocomplete="off" autocorrect="off" spellcheck="false">
+      <div class="form-hint">Include the article (der, die, das for German)</div>
     </div>
     <div class="form-group">
       <label class="form-label">English Translation</label>
       <input class="form-input" id="inp-en" placeholder="e.g. dog" autocomplete="off">
     </div>
+
+    <!-- Pronunciation & Metadata Section -->
+    <div class="form-section-title">🔤 Pronunciation & Details</div>
     <div class="form-group">
       <label class="form-label">Pronunciation (phonetic)</label>
       <input class="form-input" id="inp-pron" placeholder="e.g. dair hoont" autocomplete="off" autocorrect="off">
+      <div class="form-hint">Use English letters to show pronunciation</div>
     </div>
     <div class="form-row">
       <div class="form-group">
@@ -348,14 +367,20 @@
         </select>
       </div>
     </div>
+
+    <!-- Example Sentences Section -->
+    <div class="form-section-title">💬 Example Sentences</div>
     <div class="form-group">
-      <label class="form-label">Example sentence (target language)</label>
+      <label class="form-label">Example in target language</label>
       <textarea class="form-textarea" id="inp-ex" placeholder="e.g. Der Hund bellt laut."></textarea>
+      <div class="form-hint">Use the word naturally in a sentence</div>
     </div>
     <div class="form-group">
-      <label class="form-label">Example sentence (English)</label>
+      <label class="form-label">English translation</label>
       <textarea class="form-textarea" id="inp-exen" placeholder="e.g. The dog barks loudly."></textarea>
     </div>
+
+    <!-- Action Section -->
     <button class="save-btn" id="save-btn">Save Word</button>
     <div class="save-feedback" id="save-feedback"></div>
   </div>

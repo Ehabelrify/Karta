@@ -38,8 +38,8 @@ function boot() {
     return;
   }
   if (LANGUAGE_REGISTRY.length === 1) {
-    // Single language — skip picker, go straight to home
-    activateLanguage(LANGUAGE_REGISTRY[0]);
+    // Single language — skip picker, load and activate
+    loadLanguage(LANGUAGE_REGISTRY[0]);
   } else {
     showLanguagePicker();
   }
@@ -48,11 +48,11 @@ function boot() {
 }
 
 // ── Activate a language ──
-function activateLanguage(lang) {
+function activateLanguage(lang, loadedWords) {
   State.activeLang = lang;
-  // WORDS is the global from the loaded words.js
+  // loadedWords comes from JSON files
   const custom = SRS.getCustomWords(lang.code);
-  State.allWords = [...WORDS, ...custom];
+  State.allWords = [...loadedWords, ...custom];
   document.documentElement.dir = lang.dir || 'ltr';
   renderHome();
   showScreen('home');
@@ -92,18 +92,47 @@ function showLanguagePicker() {
   document.getElementById('nav-back').style.display = 'none';
 }
 
-// Dynamically load a language's word file
-function loadLanguage(lang) {
-  // Remove previously loaded language script if any
-  const old = document.getElementById('lang-script');
-  if (old) old.remove();
-
-  const script = document.createElement('script');
-  script.id = 'lang-script';
-  script.src = lang.script;
-  script.onload = () => activateLanguage(lang);
-  script.onerror = () => showError(`Failed to load ${lang.name} word list.`);
-  document.body.appendChild(script);
+// Dynamically load a language's JSON data files
+async function loadLanguage(lang) {
+  try {
+    // Load all JSON files for this language
+    const promises = lang.dataFiles.map(file =>
+      fetch(file).then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed to load ${file}: ${response.statusText}`);
+        }
+        return response.json();
+      })
+    );
+    
+    const levelData = await Promise.all(promises);
+    
+    // Merge all words from all levels
+    const allWords = [];
+    levelData.forEach(data => {
+      data.words.forEach(word => {
+        // Convert new format to internal format
+        const convertedWord = {
+          id: word.id,
+          level: data.level,
+          category: word.category,
+          [lang.targetField]: word.target,
+          [lang.nativeField]: word.native,
+          pronunciation: word.pronunciation,
+          example: word.examples && word.examples[0] ? word.examples[0].target : '',
+          exampleEn: word.examples && word.examples[0] ? word.examples[0].native : ''
+        };
+        allWords.push(convertedWord);
+      });
+    });
+    
+    console.log(`[App] Loaded ${allWords.length} words for ${lang.name}`);
+    activateLanguage(lang, allWords);
+    
+  } catch (error) {
+    console.error(`[App] Failed to load ${lang.name} word list:`, error);
+    showError(`Failed to load ${lang.name} word list. Please check your connection and try again.`);
+  }
 }
 
 // ── Helpers ──
@@ -284,56 +313,167 @@ function renderCard() {
   const exHighlighted = highlightExample(exampleTarget, targetText);
 
   const area = document.getElementById('card-area');
-  area.innerHTML = `
-    <div class="flashcard" id="flashcard">
-      <div class="card-meta">
-        <span class="card-level-tag tag-${levelBadgeClass(word.level)}">${word.level}</span>
-        <span class="card-cat-tag">${word.category}</span>
-        ${isNew ? '<span class="card-cat-tag new-tag">New</span>' : ''}
-      </div>
+  
+  // Create flashcard structure safely using DOM methods
+  const flashcard = document.createElement('div');
+  flashcard.className = 'flashcard';
+  flashcard.id = 'flashcard';
+  
+  // Card meta
+  const cardMeta = document.createElement('div');
+  cardMeta.className = 'card-meta';
+  
+  const levelTag = document.createElement('span');
+  levelTag.className = `card-level-tag tag-${levelBadgeClass(word.level)}`;
+  levelTag.textContent = word.level;
+  cardMeta.appendChild(levelTag);
+  
+  const catTag = document.createElement('span');
+  catTag.className = 'card-cat-tag';
+  catTag.textContent = word.category;
+  cardMeta.appendChild(catTag);
+  
+  if (isNew) {
+    const newTag = document.createElement('span');
+    newTag.className = 'card-cat-tag new-tag';
+    newTag.textContent = 'New';
+    cardMeta.appendChild(newTag);
+  }
+  
+  flashcard.appendChild(cardMeta);
+  
+  // Card front
+  const cardFront = document.createElement('div');
+  cardFront.className = 'card-front';
+  
+  const wordContainer = document.createElement('div');
+  wordContainer.className = 'german-word-container';
+  
+  const germanWord = document.createElement('div');
+  germanWord.className = 'german-word';
+  germanWord.id = 'target-word';
+  germanWord.textContent = targetText;
+  wordContainer.appendChild(germanWord);
+  
+  const speakBtn = document.createElement('button');
+  speakBtn.className = 'speak-btn';
+  speakBtn.id = 'speak-btn';
+  speakBtn.title = 'Pronounce';
+  speakBtn.setAttribute('aria-label', 'Pronounce word');
+  speakBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.26 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+  </svg>`;
+  wordContainer.appendChild(speakBtn);
+  
+  cardFront.appendChild(wordContainer);
+  
+  if (pronunciation) {
+    const pronDiv = document.createElement('div');
+    pronDiv.className = 'pronunciation';
+    pronDiv.textContent = pronunciation;
+    cardFront.appendChild(pronDiv);
+  }
+  
+  if (exampleTarget) {
+    const exampleBox = document.createElement('div');
+    exampleBox.className = 'example-box';
+    
+    const exampleDe = document.createElement('div');
+    exampleDe.className = 'example-de';
+    exampleDe.innerHTML = exHighlighted; // This is safe as it's already sanitized by highlightExample
+    exampleBox.appendChild(exampleDe);
+    
+    const exampleEn = document.createElement('div');
+    exampleEn.className = 'example-en';
+    exampleEn.id = 'ex-native';
+    exampleEn.textContent = exampleNative;
+    exampleBox.appendChild(exampleEn);
+    
+    cardFront.appendChild(exampleBox);
+  }
+  
+  flashcard.appendChild(cardFront);
+  
+  // Card back
+  const cardBack = document.createElement('div');
+  cardBack.className = 'card-back';
+  cardBack.id = 'card-back';
+  
+  const divider = document.createElement('div');
+  divider.className = 'divider';
+  cardBack.appendChild(divider);
+  
+  const translationHint = document.createElement('div');
+  translationHint.className = 'translation-hint';
+  translationHint.textContent = 'Translation';
+  cardBack.appendChild(translationHint);
+  
+  const translation = document.createElement('div');
+  translation.className = 'translation';
+  translation.textContent = nativeText;
+  cardBack.appendChild(translation);
+  
+  flashcard.appendChild(cardBack);
+  
+  // Clear and append
+  area.innerHTML = '';
+  area.appendChild(flashcard);
 
-      <div class="card-front">
-        <div class="german-word" id="target-word">${targetText}</div>
-        ${pronunciation ? `<div class="pronunciation">${pronunciation}</div>` : ''}
-        ${exampleTarget ? `
-        <div class="example-box">
-          <div class="example-de">${exHighlighted}</div>
-          <div class="example-en" id="ex-native">${exampleNative}</div>
-        </div>` : ''}
-      </div>
-
-      <div class="card-back" id="card-back">
-        <div class="divider"></div>
-        <div class="translation-hint">Translation</div>
-        <div class="translation">${nativeText}</div>
-      </div>
-
-      <div class="tap-hint" id="tap-hint">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-          <circle cx="12" cy="12" r="3"/>
-        </svg>
-        Tap to reveal
-      </div>
-    </div>
-
-    <button class="reveal-btn" id="reveal-btn">Show Answer</button>
-
-    <div class="answer-btns" id="answer-btns" style="display:none">
-      <button class="answer-btn btn-again" data-q="again">
-        Again <span class="btn-sub">10 min</span>
-      </button>
-      <button class="answer-btn btn-good" data-q="good">
-        Good <span class="btn-sub">+${getNextInterval(cardState,'good')}d</span>
-      </button>
-      <button class="answer-btn btn-easy" data-q="easy">
-        Easy <span class="btn-sub">+${getNextInterval(cardState,'easy')}d</span>
-      </button>
-    </div>
-  `;
+  // Tap hint
+  const tapHint = document.createElement('div');
+  tapHint.className = 'tap-hint';
+  tapHint.id = 'tap-hint';
+  tapHint.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+    <circle cx="12" cy="12" r="3"/>
+  </svg>
+  Tap to reveal`;
+  area.appendChild(tapHint);
+  
+  // Reveal button
+  const revealBtn = document.createElement('button');
+  revealBtn.className = 'reveal-btn';
+  revealBtn.id = 'reveal-btn';
+  revealBtn.textContent = 'Show Answer';
+  area.appendChild(revealBtn);
+  
+  // Answer buttons
+  const answerBtns = document.createElement('div');
+  answerBtns.className = 'answer-btns';
+  answerBtns.id = 'answer-btns';
+  answerBtns.style.display = 'none';
+  
+  const againBtn = document.createElement('button');
+  againBtn.className = 'answer-btn btn-again';
+  againBtn.setAttribute('data-q', 'again');
+  againBtn.innerHTML = 'Again <span class="btn-sub">10 min</span>';
+  answerBtns.appendChild(againBtn);
+  
+  const goodBtn = document.createElement('button');
+  goodBtn.className = 'answer-btn btn-good';
+  goodBtn.setAttribute('data-q', 'good');
+  goodBtn.innerHTML = `Good <span class="btn-sub">+${getNextInterval(cardState,'good')}d</span>`;
+  answerBtns.appendChild(goodBtn);
+  
+  const easyBtn = document.createElement('button');
+  easyBtn.className = 'answer-btn btn-easy';
+  easyBtn.setAttribute('data-q', 'easy');
+  easyBtn.innerHTML = `Easy <span class="btn-sub">+${getNextInterval(cardState,'easy')}d</span>`;
+  answerBtns.appendChild(easyBtn);
+  
+  area.appendChild(answerBtns);
 
   document.getElementById('flashcard').addEventListener('click', revealCard);
   document.getElementById('reveal-btn').addEventListener('click', revealCard);
+
+  // Speaker button for audio pronunciation
+  const speakBtn = document.getElementById('speak-btn');
+  if (speakBtn) {
+    speakBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      pronounceWord(targetText, lang.code);
+    });
+  }
 
   // Word tooltip (tap/hover shows translation)
   setupWordTooltip(document.getElementById('target-word'), nativeText);
@@ -369,6 +509,29 @@ function getNextInterval(state, quality) {
   return quality === 'good'
     ? Math.round(interval * ease)
     : Math.round(interval * ease * 1.3);
+}
+
+// ── Web Speech API (Text-to-Speech) ──
+function pronounceWord(word, langCode) {
+  // Stop any previous speech
+  speechSynthesis.cancel();
+
+  // Map language codes to IETF language tags
+  const langMap = {
+    german:   'de-DE',
+    spanish:  'es-ES',
+    french:   'fr-FR',
+    arabic:   'ar-SA',
+    japanese: 'ja-JP',
+  };
+
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = langMap[langCode] || 'en-US';
+  utterance.rate = 0.9; // slightly slower for clarity
+  utterance.pitch = 1.0;
+  utterance.volume = 1.0;
+
+  speechSynthesis.speak(utterance);
 }
 
 function revealCard() {
@@ -462,9 +625,47 @@ function bindAdd() {
     const cat   = document.getElementById('inp-cat').value;
     const ex    = document.getElementById('inp-ex').value.trim();
     const exen  = document.getElementById('inp-exen').value.trim();
+    
+    const feedbackEl = document.getElementById('save-feedback');
 
+    // Validation: Required fields
     if (!targetVal || !nativeVal) {
-      document.getElementById('save-feedback').textContent = '⚠️ Both fields are required.';
+      feedbackEl.textContent = '⚠️ Both target and native language fields are required.';
+      return;
+    }
+    
+    // Validation: Length limits (reasonable limits to prevent abuse)
+    const MAX_WORD_LENGTH = 200;
+    const MAX_EXAMPLE_LENGTH = 500;
+    
+    if (targetVal.length > MAX_WORD_LENGTH) {
+      feedbackEl.textContent = `⚠️ Target word too long (max ${MAX_WORD_LENGTH} characters).`;
+      return;
+    }
+    
+    if (nativeVal.length > MAX_WORD_LENGTH) {
+      feedbackEl.textContent = `⚠️ Native word too long (max ${MAX_WORD_LENGTH} characters).`;
+      return;
+    }
+    
+    if (pron && pron.length > MAX_WORD_LENGTH) {
+      feedbackEl.textContent = `⚠️ Pronunciation too long (max ${MAX_WORD_LENGTH} characters).`;
+      return;
+    }
+    
+    if (ex && ex.length > MAX_EXAMPLE_LENGTH) {
+      feedbackEl.textContent = `⚠️ Example too long (max ${MAX_EXAMPLE_LENGTH} characters).`;
+      return;
+    }
+    
+    if (exen && exen.length > MAX_EXAMPLE_LENGTH) {
+      feedbackEl.textContent = `⚠️ Example translation too long (max ${MAX_EXAMPLE_LENGTH} characters).`;
+      return;
+    }
+    
+    // Validation: Check for minimum length
+    if (targetVal.length < 1 || nativeVal.length < 1) {
+      feedbackEl.textContent = '⚠️ Words must be at least 1 character long.';
       return;
     }
 
@@ -477,14 +678,19 @@ function bindAdd() {
       exampleEn: exen || `${nativeVal}.`,
     };
 
-    const id = SRS.addCustomWord(word, lang.code);
-    State.allWords.push({ ...word, id });
+    try {
+      const id = SRS.addCustomWord(word, lang.code);
+      State.allWords.push({ ...word, id });
 
-    ['inp-de','inp-en','inp-pron','inp-ex','inp-exen'].forEach(i => {
-      document.getElementById(i).value = '';
-    });
-    document.getElementById('save-feedback').textContent = '✓ Word saved!';
-    setTimeout(() => document.getElementById('save-feedback').textContent = '', 2500);
+      ['inp-de','inp-en','inp-pron','inp-ex','inp-exen'].forEach(i => {
+        document.getElementById(i).value = '';
+      });
+      feedbackEl.textContent = '✓ Word saved!';
+      setTimeout(() => feedbackEl.textContent = '', 2500);
+    } catch (error) {
+      console.error('[App] Failed to save custom word:', error);
+      feedbackEl.textContent = '⚠️ Failed to save word. Storage may be full.';
+    }
   });
 }
 

@@ -1,0 +1,5648 @@
+{
+  "language": "german",
+  "level": "A1",
+  "words": [
+    {
+      "id": "de_a1_001",
+      "target": "die Mutter",
+      "native": "mother",
+      "pronunciation": "dee MOO-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Mutter kocht gerne.",
+          "native": "My mother likes to cook."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_002",
+      "target": "der Vater",
+      "native": "father",
+      "pronunciation": "dair FAH-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Vater arbeitet viel.",
+          "native": "My father works a lot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_003",
+      "target": "die Schwester",
+      "native": "sister",
+      "pronunciation": "dee SHVES-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Schwester ist jung.",
+          "native": "My sister is young."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_004",
+      "target": "der Bruder",
+      "native": "brother",
+      "pronunciation": "dair BROO-der",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Bruder spielt Fußball.",
+          "native": "My brother plays football."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_005",
+      "target": "die Familie",
+      "native": "family",
+      "pronunciation": "dee fa-MEEL-yeh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Familie ist groß.",
+          "native": "My family is big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_006",
+      "target": "das Kind",
+      "native": "child",
+      "pronunciation": "das kint",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Kind lacht laut.",
+          "native": "The child laughs loudly."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_007",
+      "target": "der Mann",
+      "native": "man / husband",
+      "pronunciation": "dair man",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Mann liest ein Buch.",
+          "native": "The man reads a book."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_008",
+      "target": "die Frau",
+      "native": "woman / wife",
+      "pronunciation": "dee frow",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Frau arbeitet hier.",
+          "native": "The woman works here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_009",
+      "target": "der Freund",
+      "native": "friend / boyfriend",
+      "pronunciation": "dair froynd",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Freund heißt Tom.",
+          "native": "My friend is called Tom."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_010",
+      "target": "die Freundin",
+      "native": "friend / girlfriend",
+      "pronunciation": "dee FROYN-din",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Freundin lacht viel.",
+          "native": "My girlfriend laughs a lot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_011",
+      "target": "die Großmutter",
+      "native": "grandmother",
+      "pronunciation": "dee GROHSS-moo-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Großmutter backt Kuchen.",
+          "native": "My grandmother bakes cake."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_012",
+      "target": "der Großvater",
+      "native": "grandfather",
+      "pronunciation": "dair GROHSS-fah-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Großvater ist alt.",
+          "native": "My grandfather is old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_013",
+      "target": "der Sohn",
+      "native": "son",
+      "pronunciation": "dair zohn",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ihr Sohn ist sehr klug.",
+          "native": "Her son is very smart."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_014",
+      "target": "die Tochter",
+      "native": "daughter",
+      "pronunciation": "dee TOKH-ter",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ihre Tochter singt schön.",
+          "native": "Her daughter sings beautifully."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_015",
+      "target": "der Mensch",
+      "native": "person / human",
+      "pronunciation": "dair mensh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Jeder Mensch ist anders.",
+          "native": "Every person is different."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_016",
+      "target": "das Wasser",
+      "native": "water",
+      "pronunciation": "das VAS-ser",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich trinke viel Wasser.",
+          "native": "I drink a lot of water."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_017",
+      "target": "das Brot",
+      "native": "bread",
+      "pronunciation": "das broht",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Brot ist frisch.",
+          "native": "The bread is fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_018",
+      "target": "die Milch",
+      "native": "milk",
+      "pronunciation": "dee milkh",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Milch ist kalt.",
+          "native": "The milk is cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_019",
+      "target": "der Kaffee",
+      "native": "coffee",
+      "pronunciation": "dair KAF-feh",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich trinke Kaffee am Morgen.",
+          "native": "I drink coffee in the morning."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_020",
+      "target": "der Tee",
+      "native": "tea",
+      "pronunciation": "dair teh",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Sie trinkt gerne Tee.",
+          "native": "She likes to drink tea."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_021",
+      "target": "das Fleisch",
+      "native": "meat",
+      "pronunciation": "das flysh",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Fleisch ist teuer.",
+          "native": "The meat is expensive."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_022",
+      "target": "der Fisch",
+      "native": "fish",
+      "pronunciation": "dair fish",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Fisch schmeckt gut.",
+          "native": "The fish tastes good."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_023",
+      "target": "das Ei",
+      "native": "egg",
+      "pronunciation": "das eye",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich esse ein Ei.",
+          "native": "I eat an egg."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_024",
+      "target": "der Apfel",
+      "native": "apple",
+      "pronunciation": "dair AP-fel",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Apfel ist rot.",
+          "native": "The apple is red."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_025",
+      "target": "das Gemüse",
+      "native": "vegetables",
+      "pronunciation": "das ge-MEW-ze",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich esse gerne Gemüse.",
+          "native": "I like to eat vegetables."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_026",
+      "target": "das Obst",
+      "native": "fruit",
+      "pronunciation": "das ohbst",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Obst ist gesund.",
+          "native": "Fruit is healthy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_027",
+      "target": "der Käse",
+      "native": "cheese",
+      "pronunciation": "dair KAY-ze",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Käse kommt aus Frankreich.",
+          "native": "The cheese comes from France."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_028",
+      "target": "die Suppe",
+      "native": "soup",
+      "pronunciation": "dee ZOO-pe",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Suppe ist heiß.",
+          "native": "The soup is hot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_029",
+      "target": "der Kuchen",
+      "native": "cake",
+      "pronunciation": "dair KOO-khen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Kuchen schmeckt süß.",
+          "native": "The cake tastes sweet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_030",
+      "target": "das Bier",
+      "native": "beer",
+      "pronunciation": "das beer",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Bier ist kalt.",
+          "native": "The beer is cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_031",
+      "target": "null",
+      "native": "zero",
+      "pronunciation": "nool",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Temperatur ist null Grad.",
+          "native": "The temperature is zero degrees."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_032",
+      "target": "eins",
+      "native": "one",
+      "pronunciation": "eyns",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich habe eins.",
+          "native": "I have one."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_033",
+      "target": "zwei",
+      "native": "two",
+      "pronunciation": "tsvey",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich habe zwei Kinder.",
+          "native": "I have two children."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_034",
+      "target": "drei",
+      "native": "three",
+      "pronunciation": "dry",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Es gibt drei Äpfel.",
+          "native": "There are three apples."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_035",
+      "target": "vier",
+      "native": "four",
+      "pronunciation": "feer",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das kostet vier Euro.",
+          "native": "That costs four euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_036",
+      "target": "fünf",
+      "native": "five",
+      "pronunciation": "fuenf",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich bin fünf Minuten zu spät.",
+          "native": "I am five minutes late."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_037",
+      "target": "zehn",
+      "native": "ten",
+      "pronunciation": "tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Es sind zehn Uhr.",
+          "native": "It is ten o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_038",
+      "target": "zwanzig",
+      "native": "twenty",
+      "pronunciation": "TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Er ist zwanzig Jahre alt.",
+          "native": "He is twenty years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_039",
+      "target": "hundert",
+      "native": "hundred",
+      "pronunciation": "HOON-dert",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das kostet hundert Euro.",
+          "native": "That costs a hundred euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_040",
+      "target": "tausend",
+      "native": "thousand",
+      "pronunciation": "TOW-zent",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ein tausend Menschen kamen.",
+          "native": "A thousand people came."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_041",
+      "target": "heute",
+      "native": "today",
+      "pronunciation": "HOY-te",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Heute ist schönes Wetter.",
+          "native": "Today the weather is nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_042",
+      "target": "morgen",
+      "native": "tomorrow",
+      "pronunciation": "MOR-gen",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Morgen fahre ich weg.",
+          "native": "Tomorrow I am leaving."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_043",
+      "target": "gestern",
+      "native": "yesterday",
+      "pronunciation": "GES-tern",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Gestern war es kalt.",
+          "native": "Yesterday it was cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_044",
+      "target": "jetzt",
+      "native": "now",
+      "pronunciation": "yetst",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich bin jetzt müde.",
+          "native": "I am tired now."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_045",
+      "target": "die Uhr",
+      "native": "clock / o'clock",
+      "pronunciation": "dee oor",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist drei Uhr.",
+          "native": "It is three o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_046",
+      "target": "der Tag",
+      "native": "day",
+      "pronunciation": "dair tahg",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Der Tag war lang.",
+          "native": "The day was long."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_047",
+      "target": "die Woche",
+      "native": "week",
+      "pronunciation": "dee VO-khe",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Diese Woche bin ich beschäftigt.",
+          "native": "This week I am busy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_048",
+      "target": "der Monat",
+      "native": "month",
+      "pronunciation": "dair MOH-nat",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Im nächsten Monat reise ich.",
+          "native": "Next month I am traveling."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_049",
+      "target": "das Jahr",
+      "native": "year",
+      "pronunciation": "das yahr",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Dieses Jahr ist besonders.",
+          "native": "This year is special."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_050",
+      "target": "der Morgen",
+      "native": "morning",
+      "pronunciation": "dair MOR-gen",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Am Morgen trinke ich Kaffee.",
+          "native": "In the morning I drink coffee."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_051",
+      "target": "der Abend",
+      "native": "evening",
+      "pronunciation": "dair AH-bend",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Am Abend bin ich müde.",
+          "native": "In the evening I am tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_052",
+      "target": "die Nacht",
+      "native": "night",
+      "pronunciation": "dee nakht",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In der Nacht ist es still.",
+          "native": "At night it is quiet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_053",
+      "target": "früh",
+      "native": "early",
+      "pronunciation": "froo",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich stehe früh auf.",
+          "native": "I get up early."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_054",
+      "target": "spät",
+      "native": "late",
+      "pronunciation": "shpayt",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist schon spät.",
+          "native": "It is already late."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_055",
+      "target": "immer",
+      "native": "always",
+      "pronunciation": "IM-mer",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Er ist immer pünktlich.",
+          "native": "He is always punctual."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_056",
+      "target": "rot",
+      "native": "red",
+      "pronunciation": "roht",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Auto ist rot.",
+          "native": "The car is red."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_057",
+      "target": "blau",
+      "native": "blue",
+      "pronunciation": "blow",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Der Himmel ist blau.",
+          "native": "The sky is blue."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_058",
+      "target": "grün",
+      "native": "green",
+      "pronunciation": "groon",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Gras ist grün.",
+          "native": "The grass is green."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_059",
+      "target": "gelb",
+      "native": "yellow",
+      "pronunciation": "gelp",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Sonne ist gelb.",
+          "native": "The sun is yellow."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_060",
+      "target": "schwarz",
+      "native": "black",
+      "pronunciation": "shvarts",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Katze ist schwarz.",
+          "native": "The cat is black."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_061",
+      "target": "weiß",
+      "native": "white",
+      "pronunciation": "vyss",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Der Schnee ist weiß.",
+          "native": "The snow is white."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_062",
+      "target": "grau",
+      "native": "gray",
+      "pronunciation": "grow",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Der Wolke ist grau.",
+          "native": "The cloud is gray."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_063",
+      "target": "braun",
+      "native": "brown",
+      "pronunciation": "brown",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Der Bär ist braun.",
+          "native": "The bear is brown."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_064",
+      "target": "orange",
+      "native": "orange",
+      "pronunciation": "oh-RANCH-e",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Orange ist orange.",
+          "native": "The orange is orange."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_065",
+      "target": "rosa",
+      "native": "pink",
+      "pronunciation": "ROH-za",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Kleid ist rosa.",
+          "native": "The dress is pink."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_066",
+      "target": "der Kopf",
+      "native": "head",
+      "pronunciation": "dair kopf",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Kopf tut weh.",
+          "native": "My head hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_067",
+      "target": "die Hand",
+      "native": "hand",
+      "pronunciation": "dee hant",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Hand ist kalt.",
+          "native": "The hand is cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_068",
+      "target": "das Auge",
+      "native": "eye",
+      "pronunciation": "das OW-ge",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ihre Augen sind blau.",
+          "native": "Her eyes are blue."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_069",
+      "target": "der Mund",
+      "native": "mouth",
+      "pronunciation": "dair moont",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Er öffnet den Mund.",
+          "native": "He opens his mouth."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_070",
+      "target": "das Ohr",
+      "native": "ear",
+      "pronunciation": "das or",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das Ohr tut mir weh.",
+          "native": "My ear hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_071",
+      "target": "die Nase",
+      "native": "nose",
+      "pronunciation": "dee NAH-ze",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Meine Nase ist kalt.",
+          "native": "My nose is cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_072",
+      "target": "der Zahn",
+      "native": "tooth",
+      "pronunciation": "dair tsahn",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Zahn schmerzt.",
+          "native": "The tooth hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_073",
+      "target": "der Fuß",
+      "native": "foot",
+      "pronunciation": "dair foos",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Fuß ist müde.",
+          "native": "My foot is tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_074",
+      "target": "das Bein",
+      "native": "leg",
+      "pronunciation": "das byne",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das Bein ist lang.",
+          "native": "The leg is long."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_075",
+      "target": "der Rücken",
+      "native": "back",
+      "pronunciation": "dair ROO-ken",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Rücken schmerzt.",
+          "native": "My back hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_076",
+      "target": "das Wetter",
+      "native": "weather",
+      "pronunciation": "das VET-ter",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Wetter ist schön.",
+          "native": "The weather is nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_077",
+      "target": "die Sonne",
+      "native": "sun",
+      "pronunciation": "dee ZON-ne",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Sonne scheint heute.",
+          "native": "The sun is shining today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_078",
+      "target": "der Regen",
+      "native": "rain",
+      "pronunciation": "dair RAY-gen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Regen fällt stark.",
+          "native": "The rain is falling heavily."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_079",
+      "target": "der Schnee",
+      "native": "snow",
+      "pronunciation": "dair shnay",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Schnee ist weiß.",
+          "native": "The snow is white."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_080",
+      "target": "der Wind",
+      "native": "wind",
+      "pronunciation": "dair vint",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Wind ist stark.",
+          "native": "The wind is strong."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_081",
+      "target": "das Wasser",
+      "native": "water",
+      "pronunciation": "das VAS-ser",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Wasser ist klar.",
+          "native": "The water is clear."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_082",
+      "target": "der Baum",
+      "native": "tree",
+      "pronunciation": "dair bowm",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Baum ist groß.",
+          "native": "The tree is big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_083",
+      "target": "die Blume",
+      "native": "flower",
+      "pronunciation": "dee BLOO-me",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Blume ist schön.",
+          "native": "The flower is beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_084",
+      "target": "der Hund",
+      "native": "dog",
+      "pronunciation": "dair hoont",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Hund bellt laut.",
+          "native": "The dog barks loudly."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_085",
+      "target": "die Katze",
+      "native": "cat",
+      "pronunciation": "dee KAT-tse",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Katze schläft.",
+          "native": "The cat sleeps."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_086",
+      "target": "das Haus",
+      "native": "house",
+      "pronunciation": "das hows",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Haus ist groß.",
+          "native": "The house is big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_087",
+      "target": "die Schule",
+      "native": "school",
+      "pronunciation": "dee SHOO-le",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Kinder gehen zur Schule.",
+          "native": "The children go to school."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_088",
+      "target": "die Stadt",
+      "native": "city / town",
+      "pronunciation": "dee shtat",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Stadt ist sehr groß.",
+          "native": "The city is very big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_089",
+      "target": "das Land",
+      "native": "country / countryside",
+      "pronunciation": "das lant",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Auf dem Land ist es ruhig.",
+          "native": "In the countryside it is quiet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_090",
+      "target": "der Bahnhof",
+      "native": "train station",
+      "pronunciation": "dair BAHN-hohf",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Bahnhof ist neu.",
+          "native": "The train station is new."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_091",
+      "target": "das Krankenhaus",
+      "native": "hospital",
+      "pronunciation": "das KRAN-ken-hows",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Krankenhaus ist weit.",
+          "native": "The hospital is far."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_092",
+      "target": "das Geschäft",
+      "native": "shop / store",
+      "pronunciation": "das ge-SHEFT",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Geschäft ist geschlossen.",
+          "native": "The shop is closed."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_093",
+      "target": "der Park",
+      "native": "park",
+      "pronunciation": "dair park",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Im Park ist es schön.",
+          "native": "It is nice in the park."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_094",
+      "target": "die Straße",
+      "native": "street / road",
+      "pronunciation": "dee SHTRAH-se",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Straße ist lang.",
+          "native": "The street is long."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_095",
+      "target": "das Zimmer",
+      "native": "room",
+      "pronunciation": "das TSIM-mer",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Zimmer ist sauber.",
+          "native": "The room is clean."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_096",
+      "target": "die Arbeit",
+      "native": "work / job",
+      "pronunciation": "dee AR-bite",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Arbeit macht Spaß.",
+          "native": "The work is fun."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_097",
+      "target": "das Büro",
+      "native": "office",
+      "pronunciation": "das BOO-roh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Büro ist modern.",
+          "native": "The office is modern."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_098",
+      "target": "der Chef",
+      "native": "boss",
+      "pronunciation": "dair shef",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Chef ist nett.",
+          "native": "The boss is nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_099",
+      "target": "der Lehrer",
+      "native": "teacher (male)",
+      "pronunciation": "dair LAY-rer",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Lehrer erklärt gut.",
+          "native": "The teacher explains well."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_100",
+      "target": "die Lehrerin",
+      "native": "teacher (female)",
+      "pronunciation": "dee LAY-rer-in",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Lehrerin ist geduldig.",
+          "native": "The teacher is patient."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_101",
+      "target": "froh",
+      "native": "happy / glad",
+      "pronunciation": "froh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin froh.",
+          "native": "I am happy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_102",
+      "target": "traurig",
+      "native": "sad",
+      "pronunciation": "TROW-rikh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie ist traurig.",
+          "native": "She is sad."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_103",
+      "target": "müde",
+      "native": "tired",
+      "pronunciation": "MOO-de",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin sehr müde.",
+          "native": "I am very tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_104",
+      "target": "hungrig",
+      "native": "hungry",
+      "pronunciation": "HOONG-rikh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin hungrig.",
+          "native": "I am hungry."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_105",
+      "target": "glücklich",
+      "native": "happy",
+      "pronunciation": "GLOEK-likh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er ist glücklich.",
+          "native": "He is happy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_106",
+      "target": "wütend",
+      "native": "angry",
+      "pronunciation": "VOO-tent",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie ist wütend.",
+          "native": "She is angry."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_107",
+      "target": "gut",
+      "native": "good",
+      "pronunciation": "goot",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Mir geht es gut.",
+          "native": "I am doing well."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_108",
+      "target": "schlecht",
+      "native": "bad",
+      "pronunciation": "shlekht",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Mir geht es schlecht.",
+          "native": "I am not doing well."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_109",
+      "target": "das Auto",
+      "native": "car",
+      "pronunciation": "das OW-toh",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Auto ist rot.",
+          "native": "The car is red."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_110",
+      "target": "der Zug",
+      "native": "train",
+      "pronunciation": "dair tsook",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Zug kommt pünktlich.",
+          "native": "The train comes on time."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_111",
+      "target": "das Flugzeug",
+      "native": "airplane",
+      "pronunciation": "das FLOOG-tsoyk",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Flugzeug ist groß.",
+          "native": "The airplane is big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_112",
+      "target": "der Bus",
+      "native": "bus",
+      "pronunciation": "dair boos",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Bus kommt bald.",
+          "native": "The bus is coming soon."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_113",
+      "target": "das Ticket",
+      "native": "ticket",
+      "pronunciation": "das TIK-et",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Ticket kostet viel.",
+          "native": "The ticket costs a lot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_114",
+      "target": "der Koffer",
+      "native": "suitcase",
+      "pronunciation": "dair KOF-fer",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Koffer ist schwer.",
+          "native": "The suitcase is heavy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_115",
+      "target": "die Reise",
+      "native": "trip / journey",
+      "pronunciation": "dee RY-ze",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Reise war schön.",
+          "native": "The trip was nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_149",
+      "target": "der Frühling",
+      "native": "spring",
+      "pronunciation": "dair FROO-ling",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Im Frühling blühen Blumen.",
+          "native": "In spring flowers bloom."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_336",
+      "target": "heißen",
+      "native": "to be called / named",
+      "pronunciation": "HY-ssen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich heiße Maria.",
+          "native": "My name is Maria."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_337",
+      "target": "wohnen",
+      "native": "to live / reside",
+      "pronunciation": "VOH-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich wohne in Berlin.",
+          "native": "I live in Berlin."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_338",
+      "target": "arbeiten",
+      "native": "to work",
+      "pronunciation": "AR-by-ten",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich arbeite als Arzt.",
+          "native": "I work as a doctor."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_339",
+      "target": "fahren",
+      "native": "to drive / travel",
+      "pronunciation": "FAH-ren",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir fahren nach München.",
+          "native": "We are driving to Munich."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_340",
+      "target": "kommen",
+      "native": "to come",
+      "pronunciation": "KOM-men",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich komme aus Ägypten.",
+          "native": "I come from Egypt."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_341",
+      "target": "gehen",
+      "native": "to go",
+      "pronunciation": "GAY-en",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich gehe in die Schule.",
+          "native": "I go to school."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_342",
+      "target": "essen",
+      "native": "to eat",
+      "pronunciation": "ES-sen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich esse gerne Pizza.",
+          "native": "I like to eat pizza."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_343",
+      "target": "trinken",
+      "native": "to drink",
+      "pronunciation": "TRING-ken",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich trinke Kaffee.",
+          "native": "I drink coffee."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_344",
+      "target": "lieben",
+      "native": "to love",
+      "pronunciation": "LEE-ben",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich liebe meine Familie.",
+          "native": "I love my family."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_345",
+      "target": "mögen",
+      "native": "to like",
+      "pronunciation": "MOE-gen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich mag Schokolade.",
+          "native": "I like chocolate."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_346",
+      "target": "sprechen",
+      "native": "to speak",
+      "pronunciation": "SHPREKH-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich spreche Deutsch.",
+          "native": "I speak German."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_347",
+      "target": "lernen",
+      "native": "to learn",
+      "pronunciation": "LAIR-nen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich lerne Deutsch.",
+          "native": "I am learning German."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_348",
+      "target": "verstehen",
+      "native": "to understand",
+      "pronunciation": "fer-SHTAY-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich verstehe nicht.",
+          "native": "I don't understand."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_349",
+      "target": "kaufen",
+      "native": "to buy",
+      "pronunciation": "KOW-fen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich kaufe Brot.",
+          "native": "I buy bread."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_350",
+      "target": "sagen",
+      "native": "to say",
+      "pronunciation": "ZAH-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Was sagst du?",
+          "native": "What do you say?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_351",
+      "target": "ich",
+      "native": "I",
+      "pronunciation": "ikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich bin Student.",
+          "native": "I am a student."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_352",
+      "target": "du",
+      "native": "you (informal)",
+      "pronunciation": "doo",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Du bist nett.",
+          "native": "You are nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_353",
+      "target": "er",
+      "native": "he",
+      "pronunciation": "air",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist müde.",
+          "native": "He is tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_354",
+      "target": "sie",
+      "native": "she / they",
+      "pronunciation": "zee",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie ist Ärztin.",
+          "native": "She is a doctor."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_355",
+      "target": "wir",
+      "native": "we",
+      "pronunciation": "veer",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir gehen ins Kino.",
+          "native": "We are going to the cinema."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_356",
+      "target": "sein",
+      "native": "to be",
+      "pronunciation": "zyne",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich bin glücklich.",
+          "native": "I am happy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_357",
+      "target": "haben",
+      "native": "to have",
+      "pronunciation": "HAH-ben",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich habe einen Hund.",
+          "native": "I have a dog."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_358",
+      "target": "machen",
+      "native": "to do / make",
+      "pronunciation": "MAH-khen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Was machst du?",
+          "native": "What are you doing?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_359",
+      "target": "wollen",
+      "native": "to want",
+      "pronunciation": "VOL-len",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich will schlafen.",
+          "native": "I want to sleep."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_360",
+      "target": "können",
+      "native": "can / to be able to",
+      "pronunciation": "KOEN-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich kann Deutsch sprechen.",
+          "native": "I can speak German."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_361",
+      "target": "groß",
+      "native": "big / tall",
+      "pronunciation": "grohs",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Haus ist groß.",
+          "native": "The house is big."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_362",
+      "target": "klein",
+      "native": "small / little",
+      "pronunciation": "klyne",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Kind ist klein.",
+          "native": "The child is small."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_363",
+      "target": "alt",
+      "native": "old",
+      "pronunciation": "alt",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Mann ist alt.",
+          "native": "The man is old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_364",
+      "target": "jung",
+      "native": "young",
+      "pronunciation": "yoong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Mädchen ist jung.",
+          "native": "The girl is young."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_365",
+      "target": "schön",
+      "native": "beautiful / nice",
+      "pronunciation": "shoen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Stadt ist schön.",
+          "native": "The city is beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_366",
+      "target": "neu",
+      "native": "new",
+      "pronunciation": "noy",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Buch ist neu.",
+          "native": "The book is new."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_367",
+      "target": "ja",
+      "native": "yes",
+      "pronunciation": "yah",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ja, ich verstehe.",
+          "native": "Yes, I understand."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_368",
+      "target": "nein",
+      "native": "no",
+      "pronunciation": "nyne",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Nein, danke.",
+          "native": "No, thank you."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_369",
+      "target": "bitte",
+      "native": "please / you're welcome",
+      "pronunciation": "BIT-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Bitte helfen Sie mir.",
+          "native": "Please help me."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_370",
+      "target": "danke",
+      "native": "thank you",
+      "pronunciation": "DANK-e",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Danke für die Hilfe.",
+          "native": "Thank you for the help."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_371",
+      "target": "entschuldigung",
+      "native": "excuse me / sorry",
+      "pronunciation": "ent-SHOOL-di-goong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Entschuldigung, wo ist die Post?",
+          "native": "Excuse me, where is the post office?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_372",
+      "target": "hallo",
+      "native": "hello",
+      "pronunciation": "HA-lo",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Hallo, wie geht es dir?",
+          "native": "Hello, how are you?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_373",
+      "target": "auf Wiedersehen",
+      "native": "goodbye",
+      "pronunciation": "owf VEE-der-zay-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Auf Wiedersehen und bis morgen!",
+          "native": "Goodbye and see you tomorrow!"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_374",
+      "target": "wie",
+      "native": "how",
+      "pronunciation": "vee",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wie heißt du?",
+          "native": "What is your name?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_375",
+      "target": "wo",
+      "native": "where",
+      "pronunciation": "voh",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Wo wohnst du?",
+          "native": "Where do you live?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_376",
+      "target": "wann",
+      "native": "when",
+      "pronunciation": "van",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wann kommst du?",
+          "native": "When are you coming?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_377",
+      "target": "was",
+      "native": "what",
+      "pronunciation": "vas",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Was machst du?",
+          "native": "What are you doing?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_378",
+      "target": "wer",
+      "native": "who",
+      "pronunciation": "vair",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wer ist das?",
+          "native": "Who is that?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_379",
+      "target": "warum",
+      "native": "why",
+      "pronunciation": "va-ROOM",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Warum bist du traurig?",
+          "native": "Why are you sad?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_380",
+      "target": "hier",
+      "native": "here",
+      "pronunciation": "heer",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich bin hier.",
+          "native": "I am here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_381",
+      "target": "dort",
+      "native": "there",
+      "pronunciation": "dort",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Er ist dort.",
+          "native": "He is there."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_382",
+      "target": "sehr",
+      "native": "very",
+      "pronunciation": "zair",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist sehr gut.",
+          "native": "That is very good."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_383",
+      "target": "auch",
+      "native": "also / too",
+      "pronunciation": "owkh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich bin auch hier.",
+          "native": "I am also here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_384",
+      "target": "noch",
+      "native": "still / yet / more",
+      "pronunciation": "nokh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich bin noch nicht fertig.",
+          "native": "I am not done yet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_385",
+      "target": "schon",
+      "native": "already",
+      "pronunciation": "shohn",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist schon da.",
+          "native": "He is already there."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_386",
+      "target": "nur",
+      "native": "only / just",
+      "pronunciation": "noor",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich habe nur ein Buch.",
+          "native": "I only have one book."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_387",
+      "target": "mehr",
+      "native": "more",
+      "pronunciation": "mair",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich möchte mehr Wasser.",
+          "native": "I would like more water."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_388",
+      "target": "viel",
+      "native": "much / a lot",
+      "pronunciation": "feel",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es gibt viel zu tun.",
+          "native": "There is a lot to do."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_389",
+      "target": "wenig",
+      "native": "little / few",
+      "pronunciation": "VAY-nikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich habe wenig Zeit.",
+          "native": "I have little time."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_390",
+      "target": "vielleicht",
+      "native": "maybe / perhaps",
+      "pronunciation": "feel-EYEKHT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Vielleicht komme ich morgen.",
+          "native": "Maybe I will come tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_481",
+      "target": "die Küche",
+      "native": "kitchen",
+      "pronunciation": "dee KOO-khe",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Küche ist sauber.",
+          "native": "The kitchen is clean."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_482",
+      "target": "das Badezimmer",
+      "native": "bathroom",
+      "pronunciation": "das BAH-de-tsim-mer",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Badezimmer ist klein.",
+          "native": "The bathroom is small."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_483",
+      "target": "das Wohnzimmer",
+      "native": "living room",
+      "pronunciation": "das VOHN-tsim-mer",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Wohnzimmer ist gemütlich.",
+          "native": "The living room is cozy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_484",
+      "target": "das Schlafzimmer",
+      "native": "bedroom",
+      "pronunciation": "das SHLAHF-tsim-mer",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Schlafzimmer ist ruhig.",
+          "native": "The bedroom is quiet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_485",
+      "target": "die Tür",
+      "native": "door",
+      "pronunciation": "dee toor",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Tür ist zu.",
+          "native": "The door is closed."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_486",
+      "target": "das Fenster",
+      "native": "window",
+      "pronunciation": "das FENS-ter",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Fenster ist offen.",
+          "native": "The window is open."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_487",
+      "target": "der Tisch",
+      "native": "table",
+      "pronunciation": "dair tish",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Tisch ist schwer.",
+          "native": "The table is heavy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_488",
+      "target": "der Stuhl",
+      "native": "chair",
+      "pronunciation": "dair shtool",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Stuhl ist bequem.",
+          "native": "The chair is comfortable."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_489",
+      "target": "das Bett",
+      "native": "bed",
+      "pronunciation": "das bet",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Bett ist weich.",
+          "native": "The bed is soft."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_490",
+      "target": "der Schlüssel",
+      "native": "key",
+      "pronunciation": "dair SHLOO-sel",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Wo ist mein Schlüssel?",
+          "native": "Where is my key?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_491",
+      "target": "der Stift",
+      "native": "pen / pencil",
+      "pronunciation": "dair shtift",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich brauche einen Stift.",
+          "native": "I need a pen."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_492",
+      "target": "das Buch",
+      "native": "book",
+      "pronunciation": "das bookh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Buch ist interessant.",
+          "native": "The book is interesting."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_493",
+      "target": "das Handy",
+      "native": "mobile phone",
+      "pronunciation": "das HEN-dee",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Mein Handy ist neu.",
+          "native": "My mobile phone is new."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_494",
+      "target": "der Computer",
+      "native": "computer",
+      "pronunciation": "dair kom-PYOO-ter",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Computer ist kaputt.",
+          "native": "The computer is broken."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_495",
+      "target": "das Geld",
+      "native": "money",
+      "pronunciation": "das gelt",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich habe kein Geld.",
+          "native": "I have no money."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_496",
+      "target": "die Schule besuchen",
+      "native": "to attend school",
+      "pronunciation": "dee SHOO-le be-ZOO-khen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Er besucht die Schule täglich.",
+          "native": "He attends school daily."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_514",
+      "target": "die U-Bahn",
+      "native": "subway / metro",
+      "pronunciation": "dee OO-bahn",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die U-Bahn kommt.",
+          "native": "The subway is coming."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_516",
+      "target": "die Brücke",
+      "native": "bridge",
+      "pronunciation": "dee BROO-ke",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Brücke ist alt.",
+          "native": "The bridge is old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_526",
+      "target": "der Hals",
+      "native": "neck / throat",
+      "pronunciation": "dair hals",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Hals tut weh.",
+          "native": "My throat hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_527",
+      "target": "die Brust",
+      "native": "chest / breast",
+      "pronunciation": "dee broost",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Brust ist breit.",
+          "native": "The chest is broad."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_551",
+      "target": "die Minute (pl)",
+      "native": "minutes",
+      "pronunciation": "dee mi-NOO-ten",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Fünf Minuten bitte.",
+          "native": "Five minutes please."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_601",
+      "target": "die Pizza",
+      "native": "pizza",
+      "pronunciation": "dee PEET-tsa",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich bestelle eine Pizza.",
+          "native": "I am ordering a pizza."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_602",
+      "target": "der Hamburger",
+      "native": "hamburger",
+      "pronunciation": "dair HAM-boor-ger",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Er isst einen Hamburger.",
+          "native": "He eats a hamburger."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_603",
+      "target": "die Schokolade",
+      "native": "chocolate",
+      "pronunciation": "dee sho-ko-LAH-de",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich liebe Schokolade.",
+          "native": "I love chocolate."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_604",
+      "target": "das Eis",
+      "native": "ice cream / ice",
+      "pronunciation": "das eyss",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Eis schmeckt lecker.",
+          "native": "The ice cream tastes delicious."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_611",
+      "target": "der Junge",
+      "native": "boy",
+      "pronunciation": "dair YOONG-e",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Junge spielt Fußball.",
+          "native": "The boy plays football."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_612",
+      "target": "das Mädchen",
+      "native": "girl",
+      "pronunciation": "das MAYT-khen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Mädchen singt schön.",
+          "native": "The girl sings beautifully."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_613",
+      "target": "das Baby",
+      "native": "baby",
+      "pronunciation": "das BAY-bee",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Baby schläft.",
+          "native": "The baby is sleeping."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_618",
+      "target": "links",
+      "native": "left",
+      "pronunciation": "links",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Biegen Sie links ab.",
+          "native": "Turn left."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_619",
+      "target": "rechts",
+      "native": "right",
+      "pronunciation": "rekhts",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Geschäft ist rechts.",
+          "native": "The shop is on the right."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_620",
+      "target": "geradeaus",
+      "native": "straight ahead",
+      "pronunciation": "ge-RAH-de-ows",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Gehen Sie geradeaus.",
+          "native": "Go straight ahead."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_621",
+      "target": "weit",
+      "native": "far",
+      "pronunciation": "vyte",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ist es weit von hier?",
+          "native": "Is it far from here?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_622",
+      "target": "nah",
+      "native": "near / close",
+      "pronunciation": "nah",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Es ist nah.",
+          "native": "It is nearby."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_626",
+      "target": "sechs",
+      "native": "six",
+      "pronunciation": "zeks",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Wir sind zu sechst.",
+          "native": "There are six of us."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_627",
+      "target": "sieben",
+      "native": "seven",
+      "pronunciation": "ZEE-ben",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sieben Tage hat eine Woche.",
+          "native": "A week has seven days."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_628",
+      "target": "acht",
+      "native": "eight",
+      "pronunciation": "akht",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich schlafe acht Stunden.",
+          "native": "I sleep eight hours."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_629",
+      "target": "neun",
+      "native": "nine",
+      "pronunciation": "noyn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Neun Monate hat das Jahr fast.",
+          "native": "The year almost has nine months."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_630",
+      "target": "elf",
+      "native": "eleven",
+      "pronunciation": "elf",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Es ist elf Uhr.",
+          "native": "It is eleven o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_631",
+      "target": "zwölf",
+      "native": "twelve",
+      "pronunciation": "tsvoelf",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Mittag ist um zwölf Uhr.",
+          "native": "Noon is at twelve o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_632",
+      "target": "dreißig",
+      "native": "thirty",
+      "pronunciation": "DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Er ist dreißig Jahre alt.",
+          "native": "He is thirty years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_633",
+      "target": "fünfzig",
+      "native": "fifty",
+      "pronunciation": "FOONF-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das kostet fünfzig Euro.",
+          "native": "That costs fifty euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_636",
+      "target": "violett",
+      "native": "violet / purple",
+      "pronunciation": "vi-oh-LET",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Veilchen ist violett.",
+          "native": "The violet flower is purple."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_640",
+      "target": "die Lippe",
+      "native": "lip",
+      "pronunciation": "dee LIP-pe",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ihre Lippen sind rot.",
+          "native": "Her lips are red."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_646",
+      "target": "lachen",
+      "native": "to laugh",
+      "pronunciation": "LAKH-en",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Wir lachen zusammen.",
+          "native": "We laugh together."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_647",
+      "target": "weinen",
+      "native": "to cry",
+      "pronunciation": "VY-nen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Das Kind weint.",
+          "native": "The child cries."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_701",
+      "target": "das Frühstück essen",
+      "native": "to eat breakfast",
+      "pronunciation": "das FROO-shtook ES-sen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich esse Frühstück um sieben.",
+          "native": "I eat breakfast at seven."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_702",
+      "target": "heiß",
+      "native": "hot",
+      "pronunciation": "hyss",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Tee ist heiß.",
+          "native": "The tea is hot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_703",
+      "target": "kalt",
+      "native": "cold",
+      "pronunciation": "kalt",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Wasser ist kalt.",
+          "native": "The water is cold."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_704",
+      "target": "das Gemüse schneiden",
+      "native": "to cut vegetables",
+      "pronunciation": "das ge-MEW-ze SHNY-den",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich schneide das Gemüse.",
+          "native": "I cut the vegetables."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_711",
+      "target": "gut aussehen",
+      "native": "to look good",
+      "pronunciation": "goot OWS-zay-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie sieht gut aus.",
+          "native": "She looks good."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_841",
+      "target": "klar",
+      "native": "clear / transparent",
+      "pronunciation": "klar",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Wasser ist klar.",
+          "native": "The water is clear."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_851",
+      "target": "ankommen",
+      "native": "to arrive",
+      "pronunciation": "AN-kom-men",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wann kommst du an?",
+          "native": "When do you arrive?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_852",
+      "target": "abfahren",
+      "native": "to depart / leave",
+      "pronunciation": "AP-fah-ren",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Zug fährt um neun ab.",
+          "native": "The train departs at nine."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_857",
+      "target": "bestellen",
+      "native": "to order",
+      "pronunciation": "be-SHTEL-len",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich bestelle ein Wasser.",
+          "native": "I order a water."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_858",
+      "target": "zahlen",
+      "native": "to pay",
+      "pronunciation": "TSAH-len",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Kann ich zahlen?",
+          "native": "Can I pay?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_911",
+      "target": "der Freund (m)",
+      "native": "friend (male)",
+      "pronunciation": "dair froynd",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist mein bester Freund.",
+          "native": "He is my best friend."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_916",
+      "target": "der Körper",
+      "native": "body",
+      "pronunciation": "dair KOER-per",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Körper braucht Ruhe.",
+          "native": "The body needs rest."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_951",
+      "target": "der Laden",
+      "native": "shop",
+      "pronunciation": "dair LAH-den",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Laden ist offen.",
+          "native": "The shop is open."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_956",
+      "target": "die Speise",
+      "native": "food / meal",
+      "pronunciation": "dee SHPY-ze",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Speise ist bereit.",
+          "native": "The food is ready."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_992",
+      "target": "rechts abbiegen",
+      "native": "to turn right",
+      "pronunciation": "rekhts AP-bee-gen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Biegen Sie rechts ab.",
+          "native": "Turn right."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_993",
+      "target": "dreizehn",
+      "native": "thirteen",
+      "pronunciation": "DRY-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sie ist dreizehn Jahre alt.",
+          "native": "She is thirteen years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_994",
+      "target": "vierzehn",
+      "native": "fourteen",
+      "pronunciation": "FEER-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Kurs beginnt um vierzehn Uhr.",
+          "native": "The course begins at fourteen o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_995",
+      "target": "fünfzehn",
+      "native": "fifteen",
+      "pronunciation": "FOONF-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Film dauert fünfzehn Minuten.",
+          "native": "The film lasts fifteen minutes."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_996",
+      "target": "sechzehn",
+      "native": "sixteen",
+      "pronunciation": "ZEKH-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich habe sechzehn Euro dabei.",
+          "native": "I have sixteen euros with me."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_997",
+      "target": "siebzehn",
+      "native": "seventeen",
+      "pronunciation": "ZEEB-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Bus kommt um siebzehn Uhr.",
+          "native": "The bus comes at seventeen o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_998",
+      "target": "achtzehn",
+      "native": "eighteen",
+      "pronunciation": "AKHT-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute sind achtzehn Schüler da.",
+          "native": "Today eighteen students are here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_999",
+      "target": "neunzehn",
+      "native": "nineteen",
+      "pronunciation": "NOYN-tsayn",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Zug fährt um neunzehn Uhr ab.",
+          "native": "The train departs at nineteen o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1000",
+      "target": "einundzwanzig",
+      "native": "twenty-one",
+      "pronunciation": "INE-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute ist der einundzwanzigste Mai.",
+          "native": "Today is the twenty-first of May."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1001",
+      "target": "zweiundzwanzig",
+      "native": "twenty-two",
+      "pronunciation": "TSVY-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Raum hat zweiundzwanzig Plätze.",
+          "native": "The room has twenty-two seats."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1002",
+      "target": "dreiundzwanzig",
+      "native": "twenty-three",
+      "pronunciation": "DRY-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich brauche dreiundzwanzig Euro.",
+          "native": "I need twenty-three euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1003",
+      "target": "vierundzwanzig",
+      "native": "twenty-four",
+      "pronunciation": "FEER-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ein Tag hat vierundzwanzig Stunden.",
+          "native": "A day has twenty-four hours."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1004",
+      "target": "fünfundzwanzig",
+      "native": "twenty-five",
+      "pronunciation": "FOONF-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Buch kostet fünfundzwanzig Euro.",
+          "native": "The book costs twenty-five euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1005",
+      "target": "sechsundzwanzig",
+      "native": "twenty-six",
+      "pronunciation": "ZEKS-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sie wohnt in Haus Nummer sechsundzwanzig.",
+          "native": "She lives in house number twenty-six."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1006",
+      "target": "siebenundzwanzig",
+      "native": "twenty-seven",
+      "pronunciation": "ZEE-ben-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute sind siebenundzwanzig Grad.",
+          "native": "Today it is twenty-seven degrees."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1007",
+      "target": "achtundzwanzig",
+      "native": "twenty-eight",
+      "pronunciation": "AKHT-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Monat hat achtundzwanzig Tage.",
+          "native": "The month has twenty-eight days."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1008",
+      "target": "neunundzwanzig",
+      "native": "twenty-nine",
+      "pronunciation": "NOYN-oont-TSVAN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich warte seit neunundzwanzig Minuten.",
+          "native": "I have been waiting for twenty-nine minutes."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1009",
+      "target": "vierzig",
+      "native": "forty",
+      "pronunciation": "FEER-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Mein Vater ist vierzig Jahre alt.",
+          "native": "My father is forty years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1010",
+      "target": "sechzig",
+      "native": "sixty",
+      "pronunciation": "ZEKH-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das kostet sechzig Euro.",
+          "native": "That costs sixty euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1011",
+      "target": "siebzig",
+      "native": "seventy",
+      "pronunciation": "ZEEB-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Zug fährt mit siebzig Kilometern pro Stunde.",
+          "native": "The train travels at seventy kilometers per hour."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1012",
+      "target": "achtzig",
+      "native": "eighty",
+      "pronunciation": "AKHT-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Meine Großmutter ist achtzig Jahre alt.",
+          "native": "My grandmother is eighty years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1013",
+      "target": "neunzig",
+      "native": "ninety",
+      "pronunciation": "NOYN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Ticket kostet neunzig Euro.",
+          "native": "The ticket costs ninety euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1014",
+      "target": "einunddreißig",
+      "native": "thirty-one",
+      "pronunciation": "INE-oont-DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Monat hat einunddreißig Tage.",
+          "native": "The month has thirty-one days."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1015",
+      "target": "zweiundvierzig",
+      "native": "forty-two",
+      "pronunciation": "TSVY-oont-FEER-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sie wohnt in der Wohnung zweiundvierzig.",
+          "native": "She lives in apartment forty-two."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1016",
+      "target": "fünfundfünfzig",
+      "native": "fifty-five",
+      "pronunciation": "FOONF-oont-FOONF-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Pullover kostet fünfundfünfzig Euro.",
+          "native": "The sweater costs fifty-five euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1017",
+      "target": "siebenundsechzig",
+      "native": "sixty-seven",
+      "pronunciation": "ZEE-ben-oont-ZEKH-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Bus fährt um siebenundsechzig Minuten nach acht nicht.",
+          "native": "The bus does not leave sixty-seven minutes past eight."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1018",
+      "target": "achtundsiebzig",
+      "native": "seventy-eight",
+      "pronunciation": "AKHT-oont-ZEEB-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Im Museum sind achtundsiebzig Bilder.",
+          "native": "There are seventy-eight pictures in the museum."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1019",
+      "target": "neunundachtzig",
+      "native": "eighty-nine",
+      "pronunciation": "NOYN-oont-AKHT-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Hotelzimmer kostet neunundachtzig Euro.",
+          "native": "The hotel room costs eighty-nine euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1020",
+      "target": "neunundneunzig",
+      "native": "ninety-nine",
+      "pronunciation": "NOYN-oont-NOYN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Neunundneunzig Personen sind hier.",
+          "native": "Ninety-nine people are here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1021",
+      "target": "die Minute",
+      "native": "minute",
+      "pronunciation": "dee mi-NOO-te",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Eine Minute, bitte.",
+          "native": "One minute, please."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1022",
+      "target": "die Stunde",
+      "native": "hour",
+      "pronunciation": "dee SHTOON-de",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Der Unterricht dauert eine Stunde.",
+          "native": "The lesson lasts one hour."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1023",
+      "target": "die Sekunde",
+      "native": "second",
+      "pronunciation": "dee zay-KOON-de",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Warte eine Sekunde.",
+          "native": "Wait a second."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1024",
+      "target": "der Mittag",
+      "native": "noon",
+      "pronunciation": "dair MIT-tahk",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir essen zu Mittag um zwölf Uhr.",
+          "native": "We eat lunch at noon at twelve o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1025",
+      "target": "der Nachmittag",
+      "native": "afternoon",
+      "pronunciation": "dair NAKH-mi-tahk",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Am Nachmittag lerne ich Deutsch.",
+          "native": "In the afternoon I study German."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1026",
+      "target": "das Viertel",
+      "native": "quarter",
+      "pronunciation": "das FEER-tel",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist Viertel nach drei.",
+          "native": "It is quarter past three."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1027",
+      "target": "halb",
+      "native": "half",
+      "pronunciation": "halp",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist halb drei.",
+          "native": "It is half past two / 2:30."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1028",
+      "target": "vor",
+      "native": "before / to",
+      "pronunciation": "for",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist zehn vor acht.",
+          "native": "It is ten to eight."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1029",
+      "target": "nach",
+      "native": "after / past",
+      "pronunciation": "nakh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist fünf nach neun.",
+          "native": "It is five past nine."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1030",
+      "target": "Wie spät ist es?",
+      "native": "What time is it?",
+      "pronunciation": "vee shpayt ist es",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Entschuldigung, wie spät ist es?",
+          "native": "Excuse me, what time is it?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1031",
+      "target": "Es ist...",
+      "native": "It is...",
+      "pronunciation": "es ist",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist sieben Uhr.",
+          "native": "It is seven o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1032",
+      "target": "Um wie viel Uhr?",
+      "native": "At what time?",
+      "pronunciation": "oom vee feel oor",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Um wie viel Uhr beginnt der Film?",
+          "native": "At what time does the film begin?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1033",
+      "target": "zweiunddreißig",
+      "native": "thirty-two",
+      "pronunciation": "TSVY-oont-DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Bus fährt in zweiunddreißig Minuten.",
+          "native": "The bus leaves in thirty-two minutes."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1034",
+      "target": "vierunddreißig",
+      "native": "thirty-four",
+      "pronunciation": "FEER-oont-DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sie ist vierunddreißig Jahre alt.",
+          "native": "She is thirty-four years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1035",
+      "target": "siebenunddreißig",
+      "native": "thirty-seven",
+      "pronunciation": "ZEE-ben-oont-DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute sind siebenunddreißig Gäste hier.",
+          "native": "Today there are thirty-seven guests here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1036",
+      "target": "neununddreißig",
+      "native": "thirty-nine",
+      "pronunciation": "NOYN-oont-DRY-sikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Zimmer kostet neununddreißig Euro.",
+          "native": "The room costs thirty-nine euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1037",
+      "target": "einundvierzig",
+      "native": "forty-one",
+      "pronunciation": "INE-oont-FEER-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Sie braucht einundvierzig Euro.",
+          "native": "She needs forty-one euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1038",
+      "target": "fünfundvierzig",
+      "native": "forty-five",
+      "pronunciation": "FOONF-oont-FEER-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Film dauert fünfundvierzig Minuten.",
+          "native": "The film lasts forty-five minutes."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1039",
+      "target": "achtundvierzig",
+      "native": "forty-eight",
+      "pronunciation": "AKHT-oont-FEER-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Im Kurs sind achtundvierzig Studenten.",
+          "native": "There are forty-eight students in the course."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1040",
+      "target": "einundfünfzig",
+      "native": "fifty-one",
+      "pronunciation": "INE-oont-FOONF-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das kostet einundfünfzig Euro.",
+          "native": "That costs fifty-one euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1041",
+      "target": "dreiundfünfzig",
+      "native": "fifty-three",
+      "pronunciation": "DRY-oont-FOONF-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute lernen wir dreiundfünfzig Wörter.",
+          "native": "Today we are learning fifty-three words."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1042",
+      "target": "neunundfünfzig",
+      "native": "fifty-nine",
+      "pronunciation": "NOYN-oont-FOONF-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Bus kommt in neunundfünfzig Minuten.",
+          "native": "The bus comes in fifty-nine minutes."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1043",
+      "target": "zweiundsechzig",
+      "native": "sixty-two",
+      "pronunciation": "TSVY-oont-ZEKH-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Mein Onkel ist zweiundsechzig Jahre alt.",
+          "native": "My uncle is sixty-two years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1044",
+      "target": "fünfundsechzig",
+      "native": "sixty-five",
+      "pronunciation": "FOONF-oont-ZEKH-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Ticket kostet fünfundsechzig Euro.",
+          "native": "The ticket costs sixty-five euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1045",
+      "target": "neunundsechzig",
+      "native": "sixty-nine",
+      "pronunciation": "NOYN-oont-ZEKH-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Im Regal stehen neunundsechzig Bücher.",
+          "native": "There are sixty-nine books on the shelf."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1046",
+      "target": "einundsiebzig",
+      "native": "seventy-one",
+      "pronunciation": "INE-oont-ZEEB-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Mann ist einundsiebzig Jahre alt.",
+          "native": "The man is seventy-one years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1047",
+      "target": "vierundsiebzig",
+      "native": "seventy-four",
+      "pronunciation": "FEER-oont-ZEEB-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute sind vierundsiebzig Personen im Museum.",
+          "native": "Today there are seventy-four people in the museum."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1048",
+      "target": "neunundsiebzig",
+      "native": "seventy-nine",
+      "pronunciation": "NOYN-oont-ZEEB-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Hotel hat neunundsiebzig Zimmer.",
+          "native": "The hotel has seventy-nine rooms."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1049",
+      "target": "zweiundachtzig",
+      "native": "eighty-two",
+      "pronunciation": "TSVY-oont-AKHT-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Meine Großmutter ist zweiundachtzig Jahre alt.",
+          "native": "My grandmother is eighty-two years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1050",
+      "target": "sechsundachtzig",
+      "native": "eighty-six",
+      "pronunciation": "ZEKS-oont-AKHT-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Flug kostet sechsundachtzig Euro.",
+          "native": "The flight costs eighty-six euros."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1051",
+      "target": "achtundachtzig",
+      "native": "eighty-eight",
+      "pronunciation": "AKHT-oont-AKHT-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Im Stadion sind achtundachtzig Fans.",
+          "native": "There are eighty-eight fans in the stadium."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1052",
+      "target": "einundneunzig",
+      "native": "ninety-one",
+      "pronunciation": "INE-oont-NOYN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Mann ist einundneunzig Jahre alt.",
+          "native": "The man is ninety-one years old."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1053",
+      "target": "vierundneunzig",
+      "native": "ninety-four",
+      "pronunciation": "FEER-oont-NOYN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das Paket wiegt vierundneunzig Kilo.",
+          "native": "The package weighs ninety-four kilos."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1054",
+      "target": "achtundneunzig",
+      "native": "ninety-eight",
+      "pronunciation": "AKHT-oont-NOYN-tsikh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Heute sind achtundneunzig Gäste da.",
+          "native": "Today there are ninety-eight guests here."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1055",
+      "target": "die Uhrzeit",
+      "native": "time (clock time)",
+      "pronunciation": "dee OOR-tsyte",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich kenne die genaue Uhrzeit nicht.",
+          "native": "I do not know the exact time."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1056",
+      "target": "genau",
+      "native": "exactly",
+      "pronunciation": "ge-NOW",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist genau acht Uhr.",
+          "native": "It is exactly eight o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1057",
+      "target": "kurz vor",
+      "native": "shortly before",
+      "pronunciation": "koorts for",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist kurz vor neun.",
+          "native": "It is shortly before nine."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1058",
+      "target": "kurz nach",
+      "native": "shortly after",
+      "pronunciation": "koorts nakh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist kurz nach zwei.",
+          "native": "It is shortly after two."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1059",
+      "target": "zwei Uhr siebenundfünfzig",
+      "native": "2:57",
+      "pronunciation": "tsvy oor ZEE-ben-oont-FOONF-tsikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist zwei Uhr siebenundfünfzig.",
+          "native": "It is 2:57."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1060",
+      "target": "drei Uhr einundzwanzig",
+      "native": "3:21",
+      "pronunciation": "dry oor INE-oont-TSVAN-tsikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Der Film beginnt um drei Uhr einundzwanzig.",
+          "native": "The film begins at 3:21."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1061",
+      "target": "sieben Uhr fünfundvierzig",
+      "native": "7:45",
+      "pronunciation": "ZEE-ben oor FOONF-oont-FEER-tsikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Der Zug fährt um sieben Uhr fünfundvierzig.",
+          "native": "The train leaves at 7:45."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1062",
+      "target": "zwölf Uhr neun",
+      "native": "12:09",
+      "pronunciation": "TSVOELF oor noyn",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist zwölf Uhr neun.",
+          "native": "It is 12:09."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1063",
+      "target": "sechzehn Uhr dreißig",
+      "native": "16:30",
+      "pronunciation": "ZEKH-tsayn oor DRY-sikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Der Termin ist um sechzehn Uhr dreißig.",
+          "native": "The appointment is at 16:30."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1064",
+      "target": "dreiundzwanzig Uhr neunundvierzig",
+      "native": "23:49",
+      "pronunciation": "DRY-oont-TSVAN-tsikh oor NOYN-oont-FEER-tsikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist dreiundzwanzig Uhr neunundvierzig.",
+          "native": "It is 23:49."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1065",
+      "target": "fünf vor drei",
+      "native": "five to three / 2:55",
+      "pronunciation": "foonf for dry",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist fünf vor drei.",
+          "native": "It is five to three."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1066",
+      "target": "drei vor eins",
+      "native": "three to one / 12:57",
+      "pronunciation": "dry for ayns",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist drei vor eins.",
+          "native": "It is three to one."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1067",
+      "target": "zehn nach halb acht",
+      "native": "ten after half seven / 7:40",
+      "pronunciation": "tsayn nakh halp akht",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist zehn nach halb acht.",
+          "native": "It is 7:40."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1068",
+      "target": "elf vor zwölf",
+      "native": "eleven to twelve / 11:49",
+      "pronunciation": "elf for tsvoelf",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist elf vor zwölf.",
+          "native": "It is 11:49."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1069",
+      "target": "die Eltern",
+      "native": "parents",
+      "pronunciation": "dee EL-tern",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Eltern wohnen in Berlin.",
+          "native": "My parents live in Berlin."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1070",
+      "target": "die Oma",
+      "native": "grandma",
+      "pronunciation": "dee OH-ma",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Meine Oma backt gern Kuchen.",
+          "native": "My grandma likes baking cake."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1071",
+      "target": "der Opa",
+      "native": "grandpa",
+      "pronunciation": "dair OH-pa",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Mein Opa liest die Zeitung.",
+          "native": "My grandpa reads the newspaper."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1072",
+      "target": "die Leute",
+      "native": "people",
+      "pronunciation": "dee LOY-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Viele Leute warten auf den Bus.",
+          "native": "Many people are waiting for the bus."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1073",
+      "target": "zusammen",
+      "native": "together",
+      "pronunciation": "tsoo-ZAM-men",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir lernen zusammen Deutsch.",
+          "native": "We learn German together."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1074",
+      "target": "allein",
+      "native": "alone",
+      "pronunciation": "a-LINE",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich wohne allein.",
+          "native": "I live alone."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1075",
+      "target": "helfen",
+      "native": "to help",
+      "pronunciation": "HEL-fen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Kannst du mir helfen?",
+          "native": "Can you help me?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1076",
+      "target": "brauchen",
+      "native": "to need",
+      "pronunciation": "BROW-khen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich brauche deine Hilfe.",
+          "native": "I need your help."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1077",
+      "target": "geben",
+      "native": "to give",
+      "pronunciation": "GAY-ben",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Bitte gib mir das Buch.",
+          "native": "Please give me the book."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1078",
+      "target": "nehmen",
+      "native": "to take",
+      "pronunciation": "NAY-men",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich nehme einen Kaffee.",
+          "native": "I’ll take a coffee."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1079",
+      "target": "finden",
+      "native": "to find",
+      "pronunciation": "FIN-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich finde meinen Schlüssel nicht.",
+          "native": "I can't find my key."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1080",
+      "target": "zeigen",
+      "native": "to show",
+      "pronunciation": "TSY-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Kannst du mir den Weg zeigen?",
+          "native": "Can you show me the way?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1081",
+      "target": "fragen",
+      "native": "to ask",
+      "pronunciation": "FRAH-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich möchte etwas fragen.",
+          "native": "I would like to ask something."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1082",
+      "target": "antworten",
+      "native": "to answer",
+      "pronunciation": "ANT-vor-ten",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Bitte antworte schnell.",
+          "native": "Please answer quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1083",
+      "target": "erzählen",
+      "native": "to tell",
+      "pronunciation": "air-TSAY-len",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er erzählt eine Geschichte.",
+          "native": "He tells a story."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1084",
+      "target": "warten",
+      "native": "to wait",
+      "pronunciation": "VAR-ten",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Warte bitte einen Moment.",
+          "native": "Please wait a moment."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1085",
+      "target": "beginnen",
+      "native": "to begin",
+      "pronunciation": "be-GIN-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Film beginnt jetzt.",
+          "native": "The film begins now."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1086",
+      "target": "enden",
+      "native": "to end",
+      "pronunciation": "EN-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Kurs endet um fünf.",
+          "native": "The course ends at five."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1087",
+      "target": "offen",
+      "native": "open",
+      "pronunciation": "OF-fen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ist der Laden noch offen?",
+          "native": "Is the shop still open?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1088",
+      "target": "geschlossen",
+      "native": "closed",
+      "pronunciation": "ge-SHLOS-sen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Tür ist geschlossen.",
+          "native": "The door is closed."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1089",
+      "target": "wichtig",
+      "native": "important",
+      "pronunciation": "VIKH-tikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist sehr wichtig.",
+          "native": "That is very important."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1090",
+      "target": "einfach",
+      "native": "easy / simple",
+      "pronunciation": "INE-fakh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Aufgabe ist einfach.",
+          "native": "The task is easy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1091",
+      "target": "schwer",
+      "native": "heavy / difficult",
+      "pronunciation": "shvair",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Tasche ist schwer.",
+          "native": "The bag is heavy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1092",
+      "target": "schnell",
+      "native": "fast",
+      "pronunciation": "shnel",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Zug ist schnell.",
+          "native": "The train is fast."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1093",
+      "target": "langsam",
+      "native": "slow",
+      "pronunciation": "LANG-zahm",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Bitte sprich langsam.",
+          "native": "Please speak slowly."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1094",
+      "target": "richtig",
+      "native": "correct / right",
+      "pronunciation": "RIKH-tikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Antwort ist richtig.",
+          "native": "The answer is correct."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1095",
+      "target": "falsch",
+      "native": "wrong",
+      "pronunciation": "falsh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist falsch.",
+          "native": "That is wrong."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1096",
+      "target": "der Saft",
+      "native": "juice",
+      "pronunciation": "dair zaft",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich trinke morgens Orangensaft.",
+          "native": "I drink orange juice in the morning."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1097",
+      "target": "der Reis",
+      "native": "rice",
+      "pronunciation": "dair ryce",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Zum Mittagessen esse ich Reis.",
+          "native": "I eat rice for lunch."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1098",
+      "target": "die Kartoffel",
+      "native": "potato",
+      "pronunciation": "dee kar-TOF-fel",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Kartoffeln sind noch heiß.",
+          "native": "The potatoes are still hot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1099",
+      "target": "die Banane",
+      "native": "banana",
+      "pronunciation": "dee ba-NAH-ne",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich esse jeden Tag eine Banane.",
+          "native": "I eat a banana every day."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1100",
+      "target": "die Orange",
+      "native": "orange (fruit)",
+      "pronunciation": "dee oh-RAN-zhe",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Orange ist süß und frisch.",
+          "native": "The orange is sweet and fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1101",
+      "target": "die Tomate",
+      "native": "tomato",
+      "pronunciation": "dee to-MAH-te",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich kaufe Tomaten für den Salat.",
+          "native": "I buy tomatoes for the salad."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1102",
+      "target": "der Salat",
+      "native": "salad",
+      "pronunciation": "dair za-LAHT",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Zum Abendessen esse ich Salat.",
+          "native": "I eat salad for dinner."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1103",
+      "target": "das Frühstück",
+      "native": "breakfast",
+      "pronunciation": "das FROO-shtook",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Frühstück ist um sieben Uhr.",
+          "native": "Breakfast is at seven o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1104",
+      "target": "das Mittagessen",
+      "native": "lunch",
+      "pronunciation": "das MIT-tahk-es-sen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Wir kochen heute Mittagessen zu Hause.",
+          "native": "We are cooking lunch at home today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1105",
+      "target": "das Abendessen",
+      "native": "dinner",
+      "pronunciation": "das AH-bent-es-sen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Abendessen ist schon fertig.",
+          "native": "Dinner is already ready."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1106",
+      "target": "hungrig sein",
+      "native": "to be hungry",
+      "pronunciation": "HOONG-rikh zyne",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Nach der Arbeit bin ich hungrig.",
+          "native": "After work I am hungry."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1107",
+      "target": "durstig sein",
+      "native": "to be thirsty",
+      "pronunciation": "DOOR-stikh zyne",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Nach dem Sport bin ich durstig.",
+          "native": "After sports I am thirsty."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1108",
+      "target": "kochen",
+      "native": "to cook",
+      "pronunciation": "KOKH-en",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich koche heute Pasta.",
+          "native": "I am cooking pasta today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1109",
+      "target": "frisch",
+      "native": "fresh",
+      "pronunciation": "frish",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Brot ist frisch.",
+          "native": "The bread is fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1110",
+      "target": "lecker",
+      "native": "tasty",
+      "pronunciation": "LEK-er",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Suppe ist sehr lecker.",
+          "native": "The soup is very tasty."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1111",
+      "target": "das Handy laden",
+      "native": "to charge the phone",
+      "pronunciation": "das HEN-dee LAH-den",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich muss mein Handy laden.",
+          "native": "I have to charge my phone."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1112",
+      "target": "anrufen",
+      "native": "to call",
+      "pronunciation": "AN-roo-fen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich rufe dich später an.",
+          "native": "I will call you later."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1113",
+      "target": "die Nachricht",
+      "native": "message / news",
+      "pronunciation": "dee NAKH-rikht",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich schicke dir eine Nachricht.",
+          "native": "I am sending you a message."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1114",
+      "target": "schreiben",
+      "native": "to write",
+      "pronunciation": "SHRY-ben",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich schreibe eine E-Mail.",
+          "native": "I am writing an email."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1115",
+      "target": "lesen",
+      "native": "to read",
+      "pronunciation": "LAY-zen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich lese jeden Abend ein Buch.",
+          "native": "I read a book every evening."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1116",
+      "target": "lernen für",
+      "native": "to study for",
+      "pronunciation": "LAIR-nen fuer",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich lerne für die Prüfung.",
+          "native": "I am studying for the exam."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1117",
+      "target": "die Pause",
+      "native": "break",
+      "pronunciation": "dee POW-ze",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir haben jetzt eine Pause.",
+          "native": "We have a break now."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1118",
+      "target": "fertig",
+      "native": "finished / ready",
+      "pronunciation": "FER-tikh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich bin mit der Arbeit fertig.",
+          "native": "I am finished with the work."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1119",
+      "target": "beschäftigt",
+      "native": "busy",
+      "pronunciation": "be-SHEF-tikht",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich bin heute sehr beschäftigt.",
+          "native": "I am very busy today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1120",
+      "target": "der Termin",
+      "native": "appointment",
+      "pronunciation": "dair tair-MEEN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich habe morgen einen Termin.",
+          "native": "I have an appointment tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1121",
+      "target": "das Problem",
+      "native": "problem",
+      "pronunciation": "das pro-BLEM",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir haben ein kleines Problem.",
+          "native": "We have a small problem."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1122",
+      "target": "die Lösung",
+      "native": "solution",
+      "pronunciation": "dee LOO-zoong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das ist eine gute Lösung.",
+          "native": "That is a good solution."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1123",
+      "target": "das Papier",
+      "native": "paper",
+      "pronunciation": "das pa-PEER",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Papier liegt auf dem Tisch.",
+          "native": "The paper is on the table."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1124",
+      "target": "die Tasche",
+      "native": "bag",
+      "pronunciation": "dee TASH-e",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Meine Tasche ist unter dem Tisch.",
+          "native": "My bag is under the table."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1125",
+      "target": "die Wohnung",
+      "native": "apartment",
+      "pronunciation": "dee VOH-noong",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Unsere Wohnung ist klein, aber schön.",
+          "native": "Our apartment is small but nice."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1126",
+      "target": "der Balkon",
+      "native": "balcony",
+      "pronunciation": "dair bal-KON",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Im Sommer sitze ich auf dem Balkon.",
+          "native": "In summer I sit on the balcony."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1127",
+      "target": "der Kühlschrank",
+      "native": "fridge",
+      "pronunciation": "dair KOOLE-shrank",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Milch ist im Kühlschrank.",
+          "native": "The milk is in the fridge."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1128",
+      "target": "der Herd",
+      "native": "stove",
+      "pronunciation": "dair hairt",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Topf steht auf dem Herd.",
+          "native": "The pot is on the stove."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1129",
+      "target": "die Lampe",
+      "native": "lamp",
+      "pronunciation": "dee LAM-pe",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Lampe ist neben dem Bett.",
+          "native": "The lamp is next to the bed."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1130",
+      "target": "das Licht",
+      "native": "light",
+      "pronunciation": "das likht",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Mach bitte das Licht an.",
+          "native": "Please turn on the light."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1131",
+      "target": "anmachen",
+      "native": "to turn on",
+      "pronunciation": "AN-ma-khen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Kannst du das Radio anmachen?",
+          "native": "Can you turn on the radio?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1132",
+      "target": "ausmachen",
+      "native": "to turn off",
+      "pronunciation": "OWS-ma-khen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Mach bitte das Licht aus.",
+          "native": "Please turn off the light."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1133",
+      "target": "sauber",
+      "native": "clean",
+      "pronunciation": "ZOW-ber",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Zimmer ist sauber.",
+          "native": "The room is clean."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1134",
+      "target": "schmutzig",
+      "native": "dirty",
+      "pronunciation": "SHMOOT-sikh",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Schuhe sind schmutzig.",
+          "native": "The shoes are dirty."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1135",
+      "target": "oben",
+      "native": "upstairs / above",
+      "pronunciation": "OH-ben",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Schlafzimmer ist oben.",
+          "native": "The bedroom is upstairs."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1136",
+      "target": "unten",
+      "native": "downstairs / below",
+      "pronunciation": "OON-ten",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Küche ist unten.",
+          "native": "The kitchen is downstairs."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1137",
+      "target": "drinnen",
+      "native": "inside",
+      "pronunciation": "DRIN-nen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Es ist kalt, wir bleiben drinnen.",
+          "native": "It is cold, we are staying inside."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1138",
+      "target": "draußen",
+      "native": "outside",
+      "pronunciation": "DROW-sen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Kinder spielen draußen.",
+          "native": "The children are playing outside."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1139",
+      "target": "der Supermarkt",
+      "native": "supermarket",
+      "pronunciation": "dair ZOO-per-markt",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich gehe in den Supermarkt.",
+          "native": "I am going to the supermarket."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1140",
+      "target": "die Apotheke",
+      "native": "pharmacy",
+      "pronunciation": "dee a-po-TAY-ke",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Apotheke ist neben dem Bahnhof.",
+          "native": "The pharmacy is next to the station."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1141",
+      "target": "der Arzt",
+      "native": "doctor",
+      "pronunciation": "dair artst",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich habe morgen einen Termin beim Arzt.",
+          "native": "I have a doctor's appointment tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1142",
+      "target": "die Toilette",
+      "native": "toilet / restroom",
+      "pronunciation": "dee toi-LET-te",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Wo ist die Toilette?",
+          "native": "Where is the toilet?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1143",
+      "target": "einsteigen",
+      "native": "to get in / board",
+      "pronunciation": "INE-shty-gen",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir steigen jetzt in den Bus ein.",
+          "native": "We are getting on the bus now."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1144",
+      "target": "aussteigen",
+      "native": "to get out / get off",
+      "pronunciation": "OWS-shty-gen",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich steige an der nächsten Station aus.",
+          "native": "I get off at the next station."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1145",
+      "target": "umsteigen",
+      "native": "to change trains / transfer",
+      "pronunciation": "OOM-shty-gen",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "In Berlin muss ich umsteigen.",
+          "native": "I have to change trains in Berlin."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1146",
+      "target": "die Haltestelle",
+      "native": "stop",
+      "pronunciation": "dee HAL-te-shtel-le",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Haltestelle ist dort vorne.",
+          "native": "The stop is up there."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1147",
+      "target": "die Station",
+      "native": "station",
+      "pronunciation": "dee sta-TSYOHN",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die nächste Station ist Hauptbahnhof.",
+          "native": "The next station is central station."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1148",
+      "target": "zu Fuß",
+      "native": "on foot",
+      "pronunciation": "tsoo foos",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich gehe zu Fuß zur Arbeit.",
+          "native": "I go to work on foot."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1149",
+      "target": "das Fahrrad",
+      "native": "bicycle",
+      "pronunciation": "das FAHR-rat",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Im Sommer fahre ich oft Fahrrad.",
+          "native": "In summer I often ride a bicycle."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1150",
+      "target": "das Taxi",
+      "native": "taxi",
+      "pronunciation": "das TAK-see",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir nehmen ein Taxi nach Hause.",
+          "native": "We are taking a taxi home."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1151",
+      "target": "spazieren gehen",
+      "native": "to go for a walk",
+      "pronunciation": "shpa-TSEE-ren GAY-en",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Am Abend gehe ich gern spazieren.",
+          "native": "In the evening I like to go for a walk."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1152",
+      "target": "die Richtung",
+      "native": "direction",
+      "pronunciation": "dee RIKH-toong",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ist das die richtige Richtung?",
+          "native": "Is that the right direction?"
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1153",
+      "target": "die Seite",
+      "native": "side",
+      "pronunciation": "dee ZY-te",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Café ist auf der linken Seite.",
+          "native": "The café is on the left side."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1154",
+      "target": "frühstücken",
+      "native": "to have breakfast",
+      "pronunciation": "FROO-shtook-en",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich frühstücke um sieben Uhr.",
+          "native": "I have breakfast at seven o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1155",
+      "target": "zu Mittag essen",
+      "native": "to have lunch",
+      "pronunciation": "tsoo MIT-tahk ES-sen",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir essen um eins zu Mittag.",
+          "native": "We have lunch at one."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1156",
+      "target": "zu Abend essen",
+      "native": "to have dinner",
+      "pronunciation": "tsoo AH-bent ES-sen",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir essen um sieben zu Abend.",
+          "native": "We have dinner at seven."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1157",
+      "target": "aufstehen",
+      "native": "to get up",
+      "pronunciation": "OWF-shtay-en",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich stehe jeden Tag früh auf.",
+          "native": "I get up early every day."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1158",
+      "target": "schlafen",
+      "native": "to sleep",
+      "pronunciation": "SHLAH-fen",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Das Baby schläft schon.",
+          "native": "The baby is already sleeping."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1159",
+      "target": "ins Bett gehen",
+      "native": "to go to bed",
+      "pronunciation": "ins bet GAY-en",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich gehe um elf ins Bett.",
+          "native": "I go to bed at eleven."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1160",
+      "target": "später",
+      "native": "later",
+      "pronunciation": "SHPAY-ter",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich rufe dich später an.",
+          "native": "I will call you later."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1161",
+      "target": "sofort",
+      "native": "immediately",
+      "pronunciation": "zoh-FORT",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich komme sofort.",
+          "native": "I am coming immediately."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1162",
+      "target": "oft",
+      "native": "often",
+      "pronunciation": "oft",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich gehe oft spazieren.",
+          "native": "I often go for a walk."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1163",
+      "target": "manchmal",
+      "native": "sometimes",
+      "pronunciation": "MAN-khmal",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Manchmal trinke ich Tee am Abend.",
+          "native": "Sometimes I drink tea in the evening."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1164",
+      "target": "nie",
+      "native": "never",
+      "pronunciation": "nee",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich komme nie zu spät.",
+          "native": "I am never late."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1165",
+      "target": "zuerst",
+      "native": "first",
+      "pronunciation": "tsoo-AIRST",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Zuerst trinke ich Kaffee.",
+          "native": "First I drink coffee."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1166",
+      "target": "dann",
+      "native": "then",
+      "pronunciation": "dan",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Ich esse und dann lerne ich.",
+          "native": "I eat and then I study."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1167",
+      "target": "danach",
+      "native": "after that",
+      "pronunciation": "da-NAKH",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir gehen einkaufen und danach nach Hause.",
+          "native": "We go shopping and after that home."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1168",
+      "target": "der Bauch",
+      "native": "stomach / belly",
+      "pronunciation": "dair bowkh",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Bauch tut weh.",
+          "native": "My stomach hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1169",
+      "target": "der Arm",
+      "native": "arm",
+      "pronunciation": "dair arm",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Arm ist müde.",
+          "native": "My arm is tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1170",
+      "target": "der Finger",
+      "native": "finger",
+      "pronunciation": "dair FING-er",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Ring ist an meinem Finger.",
+          "native": "The ring is on my finger."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1171",
+      "target": "das Gesicht",
+      "native": "face",
+      "pronunciation": "das ge-ZIKHT",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Sie wäscht ihr Gesicht.",
+          "native": "She washes her face."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1172",
+      "target": "die Haare",
+      "native": "hair",
+      "pronunciation": "dee HAH-re",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Meine Haare sind nass.",
+          "native": "My hair is wet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1173",
+      "target": "krank",
+      "native": "sick",
+      "pronunciation": "krank",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich bin heute krank.",
+          "native": "I am sick today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1174",
+      "target": "gesund",
+      "native": "healthy",
+      "pronunciation": "ge-ZOONT",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Obst und Gemüse sind gesund.",
+          "native": "Fruit and vegetables are healthy."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1175",
+      "target": "weh tun",
+      "native": "to hurt",
+      "pronunciation": "vay toon",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Kopf tut weh.",
+          "native": "My head hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1176",
+      "target": "die Wolke",
+      "native": "cloud",
+      "pronunciation": "dee VOL-ke",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Eine große Wolke ist am Himmel.",
+          "native": "A big cloud is in the sky."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1177",
+      "target": "der Himmel",
+      "native": "sky",
+      "pronunciation": "dair HIM-mel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Himmel ist heute blau.",
+          "native": "The sky is blue today."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1178",
+      "target": "das Meer",
+      "native": "sea",
+      "pronunciation": "das mayr",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Im Sommer fahren wir ans Meer.",
+          "native": "In summer we go to the sea."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1179",
+      "target": "der See",
+      "native": "lake",
+      "pronunciation": "dair zay",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der See ist sehr schön.",
+          "native": "The lake is very beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1180",
+      "target": "der Berg",
+      "native": "mountain",
+      "pronunciation": "dair bairk",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Berg ist hoch.",
+          "native": "The mountain is high."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1181",
+      "target": "die Luft",
+      "native": "air",
+      "pronunciation": "dee looft",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Luft ist frisch.",
+          "native": "The air is fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1182",
+      "target": "warm",
+      "native": "warm",
+      "pronunciation": "varm",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Heute ist es warm.",
+          "native": "Today it is warm."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1183",
+      "target": "trocken",
+      "native": "dry",
+      "pronunciation": "TROK-en",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Straße ist trocken.",
+          "native": "The street is dry."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1184",
+      "target": "nass",
+      "native": "wet",
+      "pronunciation": "nas",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Meine Schuhe sind nass.",
+          "native": "My shoes are wet."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1185",
+      "target": "der Alltag",
+      "native": "everyday life",
+      "pronunciation": "dair AL-tahk",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Deutsch hilft mir im Alltag.",
+          "native": "German helps me in everyday life."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1186",
+      "target": "ruhig",
+      "native": "calm / quiet",
+      "pronunciation": "ROO-ikh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Bitte bleib ruhig.",
+          "native": "Please stay calm."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1187",
+      "target": "nervös",
+      "native": "nervous",
+      "pronunciation": "nair-VOES",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Vor der Prüfung bin ich nervös.",
+          "native": "Before the exam I am nervous."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1188",
+      "target": "krank sein",
+      "native": "to be sick",
+      "pronunciation": "krank zyne",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich kann nicht kommen, ich bin krank.",
+          "native": "I can't come, I am sick."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1189",
+      "target": "Angst haben",
+      "native": "to be afraid",
+      "pronunciation": "angst HAH-ben",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Das Kind hat Angst im Dunkeln.",
+          "native": "The child is afraid in the dark."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1190",
+      "target": "zufrieden",
+      "native": "satisfied",
+      "pronunciation": "tsoo-FREE-den",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin mit dem Essen zufrieden.",
+          "native": "I am satisfied with the food."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1191",
+      "target": "aufgeregt",
+      "native": "excited / nervous",
+      "pronunciation": "OWF-ge-regt",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Vor der Reise bin ich aufgeregt.",
+          "native": "Before the trip I am excited."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1192",
+      "target": "müde sein",
+      "native": "to be tired",
+      "pronunciation": "MOO-de zyne",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Nach der Arbeit bin ich müde.",
+          "native": "After work I am tired."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1193",
+      "target": "orangefarben",
+      "native": "orange-colored",
+      "pronunciation": "oh-RAN-zhe-far-ben",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das T-Shirt ist orangefarben.",
+          "native": "The T-shirt is orange-colored."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1194",
+      "target": "dunkel",
+      "native": "dark",
+      "pronunciation": "DOON-kel",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "In der Nacht ist es dunkel.",
+          "native": "At night it is dark."
+        }
+      ]
+    },
+    {
+      "id": "de_a1_1195",
+      "target": "hell",
+      "native": "bright / light",
+      "pronunciation": "hel",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Zimmer ist hell.",
+          "native": "The room is bright."
+        }
+      ]
+    }
+  ]
+}

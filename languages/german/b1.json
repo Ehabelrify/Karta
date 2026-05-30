@@ -1,0 +1,4309 @@
+{
+  "language": "german",
+  "level": "B1",
+  "words": [
+    {
+      "id": "de_b1_216",
+      "target": "die Persönlichkeit",
+      "native": "personality",
+      "pronunciation": "dee pair-ZOEN-likh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie hat eine starke Persönlichkeit.",
+          "native": "She has a strong personality."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_217",
+      "target": "die Beziehung",
+      "native": "relationship",
+      "pronunciation": "dee be-TSEE-oong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Unsere Beziehung ist kompliziert.",
+          "native": "Our relationship is complicated."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_218",
+      "target": "die Scheidung",
+      "native": "divorce",
+      "pronunciation": "dee SHYE-doong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Nach der Scheidung lebten sie getrennt.",
+          "native": "After the divorce they lived separately."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_219",
+      "target": "die Hochzeit",
+      "native": "wedding",
+      "pronunciation": "dee HOKH-tsyte",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Hochzeit war wunderschön.",
+          "native": "The wedding was beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_220",
+      "target": "der Verwandte",
+      "native": "relative",
+      "pronunciation": "dair fer-VAN-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Viele Verwandte kamen zu Besuch.",
+          "native": "Many relatives came to visit."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_221",
+      "target": "die Kindheit",
+      "native": "childhood",
+      "pronunciation": "dee KINT-hite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich erinnere mich an meine Kindheit.",
+          "native": "I remember my childhood."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_222",
+      "target": "das Vertrauen",
+      "native": "trust",
+      "pronunciation": "das fer-TROW-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Vertrauen ist wichtig in einer Beziehung.",
+          "native": "Trust is important in a relationship."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_223",
+      "target": "die Verantwortung",
+      "native": "responsibility",
+      "pronunciation": "dee fer-ANT-vor-toong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich trage Verantwortung für meine Familie.",
+          "native": "I bear responsibility for my family."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_224",
+      "target": "die Zutat",
+      "native": "ingredient",
+      "pronunciation": "dee TSOO-taht",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Welche Zutaten brauche ich?",
+          "native": "Which ingredients do I need?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_225",
+      "target": "das Gericht",
+      "native": "dish / course",
+      "pronunciation": "das ge-RIKH t",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Gericht kommt aus Italien.",
+          "native": "The dish comes from Italy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_226",
+      "target": "biologisch",
+      "native": "organic",
+      "pronunciation": "bee-oh-LOH-gish",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich kaufe gerne biologisches Gemüse.",
+          "native": "I like to buy organic vegetables."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_227",
+      "target": "die Speisekarte",
+      "native": "menu",
+      "pronunciation": "dee SHPYE-ze-kar-te",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Darf ich die Speisekarte haben?",
+          "native": "May I have the menu?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_228",
+      "target": "der Vegetarier",
+      "native": "vegetarian",
+      "pronunciation": "dair ve-ge-TAH-ree-er",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Er ist Vegetarier seit Jahren.",
+          "native": "He has been vegetarian for years."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_229",
+      "target": "die Gewürze",
+      "native": "spices",
+      "pronunciation": "dee ge-VOOR-tse",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Gewürze verleihen Geschmack.",
+          "native": "The spices add flavor."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_230",
+      "target": "allergisch",
+      "native": "allergic",
+      "pronunciation": "a-LAIR-gish",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich bin allergisch gegen Nüsse.",
+          "native": "I am allergic to nuts."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_231",
+      "target": "die Vergangenheit",
+      "native": "past",
+      "pronunciation": "dee fer-GANG-en-hite",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In der Vergangenheit war es anders.",
+          "native": "In the past it was different."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_232",
+      "target": "die Gegenwart",
+      "native": "present",
+      "pronunciation": "dee GAY-gen-vart",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In der Gegenwart lebe ich bewusst.",
+          "native": "In the present I live consciously."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_233",
+      "target": "die Zukunft",
+      "native": "future",
+      "pronunciation": "dee TSOO-koonft",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Die Zukunft ist ungewiss.",
+          "native": "The future is uncertain."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_234",
+      "target": "gelegentlich",
+      "native": "occasionally",
+      "pronunciation": "ge-LAY-gent-likh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Er kommt gelegentlich vorbei.",
+          "native": "He occasionally drops by."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_235",
+      "target": "regelmäßig",
+      "native": "regularly",
+      "pronunciation": "RAY-gel-may-sikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Sie trainiert regelmäßig.",
+          "native": "She trains regularly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_236",
+      "target": "vorübergehend",
+      "native": "temporary",
+      "pronunciation": "for-OO-ber-gay-end",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Es ist nur vorübergehend.",
+          "native": "It is only temporary."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_237",
+      "target": "die Frist",
+      "native": "deadline",
+      "pronunciation": "dee frist",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Die Frist läuft morgen ab.",
+          "native": "The deadline expires tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_238",
+      "target": "die Menge",
+      "native": "quantity / amount",
+      "pronunciation": "dee MENG-e",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Menge ist zu groß.",
+          "native": "The quantity is too large."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_239",
+      "target": "ungefähr",
+      "native": "approximately",
+      "pronunciation": "OON-ge-fair",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Es dauert ungefähr zwei Stunden.",
+          "native": "It takes approximately two hours."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_240",
+      "target": "genau",
+      "native": "exactly / precise",
+      "pronunciation": "ge-NOW",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das ist genau richtig.",
+          "native": "That is exactly right."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_241",
+      "target": "mindestens",
+      "native": "at least",
+      "pronunciation": "MIN-des-tens",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich brauche mindestens fünf Stunden.",
+          "native": "I need at least five hours."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_242",
+      "target": "höchstens",
+      "native": "at most",
+      "pronunciation": "HOEKH-stens",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Es dauert höchstens eine Stunde.",
+          "native": "It takes at most an hour."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_243",
+      "target": "der Farbton",
+      "native": "shade / hue",
+      "pronunciation": "dair FARB-tohn",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Dieser Farbton passt besser.",
+          "native": "This shade fits better."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_244",
+      "target": "transparent",
+      "native": "transparent",
+      "pronunciation": "trans-pa-RENT",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Das Glas ist transparent.",
+          "native": "The glass is transparent."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_245",
+      "target": "leuchtend",
+      "native": "bright / vivid",
+      "pronunciation": "LOYKHD-end",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Farbe ist sehr leuchtend.",
+          "native": "The color is very vivid."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_246",
+      "target": "die Gesundheit",
+      "native": "health",
+      "pronunciation": "dee ge-ZOONT-hite",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Gesundheit ist das Wichtigste.",
+          "native": "Health is the most important thing."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_247",
+      "target": "die Krankheit",
+      "native": "illness / disease",
+      "pronunciation": "dee KRANK-hite",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Krankheit verbreitet sich schnell.",
+          "native": "The illness spreads quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_248",
+      "target": "die Verletzung",
+      "native": "injury",
+      "pronunciation": "dee fer-LET-tsoong",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Verletzung heilt langsam.",
+          "native": "The injury heals slowly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_249",
+      "target": "die Medikamente",
+      "native": "medication",
+      "pronunciation": "dee me-di-ka-MEN-te",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Medikamente helfen mir.",
+          "native": "The medication helps me."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_250",
+      "target": "das Gewicht",
+      "native": "weight",
+      "pronunciation": "das ge-VIKHT",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Gewicht ist stabil.",
+          "native": "My weight is stable."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_251",
+      "target": "die Muskeln",
+      "native": "muscles",
+      "pronunciation": "dee MOOS-keln",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Sport stärkt die Muskeln.",
+          "native": "Sport strengthens the muscles."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_252",
+      "target": "die Ernährung",
+      "native": "nutrition / diet",
+      "pronunciation": "dee air-NAY-roong",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Eine gesunde Ernährung ist wichtig.",
+          "native": "A healthy diet is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_253",
+      "target": "die Umwelt",
+      "native": "environment",
+      "pronunciation": "dee OOM-velt",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Wir müssen die Umwelt schützen.",
+          "native": "We must protect the environment."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_254",
+      "target": "das Klima",
+      "native": "climate",
+      "pronunciation": "das KLEE-ma",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Klima ändert sich.",
+          "native": "The climate is changing."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_255",
+      "target": "die Küste",
+      "native": "coast",
+      "pronunciation": "dee KOOS-te",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Küste ist wunderschön.",
+          "native": "The coast is beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_256",
+      "target": "der Horizont",
+      "native": "horizon",
+      "pronunciation": "dair ho-ri-TSONT",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Sonne geht am Horizont unter.",
+          "native": "The sun sets at the horizon."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_257",
+      "target": "die Pflanze",
+      "native": "plant",
+      "pronunciation": "dee PFLAN-tse",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Pflanze braucht Wasser.",
+          "native": "The plant needs water."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_258",
+      "target": "der Boden",
+      "native": "ground / soil",
+      "pronunciation": "dair BOH-den",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Boden ist fruchtbar.",
+          "native": "The soil is fertile."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_259",
+      "target": "das Gewitter",
+      "native": "thunderstorm",
+      "pronunciation": "das ge-VIT-ter",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Ein Gewitter zieht auf.",
+          "native": "A thunderstorm is approaching."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_260",
+      "target": "der Sonnenaufgang",
+      "native": "sunrise",
+      "pronunciation": "dair ZON-nen-owf-gang",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Sonnenaufgang war herrlich.",
+          "native": "The sunrise was magnificent."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_261",
+      "target": "die Hauptstadt",
+      "native": "capital city",
+      "pronunciation": "dee HOWPT-shtat",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Berlin ist die Hauptstadt Deutschlands.",
+          "native": "Berlin is the capital of Germany."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_262",
+      "target": "der Vorort",
+      "native": "suburb",
+      "pronunciation": "dair FOR-ort",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Wir wohnen im Vorort.",
+          "native": "We live in the suburb."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_263",
+      "target": "das Ausland",
+      "native": "abroad / foreign country",
+      "pronunciation": "das OWS-lant",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Er arbeitet im Ausland.",
+          "native": "He works abroad."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_264",
+      "target": "die Botschaft",
+      "native": "embassy",
+      "pronunciation": "dee BOHT-shaft",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich gehe zur Botschaft.",
+          "native": "I go to the embassy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_265",
+      "target": "das Stadtzentrum",
+      "native": "city center",
+      "pronunciation": "das SHTAT-tsen-troom",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Stadtzentrum ist belebt.",
+          "native": "The city center is busy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_266",
+      "target": "die Nachbarschaft",
+      "native": "neighborhood",
+      "pronunciation": "dee NAKH-bar-shaft",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Nachbarschaft ist ruhig.",
+          "native": "The neighborhood is quiet."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_267",
+      "target": "das Viertel",
+      "native": "district / quarter",
+      "pronunciation": "das FEER-tel",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Viertel ist bekannt.",
+          "native": "The district is well-known."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_268",
+      "target": "die Karriere",
+      "native": "career",
+      "pronunciation": "dee ka-RYAY-re",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Sie plant ihre Karriere sorgfältig.",
+          "native": "She plans her career carefully."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_269",
+      "target": "die Bewerbung",
+      "native": "job application",
+      "pronunciation": "dee be-VAIR-boong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Bewerbung war erfolgreich.",
+          "native": "The job application was successful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_270",
+      "target": "das Vorstellungsgespräch",
+      "native": "job interview",
+      "pronunciation": "das FOR-shtel-oonks-ge-shprekh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Vorstellungsgespräch war gut.",
+          "native": "The job interview went well."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_271",
+      "target": "die Weiterbildung",
+      "native": "further training",
+      "pronunciation": "dee VY-ter-bil-doong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Weiterbildung ist wichtig.",
+          "native": "Further training is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_272",
+      "target": "der Vertrag",
+      "native": "contract",
+      "pronunciation": "dair fer-TRAHG",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich habe den Vertrag unterschrieben.",
+          "native": "I signed the contract."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_273",
+      "target": "die Kündigung",
+      "native": "resignation / dismissal",
+      "pronunciation": "dee KOON-di-goong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er hat seine Kündigung eingereicht.",
+          "native": "He submitted his resignation."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_274",
+      "target": "selbstständig",
+      "native": "self-employed",
+      "pronunciation": "ZELBST-shten-dikh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Sie ist seit Jahren selbstständig.",
+          "native": "She has been self-employed for years."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_275",
+      "target": "die Gewerkschaft",
+      "native": "trade union",
+      "pronunciation": "dee ge-VAIRK-shaft",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Gewerkschaft kämpft für Rechte.",
+          "native": "The trade union fights for rights."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_276",
+      "target": "die Leidenschaft",
+      "native": "passion",
+      "pronunciation": "dee LY-den-shaft",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Musik ist meine Leidenschaft.",
+          "native": "Music is my passion."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_277",
+      "target": "das Mitgefühl",
+      "native": "compassion / empathy",
+      "pronunciation": "das MIT-ge-fool",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er zeigt viel Mitgefühl.",
+          "native": "He shows a lot of compassion."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_278",
+      "target": "die Scham",
+      "native": "shame",
+      "pronunciation": "dee shahm",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie empfindet Scham.",
+          "native": "She feels shame."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_279",
+      "target": "die Dankbarkeit",
+      "native": "gratitude",
+      "pronunciation": "dee DANK-bar-kite",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Dankbarkeit macht das Leben schöner.",
+          "native": "Gratitude makes life more beautiful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_280",
+      "target": "die Eifersucht",
+      "native": "jealousy",
+      "pronunciation": "dee EYE-fer-zookht",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Eifersucht kann Beziehungen zerstören.",
+          "native": "Jealousy can destroy relationships."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_281",
+      "target": "überwältigt",
+      "native": "overwhelmed",
+      "pronunciation": "OO-ber-vel-tigt",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin überwältigt von der Arbeit.",
+          "native": "I am overwhelmed by the work."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_282",
+      "target": "hoffnungsvoll",
+      "native": "hopeful",
+      "pronunciation": "HOF-noonks-fol",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin hoffnungsvoll für die Zukunft.",
+          "native": "I am hopeful for the future."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_283",
+      "target": "die Buchung",
+      "native": "booking / reservation",
+      "pronunciation": "dee BOO-khoong",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Buchung war günstig.",
+          "native": "The booking was affordable."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_284",
+      "target": "das Visum",
+      "native": "visa",
+      "pronunciation": "das VEE-zoom",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich brauche ein Visum.",
+          "native": "I need a visa."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_285",
+      "target": "der Zoll",
+      "native": "customs",
+      "pronunciation": "dair tsol",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Am Zoll wurde alles kontrolliert.",
+          "native": "At customs everything was checked."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_286",
+      "target": "die Reisekrankenversicherung",
+      "native": "travel insurance",
+      "pronunciation": "dee RY-ze-kran-ken-fer-zi-khe-roong",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Reisekrankenversicherung ist Pflicht.",
+          "native": "Travel insurance is mandatory."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_287",
+      "target": "das Gepäck",
+      "native": "luggage",
+      "pronunciation": "das ge-PEK",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Das Gepäck ist zu schwer.",
+          "native": "The luggage is too heavy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_441",
+      "target": "erreichen",
+      "native": "to achieve / reach",
+      "pronunciation": "air-RY-khen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich will mein Ziel erreichen.",
+          "native": "I want to achieve my goal."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_442",
+      "target": "entwickeln",
+      "native": "to develop",
+      "pronunciation": "ent-VIK-eln",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir entwickeln neue Strategien.",
+          "native": "We are developing new strategies."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_443",
+      "target": "verbessern",
+      "native": "to improve",
+      "pronunciation": "fer-BES-sern",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich möchte mein Deutsch verbessern.",
+          "native": "I want to improve my German."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_444",
+      "target": "entscheiden",
+      "native": "to decide",
+      "pronunciation": "ent-SHY-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich muss schnell entscheiden.",
+          "native": "I must decide quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_445",
+      "target": "bestätigen",
+      "native": "to confirm",
+      "pronunciation": "be-SHTAY-ti-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Bitte bestätige die Buchung.",
+          "native": "Please confirm the booking."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_446",
+      "target": "vermeiden",
+      "native": "to avoid",
+      "pronunciation": "fer-MY-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich versuche Stress zu vermeiden.",
+          "native": "I try to avoid stress."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_447",
+      "target": "beschreiben",
+      "native": "to describe",
+      "pronunciation": "be-SHRY-ben",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Beschreibe mir die Situation.",
+          "native": "Describe the situation to me."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_448",
+      "target": "sich erinnern",
+      "native": "to remember",
+      "pronunciation": "zikh air-IN-nern",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich erinnere mich an die Schule.",
+          "native": "I remember school."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_449",
+      "target": "versprechen",
+      "native": "to promise",
+      "pronunciation": "fer-SHPREKH-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich verspreche, pünktlich zu sein.",
+          "native": "I promise to be on time."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_450",
+      "target": "vorschlagen",
+      "native": "to suggest / propose",
+      "pronunciation": "FOR-shlah-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Darf ich etwas vorschlagen?",
+          "native": "May I suggest something?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_451",
+      "target": "die Meinung",
+      "native": "opinion",
+      "pronunciation": "dee MY-noong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Was ist deine Meinung?",
+          "native": "What is your opinion?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_452",
+      "target": "der Unterschied",
+      "native": "difference",
+      "pronunciation": "dair OON-ter-sheed",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Was ist der Unterschied?",
+          "native": "What is the difference?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_453",
+      "target": "die Lösung",
+      "native": "solution",
+      "pronunciation": "dee LOE-zoong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir suchen eine Lösung.",
+          "native": "We are looking for a solution."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_454",
+      "target": "das Problem",
+      "native": "problem",
+      "pronunciation": "das pro-BLAYM",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Problem ist kompliziert.",
+          "native": "The problem is complicated."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_455",
+      "target": "der Vorteil",
+      "native": "advantage",
+      "pronunciation": "dair FOR-tyle",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das hat viele Vorteile.",
+          "native": "That has many advantages."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_456",
+      "target": "der Nachteil",
+      "native": "disadvantage",
+      "pronunciation": "dair NAKH-tyle",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es gibt auch Nachteile.",
+          "native": "There are also disadvantages."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_457",
+      "target": "die Chance",
+      "native": "chance / opportunity",
+      "pronunciation": "dee SHAN-se",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist eine gute Chance.",
+          "native": "That is a good opportunity."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_458",
+      "target": "das Risiko",
+      "native": "risk",
+      "pronunciation": "das REE-zi-ko",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es gibt ein gewisses Risiko.",
+          "native": "There is a certain risk."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_459",
+      "target": "der Erfolg",
+      "native": "success",
+      "pronunciation": "dair air-FOLK",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Erfolg kam nach langer Arbeit.",
+          "native": "Success came after long work."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_460",
+      "target": "der Misserfolg",
+      "native": "failure",
+      "pronunciation": "dair MIS-er-folk",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Aus Misserfolg kann man lernen.",
+          "native": "You can learn from failure."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_461",
+      "target": "die Erfahrung",
+      "native": "experience",
+      "pronunciation": "dee air-FAH-roong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich habe viel Erfahrung.",
+          "native": "I have a lot of experience."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_462",
+      "target": "die Fähigkeit",
+      "native": "ability / skill",
+      "pronunciation": "dee FAY-ikh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er hat viele Fähigkeiten.",
+          "native": "He has many abilities."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_463",
+      "target": "die Möglichkeit",
+      "native": "possibility / opportunity",
+      "pronunciation": "dee MOEGH-likh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es gibt viele Möglichkeiten.",
+          "native": "There are many possibilities."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_464",
+      "target": "die Wahl",
+      "native": "choice / election",
+      "pronunciation": "dee vahl",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Du hast die Wahl.",
+          "native": "You have the choice."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_465",
+      "target": "die Entscheidung",
+      "native": "decision",
+      "pronunciation": "dee ent-SHY-doong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Eine schwierige Entscheidung.",
+          "native": "A difficult decision."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_501",
+      "target": "die Energie",
+      "native": "energy",
+      "pronunciation": "dee e-nair-GEE",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Wir sparen Energie.",
+          "native": "We save energy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_502",
+      "target": "die Luft",
+      "native": "air",
+      "pronunciation": "dee looft",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Luft ist frisch.",
+          "native": "The air is fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_503",
+      "target": "der Schatten",
+      "native": "shadow / shade",
+      "pronunciation": "dair SHAT-ten",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Im Schatten ist es kühl.",
+          "native": "It is cool in the shade."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_507",
+      "target": "der Ozean",
+      "native": "ocean",
+      "pronunciation": "dair oh-TSE-an",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Ozean ist riesig.",
+          "native": "The ocean is enormous."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_509",
+      "target": "die Wüste",
+      "native": "desert",
+      "pronunciation": "dee VOOS-te",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Wüste ist heiß.",
+          "native": "The desert is hot."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_510",
+      "target": "der Dschungel",
+      "native": "jungle",
+      "pronunciation": "dair DJOON-gel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Dschungel ist dicht.",
+          "native": "The jungle is dense."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_520",
+      "target": "die Universität",
+      "native": "university",
+      "pronunciation": "dee oo-ni-vair-zi-TAYT",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Universität hat viele Studenten.",
+          "native": "The university has many students."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_522",
+      "target": "der Anwalt",
+      "native": "lawyer (male)",
+      "pronunciation": "dair AN-valt",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Anwalt hilft mir.",
+          "native": "The lawyer helps me."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_523",
+      "target": "der Architekt",
+      "native": "architect (male)",
+      "pronunciation": "dair ar-khee-TEKT",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Architekt zeichnet Pläne.",
+          "native": "The architect draws plans."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_530",
+      "target": "das Gelenk",
+      "native": "joint",
+      "pronunciation": "das ge-LENK",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das Gelenk ist steif.",
+          "native": "The joint is stiff."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_533",
+      "target": "verliebt",
+      "native": "in love",
+      "pronunciation": "fer-LEEPT",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er ist verliebt.",
+          "native": "He is in love."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_534",
+      "target": "enttäuscht sein",
+      "native": "to be disappointed",
+      "pronunciation": "ent-TOYSHT zyne",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin sehr enttäuscht.",
+          "native": "I am very disappointed."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_536",
+      "target": "der Geschmack",
+      "native": "taste / flavor",
+      "pronunciation": "dair ge-SHMAK",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Geschmack ist ausgezeichnet.",
+          "native": "The taste is excellent."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_537",
+      "target": "süß",
+      "native": "sweet",
+      "pronunciation": "zoos",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Kuchen ist süß.",
+          "native": "The cake is sweet."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_538",
+      "target": "sauer",
+      "native": "sour / acidic",
+      "pronunciation": "ZOW-er",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Zitrone ist sauer.",
+          "native": "The lemon is sour."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_539",
+      "target": "scharf",
+      "native": "spicy / sharp",
+      "pronunciation": "sharf",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Essen ist scharf.",
+          "native": "The food is spicy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_540",
+      "target": "bitter",
+      "native": "bitter",
+      "pronunciation": "BIT-ter",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Der Kaffee ist bitter.",
+          "native": "The coffee is bitter."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_543",
+      "target": "die Besprechung leiten",
+      "native": "to lead a meeting",
+      "pronunciation": "dee be-SHPREKH-oong LY-ten",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Sie leitet die Besprechung souverän.",
+          "native": "She leads the meeting confidently."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_544",
+      "target": "präsentieren",
+      "native": "to present",
+      "pronunciation": "pray-zen-TEE-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er präsentiert die Ergebnisse.",
+          "native": "He presents the results."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_545",
+      "target": "analysieren",
+      "native": "to analyze",
+      "pronunciation": "a-na-ly-ZEE-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir analysieren die Daten.",
+          "native": "We analyze the data."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_555",
+      "target": "gleichzeitig",
+      "native": "simultaneously",
+      "pronunciation": "GLYSH-tsy-tikh",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wir arbeiten gleichzeitig.",
+          "native": "We work simultaneously."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_558",
+      "target": "einander",
+      "native": "each other / one another",
+      "pronunciation": "eye-NAN-der",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie helfen einander.",
+          "native": "They help each other."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_564",
+      "target": "derjenige",
+      "native": "the one who",
+      "pronunciation": "dair YAY-ni-ge",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Derjenige, der es tut, gewinnt.",
+          "native": "The one who does it wins."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_567",
+      "target": "das Ergebnis",
+      "native": "result / outcome",
+      "pronunciation": "das air-GAYP-nis",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Ergebnis ist positiv.",
+          "native": "The result is positive."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_568",
+      "target": "die Zusammenfassung",
+      "native": "summary",
+      "pronunciation": "dee tsoo-ZAM-men-fas-soong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Zusammenfassung ist klar.",
+          "native": "The summary is clear."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_569",
+      "target": "der Bericht",
+      "native": "report",
+      "pronunciation": "dair be-RIKH T",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Bericht ist fertig.",
+          "native": "The report is finished."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_570",
+      "target": "die Strategie",
+      "native": "strategy",
+      "pronunciation": "dee shtra-te-GEE",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Strategie muss angepasst werden.",
+          "native": "The strategy must be adjusted."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_573",
+      "target": "das Budget",
+      "native": "budget",
+      "pronunciation": "das boo-DJET",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Budget ist begrenzt.",
+          "native": "The budget is limited."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_574",
+      "target": "die Kosten",
+      "native": "costs / expenses",
+      "pronunciation": "dee KOS-ten",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Kosten sind gestiegen.",
+          "native": "The costs have risen."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_577",
+      "target": "die Investition",
+      "native": "investment",
+      "pronunciation": "dee in-ves-ti-TSYOHN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Investition lohnt sich.",
+          "native": "The investment is worthwhile."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_580",
+      "target": "der Auftrag",
+      "native": "order / commission",
+      "pronunciation": "dair OWF-trahg",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir haben einen neuen Auftrag.",
+          "native": "We have a new order."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_581",
+      "target": "die Kultur",
+      "native": "culture",
+      "pronunciation": "dee kool-TOOR",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Kultur ist reichhaltig.",
+          "native": "The culture is rich."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_582",
+      "target": "die Tradition",
+      "native": "tradition",
+      "pronunciation": "dee tra-di-TSYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Diese Tradition ist sehr alt.",
+          "native": "This tradition is very old."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_583",
+      "target": "der Brauch",
+      "native": "custom / practice",
+      "pronunciation": "dair browkh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das ist ein alter Brauch.",
+          "native": "That is an old custom."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_584",
+      "target": "die Religion",
+      "native": "religion",
+      "pronunciation": "dee re-li-GYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Religion spielt eine wichtige Rolle.",
+          "native": "Religion plays an important role."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_587",
+      "target": "das Gespräch",
+      "native": "conversation",
+      "pronunciation": "das ge-SHPREKH",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir hatten ein interessantes Gespräch.",
+          "native": "We had an interesting conversation."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_588",
+      "target": "die Diskussion",
+      "native": "discussion",
+      "pronunciation": "dee dis-koo-SYOHN",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Diskussion war lebhaft.",
+          "native": "The discussion was lively."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_591",
+      "target": "die Einstellung",
+      "native": "attitude / setting",
+      "pronunciation": "dee EYN-shtel-loong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Seine Einstellung ist positiv.",
+          "native": "His attitude is positive."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_593",
+      "target": "das Verhalten",
+      "native": "behavior",
+      "pronunciation": "das fer-HAL-ten",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sein Verhalten ist seltsam.",
+          "native": "His behavior is strange."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_596",
+      "target": "die Katastrophe",
+      "native": "catastrophe / disaster",
+      "pronunciation": "dee ka-ta-STROH-fe",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Eine Katastrophe hat das Land getroffen.",
+          "native": "A disaster struck the country."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_597",
+      "target": "das Erdbeben",
+      "native": "earthquake",
+      "pronunciation": "das AIRT-bay-ben",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Erdbeben war stark.",
+          "native": "The earthquake was strong."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_598",
+      "target": "die Überschwemmung",
+      "native": "flood",
+      "pronunciation": "dee OO-ber-shvem-moong",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Überschwemmung war verheerend.",
+          "native": "The flood was devastating."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_610",
+      "target": "das Hähnchen",
+      "native": "chicken",
+      "pronunciation": "das HAYN-khen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Hähnchen ist gebraten.",
+          "native": "The chicken is roasted."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_615",
+      "target": "der Zeuge",
+      "native": "witness",
+      "pronunciation": "dair TSOY-ge",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es gab keinen Zeugen.",
+          "native": "There was no witness."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_625",
+      "target": "die Reiseroute",
+      "native": "itinerary / route",
+      "pronunciation": "dee RY-ze-roo-te",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Reiseroute ist gut geplant.",
+          "native": "The itinerary is well planned."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_638",
+      "target": "beige",
+      "native": "beige",
+      "pronunciation": "bayzh",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Die Wand ist beige.",
+          "native": "The wall is beige."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_643",
+      "target": "die Zehe",
+      "native": "toe",
+      "pronunciation": "dee TSAY-e",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Zeh ist verletzt.",
+          "native": "The toe is injured."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_644",
+      "target": "der Ellbogen",
+      "native": "elbow",
+      "pronunciation": "dair EL-boh-gen",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Ellbogen tut weh.",
+          "native": "The elbow hurts."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_645",
+      "target": "der Daumen",
+      "native": "thumb",
+      "pronunciation": "dair DOW-men",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich habe den Daumen verletzt.",
+          "native": "I injured my thumb."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_650",
+      "target": "flüstern",
+      "native": "to whisper",
+      "pronunciation": "FLOOS-tern",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er flüstert ins Ohr.",
+          "native": "He whispers in the ear."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_655",
+      "target": "das Krankenhaus besuchen",
+      "native": "to visit hospital",
+      "pronunciation": "das KRAN-ken-hows be-ZOO-khen",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich besuche ihn im Krankenhaus.",
+          "native": "I visit him in hospital."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_657",
+      "target": "das Schwimmbad",
+      "native": "swimming pool",
+      "pronunciation": "das SHVIM-baht",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Schwimmbad hat nachmittags auf.",
+          "native": "The swimming pool opens in the afternoon."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_659",
+      "target": "die Galerie",
+      "native": "gallery",
+      "pronunciation": "dee ga-le-REE",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Galerie zeigt moderne Kunst.",
+          "native": "The gallery shows modern art."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_660",
+      "target": "das Stadion",
+      "native": "stadium",
+      "pronunciation": "das SHTA-di-on",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Stadion ist ausverkauft.",
+          "native": "The stadium is sold out."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_662",
+      "target": "die Ausbildung",
+      "native": "training / apprenticeship",
+      "pronunciation": "dee OWS-bil-doong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er macht eine Ausbildung.",
+          "native": "He is doing an apprenticeship."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_663",
+      "target": "der Praktikant",
+      "native": "intern (male)",
+      "pronunciation": "dair prak-ti-KANT",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Praktikant lernt schnell.",
+          "native": "The intern learns quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_664",
+      "target": "die Probezeit",
+      "native": "probationary period",
+      "pronunciation": "dee PROH-be-tsyte",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Probezeit dauert drei Monate.",
+          "native": "The probationary period lasts three months."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_668",
+      "target": "die Abteilung",
+      "native": "department",
+      "pronunciation": "dee ap-TY-loong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Abteilung wächst.",
+          "native": "The department is growing."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_669",
+      "target": "der Vorgesetzte",
+      "native": "supervisor / superior",
+      "pronunciation": "dair FOR-ge-zets-te",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Mein Vorgesetzter ist fair.",
+          "native": "My supervisor is fair."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_671",
+      "target": "die Sprache",
+      "native": "language",
+      "pronunciation": "dee SHPRAH-khe",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich lerne eine neue Sprache.",
+          "native": "I am learning a new language."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_672",
+      "target": "der Akzent",
+      "native": "accent",
+      "pronunciation": "dair ak-TSENT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er hat einen starken Akzent.",
+          "native": "He has a strong accent."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_673",
+      "target": "der Dialekt",
+      "native": "dialect",
+      "pronunciation": "dair di-a-LEKT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Dialekt ist schwer zu verstehen.",
+          "native": "The dialect is hard to understand."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_675",
+      "target": "übersetzen",
+      "native": "to translate",
+      "pronunciation": "OO-ber-zet-tsen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Kannst du das übersetzen?",
+          "native": "Can you translate that?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_676",
+      "target": "das Missverständnis",
+      "native": "misunderstanding",
+      "pronunciation": "das MIS-fer-shtent-nis",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Es war ein Missverständnis.",
+          "native": "It was a misunderstanding."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_678",
+      "target": "versöhnen",
+      "native": "to reconcile",
+      "pronunciation": "fer-ZOE-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie haben sich versöhnt.",
+          "native": "They reconciled."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_679",
+      "target": "die Neugier",
+      "native": "curiosity",
+      "pronunciation": "dee NOY-geer",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Neugier treibt uns an.",
+          "native": "Curiosity drives us forward."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_680",
+      "target": "die Begeisterung",
+      "native": "enthusiasm / excitement",
+      "pronunciation": "dee be-GY-ster-oong",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die Begeisterung ist ansteckend.",
+          "native": "The enthusiasm is contagious."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_683",
+      "target": "das Selbstvertrauen",
+      "native": "self-confidence",
+      "pronunciation": "das ZELBST-fer-trow-en",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er hat viel Selbstvertrauen.",
+          "native": "He has a lot of self-confidence."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_684",
+      "target": "die Geduld",
+      "native": "patience",
+      "pronunciation": "dee ge-DOOLT",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Geduld ist eine Tugend.",
+          "native": "Patience is a virtue."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_685",
+      "target": "mutig",
+      "native": "brave / courageous",
+      "pronunciation": "MOO-tikh",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie ist sehr mutig.",
+          "native": "She is very brave."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_686",
+      "target": "die Jahreszeit",
+      "native": "season",
+      "pronunciation": "dee YAH-res-tsyte",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Welche Jahreszeit magst du?",
+          "native": "Which season do you like?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_688",
+      "target": "der Nebel",
+      "native": "fog / mist",
+      "pronunciation": "dair NAY-bel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Nebel ist dicht.",
+          "native": "The fog is thick."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_691",
+      "target": "der Regenbogen",
+      "native": "rainbow",
+      "pronunciation": "dair RAY-gen-boh-gen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Ein Regenbogen erscheint nach dem Regen.",
+          "native": "A rainbow appears after the rain."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_692",
+      "target": "die Gezut",
+      "native": "tide",
+      "pronunciation": "dee ge-TSOOT",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Gezeit kommt und geht.",
+          "native": "The tide comes and goes."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_694",
+      "target": "das Ökosystem",
+      "native": "ecosystem",
+      "pronunciation": "das OE-ko-zis-taym",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Ökosystem ist fragil.",
+          "native": "The ecosystem is fragile."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_697",
+      "target": "der Reiseführer",
+      "native": "travel guide",
+      "pronunciation": "dair RY-ze-foo-rer",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Reiseführer ist sehr nützlich.",
+          "native": "The travel guide is very useful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_699",
+      "target": "die Einreise",
+      "native": "entry (into a country)",
+      "pronunciation": "dee EYN-rye-ze",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Einreise war problemlos.",
+          "native": "The entry was problem-free."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_708",
+      "target": "das Aroma",
+      "native": "aroma / fragrance",
+      "pronunciation": "das a-ROH-ma",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Aroma ist wunderbar.",
+          "native": "The aroma is wonderful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_709",
+      "target": "die Portion",
+      "native": "portion",
+      "pronunciation": "dee por-TSYOHN",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Portion ist zu groß.",
+          "native": "The portion is too big."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_710",
+      "target": "das Tiefkühlkost",
+      "native": "frozen food",
+      "pronunciation": "das TEEF-kool-kost",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Tiefkühlkost ist praktisch.",
+          "native": "Frozen food is practical."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_715",
+      "target": "zuverlässig",
+      "native": "reliable",
+      "pronunciation": "tsoo-fer-LES-sikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist sehr zuverlässig.",
+          "native": "He is very reliable."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_716",
+      "target": "kreativ",
+      "native": "creative",
+      "pronunciation": "kray-ah-TEEF",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie ist sehr kreativ.",
+          "native": "She is very creative."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_717",
+      "target": "geduldig",
+      "native": "patient",
+      "pronunciation": "ge-DOOL-dikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ein guter Lehrer ist geduldig.",
+          "native": "A good teacher is patient."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_718",
+      "target": "fleißig",
+      "native": "hardworking / diligent",
+      "pronunciation": "FLY-sikh",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie ist sehr fleißig.",
+          "native": "She is very hardworking."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_721",
+      "target": "bescheiden",
+      "native": "modest / humble",
+      "pronunciation": "be-SHY-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist trotz Erfolg bescheiden.",
+          "native": "He is modest despite success."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_727",
+      "target": "gestresst",
+      "native": "stressed",
+      "pronunciation": "ge-SHTRЕСТ",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin total gestresst.",
+          "native": "I am totally stressed."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_728",
+      "target": "erschöpft",
+      "native": "exhausted",
+      "pronunciation": "air-SHOEPFT",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin völlig erschöpft.",
+          "native": "I am completely exhausted."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_729",
+      "target": "erleichtert",
+      "native": "relieved",
+      "pronunciation": "air-LYH-tert",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin erleichtert.",
+          "native": "I am relieved."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_730",
+      "target": "begeistert",
+      "native": "enthusiastic / thrilled",
+      "pronunciation": "be-GY-stert",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bin begeistert davon.",
+          "native": "I am thrilled about it."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_750",
+      "target": "das Jubiläum",
+      "native": "anniversary / jubilee",
+      "pronunciation": "das yoo-bi-LAY-oom",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Das Unternehmen feiert sein Jubiläum.",
+          "native": "The company celebrates its anniversary."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_751",
+      "target": "der Schriftsteller",
+      "native": "writer / author (male)",
+      "pronunciation": "dair SHRIFT-shtel-ler",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Schriftsteller schreibt täglich.",
+          "native": "The writer writes daily."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_752",
+      "target": "der Künstler",
+      "native": "artist (male)",
+      "pronunciation": "dair KOONST-ler",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Künstler malt abstrakt.",
+          "native": "The artist paints abstractly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_753",
+      "target": "der Journalist",
+      "native": "journalist (male)",
+      "pronunciation": "dair zhoor-na-LIST",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Journalist recherchiert gründlich.",
+          "native": "The journalist researches thoroughly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_754",
+      "target": "der Wissenschaftler",
+      "native": "scientist (male)",
+      "pronunciation": "dair VIS-sen-shaft-ler",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Wissenschaftler forscht intensiv.",
+          "native": "The scientist researches intensively."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_757",
+      "target": "der Buchhalter",
+      "native": "accountant (male)",
+      "pronunciation": "dair BOOKH-hal-ter",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Buchhalter prüft die Zahlen.",
+          "native": "The accountant checks the numbers."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_759",
+      "target": "der Sozialarbeiter",
+      "native": "social worker (male)",
+      "pronunciation": "dair zo-TSYAHL-ar-by-ter",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Sozialarbeiter hilft Bedürftigen.",
+          "native": "The social worker helps the needy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_760",
+      "target": "der Feuerwehrmann",
+      "native": "firefighter (male)",
+      "pronunciation": "dair FOY-er-vair-man",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Feuerwehrmann ist mutig.",
+          "native": "The firefighter is brave."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_761",
+      "target": "die Geselligkeit",
+      "native": "sociability",
+      "pronunciation": "dee ge-ZEL-ikh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er schätzt die Geselligkeit.",
+          "native": "He appreciates sociability."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_762",
+      "target": "die Neuigkeit",
+      "native": "news (personal)",
+      "pronunciation": "dee NOY-ikh-kite",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Hast du Neuigkeiten?",
+          "native": "Do you have any news?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_764",
+      "target": "das Versprechen",
+      "native": "promise",
+      "pronunciation": "das fer-SHPREKH-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich halte mein Versprechen.",
+          "native": "I keep my promise."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_765",
+      "target": "die Hilfsbereitschaft",
+      "native": "willingness to help",
+      "pronunciation": "dee HILFS-be-rite-shaft",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Seine Hilfsbereitschaft ist bewundernswert.",
+          "native": "His willingness to help is admirable."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_767",
+      "target": "die Verwirrung",
+      "native": "confusion",
+      "pronunciation": "dee fer-VIR-roong",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die Verwirrung ist verständlich.",
+          "native": "The confusion is understandable."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_769",
+      "target": "der Stress",
+      "native": "stress",
+      "pronunciation": "dair shtrес",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Zu viel Stress ist ungesund.",
+          "native": "Too much stress is unhealthy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_770",
+      "target": "die Aufregung",
+      "native": "excitement / agitation",
+      "pronunciation": "dee OWF-ray-goong",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die Aufregung vor dem Spiel.",
+          "native": "The excitement before the game."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_772",
+      "target": "die Landschaft",
+      "native": "landscape / scenery",
+      "pronunciation": "dee LANT-shaft",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Landschaft ist atemberaubend.",
+          "native": "The landscape is breathtaking."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_773",
+      "target": "das Tal",
+      "native": "valley",
+      "pronunciation": "das tahl",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Das Tal ist grün.",
+          "native": "The valley is green."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_774",
+      "target": "die Insel",
+      "native": "island",
+      "pronunciation": "dee IN-zel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Insel ist ein Paradies.",
+          "native": "The island is a paradise."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_775",
+      "target": "der Gipfel",
+      "native": "summit / peak",
+      "pronunciation": "dair GIP-fel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Gipfel ist 3000 Meter hoch.",
+          "native": "The summit is 3000 meters high."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_781",
+      "target": "das Vollkornbrot",
+      "native": "whole grain bread",
+      "pronunciation": "das FOL-korn-broht",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Vollkornbrot ist gesünder.",
+          "native": "Whole grain bread is healthier."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_782",
+      "target": "die Hülsenfrüchte",
+      "native": "legumes",
+      "pronunciation": "dee HOOL-zen-froohkh-te",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Hülsenfrüchte sind proteinreich.",
+          "native": "Legumes are protein-rich."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_783",
+      "target": "das Gewürz",
+      "native": "spice",
+      "pronunciation": "das ge-VOORTS",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Das Gewürz verleiht Aroma.",
+          "native": "The spice adds aroma."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_786",
+      "target": "die Festung",
+      "native": "fortress / castle",
+      "pronunciation": "dee FES-toong",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Festung überblickt die Stadt.",
+          "native": "The fortress overlooks the city."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_787",
+      "target": "der Dom",
+      "native": "cathedral",
+      "pronunciation": "dair dohm",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Der Dom ist ein Wahrzeichen.",
+          "native": "The cathedral is a landmark."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_790",
+      "target": "die Altstadt",
+      "native": "old town",
+      "pronunciation": "dee ALT-shtat",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Altstadt hat Charme.",
+          "native": "The old town has charm."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_791",
+      "target": "die Abfahrt",
+      "native": "departure",
+      "pronunciation": "dee AP-fart",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Abfahrt ist um zehn Uhr.",
+          "native": "The departure is at ten o'clock."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_792",
+      "target": "die Ankunft",
+      "native": "arrival",
+      "pronunciation": "dee AN-koonft",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Ankunft war pünktlich.",
+          "native": "The arrival was on time."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_795",
+      "target": "das Reiseziel",
+      "native": "travel destination",
+      "pronunciation": "das RY-ze-tseel",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Unser Reiseziel ist Spanien.",
+          "native": "Our travel destination is Spain."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_796",
+      "target": "die Gleichstellung",
+      "native": "gender equality",
+      "pronunciation": "dee GLYSH-shtel-loong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Gleichstellung ist ein Grundrecht.",
+          "native": "Gender equality is a fundamental right."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_801",
+      "target": "das Formular",
+      "native": "form",
+      "pronunciation": "das for-moo-LAR",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Formular muss ausgefüllt werden.",
+          "native": "The form must be filled out."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_802",
+      "target": "der Antrag",
+      "native": "application / request",
+      "pronunciation": "dair AN-trahg",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Antrag wurde genehmigt.",
+          "native": "The application was approved."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_803",
+      "target": "die Genehmigung",
+      "native": "approval / permission",
+      "pronunciation": "dee ge-NAY-mi-goong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Genehmigung ist erteilt.",
+          "native": "The approval has been granted."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_805",
+      "target": "die Fachkenntnis",
+      "native": "expertise",
+      "pronunciation": "dee FAKH-kent-nis",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Fachkenntnisse sind gefragt.",
+          "native": "Expertise is in demand."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_809",
+      "target": "das Passwort",
+      "native": "password",
+      "pronunciation": "das PAS-vort",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Passwort ist sicher.",
+          "native": "The password is secure."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_810",
+      "target": "das Internet",
+      "native": "internet",
+      "pronunciation": "das IN-ter-net",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das Internet verbindet Menschen.",
+          "native": "The internet connects people."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_811",
+      "target": "die Webseite",
+      "native": "website",
+      "pronunciation": "dee VEB-zy-te",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die Webseite ist aktuell.",
+          "native": "The website is current."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_812",
+      "target": "die App",
+      "native": "app",
+      "pronunciation": "dee ap",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Die App ist kostenlos.",
+          "native": "The app is free."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_813",
+      "target": "die Präsentation",
+      "native": "presentation",
+      "pronunciation": "dee pray-zen-ta-TSYOHN",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Präsentation war überzeugend.",
+          "native": "The presentation was convincing."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_814",
+      "target": "der Besprechungsraum",
+      "native": "meeting room",
+      "pronunciation": "dair be-SHPREKH-oonks-rowm",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir treffen uns im Besprechungsraum.",
+          "native": "We meet in the meeting room."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_815",
+      "target": "der Arbeitsplatz",
+      "native": "workplace",
+      "pronunciation": "dair AR-byts-plats",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ein guter Arbeitsplatz ist wichtig.",
+          "native": "A good workplace is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_817",
+      "target": "trösten",
+      "native": "to comfort",
+      "pronunciation": "TROE-sten",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie tröstet das weinende Kind.",
+          "native": "She comforts the crying child."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_818",
+      "target": "ermutigen",
+      "native": "to encourage",
+      "pronunciation": "air-MOO-ti-gen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Sie ermutigt ihn.",
+          "native": "She encourages him."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_824",
+      "target": "der Blutdruck",
+      "native": "blood pressure",
+      "pronunciation": "dair BLOOT-drook",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Mein Blutdruck ist normal.",
+          "native": "My blood pressure is normal."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_825",
+      "target": "die Allergie",
+      "native": "allergy",
+      "pronunciation": "dee a-lair-GEE",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich habe eine Allergie.",
+          "native": "I have an allergy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_829",
+      "target": "der Arzttermin",
+      "native": "doctor's appointment",
+      "pronunciation": "dair ARTST-ter-meen",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich habe morgen einen Arzttermin.",
+          "native": "I have a doctor's appointment tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_830",
+      "target": "die Operation",
+      "native": "operation / surgery",
+      "pronunciation": "dee o-pe-ra-TSYOHN",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Die Operation war erfolgreich.",
+          "native": "The operation was successful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_837",
+      "target": "das Erdgeschoss",
+      "native": "ground floor",
+      "pronunciation": "das AIRT-ge-shos",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Büro liegt im Erdgeschoss.",
+          "native": "The office is on the ground floor."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_839",
+      "target": "mehrfach",
+      "native": "multiple times",
+      "pronunciation": "MAIR-fakh",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Das ist mehrfach passiert.",
+          "native": "That happened multiple times."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_840",
+      "target": "die Summe",
+      "native": "sum / total",
+      "pronunciation": "dee ZOO-me",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Summe ist korrekt.",
+          "native": "The sum is correct."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_842",
+      "target": "der Kontrast",
+      "native": "contrast",
+      "pronunciation": "dair kon-TRAST",
+      "category": "Colors",
+      "examples": [
+        {
+          "target": "Der Kontrast ist stark.",
+          "native": "The contrast is strong."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_845",
+      "target": "das Protokoll",
+      "native": "minutes / protocol",
+      "pronunciation": "das pro-to-KOL",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Protokoll wurde geschrieben.",
+          "native": "The minutes were written."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_846",
+      "target": "die Stellenanzeige",
+      "native": "job advertisement",
+      "pronunciation": "dee SHTEL-len-an-tsy-ge",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Stellenanzeige ist online.",
+          "native": "The job advertisement is online."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_847",
+      "target": "das Zeugnis",
+      "native": "reference / certificate",
+      "pronunciation": "das TSOYG-nis",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Das Zeugnis ist sehr gut.",
+          "native": "The reference is very good."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_863",
+      "target": "bewerben",
+      "native": "to apply (for a job)",
+      "pronunciation": "be-VAIR-ben",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich bewerbe mich um die Stelle.",
+          "native": "I apply for the position."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_864",
+      "target": "kündigen",
+      "native": "to resign / terminate",
+      "pronunciation": "KOON-di-gen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er kündigt seinen Job.",
+          "native": "He resigns from his job."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_865",
+      "target": "verhandeln",
+      "native": "to negotiate",
+      "pronunciation": "fer-HAN-deln",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir verhandeln über den Preis.",
+          "native": "We negotiate about the price."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_866",
+      "target": "widersprechen",
+      "native": "to contradict",
+      "pronunciation": "VEE-der-shprekh-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er widerspricht oft.",
+          "native": "He often contradicts."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_867",
+      "target": "überzeugen",
+      "native": "to convince",
+      "pronunciation": "OO-ber-tsoy-gen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich versuche ihn zu überzeugen.",
+          "native": "I try to convince him."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_871",
+      "target": "pflanzen",
+      "native": "to plant",
+      "pronunciation": "PFLAN-tsen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Wir pflanzen Blumen.",
+          "native": "We plant flowers."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_872",
+      "target": "ernten",
+      "native": "to harvest",
+      "pronunciation": "AIRT-en",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Im Herbst ernten wir Äpfel.",
+          "native": "In autumn we harvest apples."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_875",
+      "target": "backen",
+      "native": "to bake",
+      "pronunciation": "BAK-ken",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich backe einen Kuchen.",
+          "native": "I bake a cake."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_876",
+      "target": "braten",
+      "native": "to roast / fry",
+      "pronunciation": "BRAH-ten",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich brate das Fleisch.",
+          "native": "I roast the meat."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_877",
+      "target": "grillen",
+      "native": "to grill / barbecue",
+      "pronunciation": "GRIL-len",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Im Sommer grille ich gerne.",
+          "native": "In summer I like to grill."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_879",
+      "target": "würzen",
+      "native": "to season",
+      "pronunciation": "VOOR-tsen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Ich würze das Essen.",
+          "native": "I season the food."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_882",
+      "target": "zustimmen",
+      "native": "to agree",
+      "pronunciation": "TSOO-shtim-men",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich stimme zu.",
+          "native": "I agree."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_883",
+      "target": "ablehnen",
+      "native": "to decline / refuse",
+      "pronunciation": "AP-lay-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich lehne das Angebot ab.",
+          "native": "I decline the offer."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_884",
+      "target": "nachdenken",
+      "native": "to think about / reflect",
+      "pronunciation": "NAKH-denk-en",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Ich denke darüber nach.",
+          "native": "I think about it."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_885",
+      "target": "planen",
+      "native": "to plan",
+      "pronunciation": "PLAH-nen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir planen einen Ausflug.",
+          "native": "We plan an outing."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_887",
+      "target": "lösen",
+      "native": "to solve / dissolve",
+      "pronunciation": "LOE-zen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Wir müssen das Problem lösen.",
+          "native": "We must solve the problem."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_888",
+      "target": "verbinden",
+      "native": "to connect / combine",
+      "pronunciation": "fer-BIN-den",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Das verbindet uns.",
+          "native": "That connects us."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_893",
+      "target": "genießen",
+      "native": "to enjoy / savor",
+      "pronunciation": "ge-NEE-ssen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich genieße den Moment.",
+          "native": "I enjoy the moment."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_894",
+      "target": "bereuen",
+      "native": "to regret",
+      "pronunciation": "be-ROY-en",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich bereue die Entscheidung.",
+          "native": "I regret the decision."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_895",
+      "target": "fürchten",
+      "native": "to fear",
+      "pronunciation": "FOOR-khten",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er fürchtet das Versagen.",
+          "native": "He fears failure."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_897",
+      "target": "staunen",
+      "native": "to be amazed / astonished",
+      "pronunciation": "SHTOW-nen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich staunte über die Schönheit.",
+          "native": "I was amazed at the beauty."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_899",
+      "target": "anerkennen",
+      "native": "to acknowledge / recognize",
+      "pronunciation": "AN-er-ken-nen",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich erkenne deinen Mut an.",
+          "native": "I acknowledge your courage."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_904",
+      "target": "der Aufenthalt",
+      "native": "stay / stopover",
+      "pronunciation": "dair OWF-ent-halt",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Der Aufenthalt war wunderbar.",
+          "native": "The stay was wonderful."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_905",
+      "target": "die Reiseversicherung",
+      "native": "travel insurance",
+      "pronunciation": "dee RY-ze-fer-zi-kher-oong",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Reiseversicherung ist wichtig.",
+          "native": "Travel insurance is important."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_907",
+      "target": "die Agenda",
+      "native": "agenda",
+      "pronunciation": "dee a-GEN-da",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Was steht auf der Agenda?",
+          "native": "What is on the agenda?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_908",
+      "target": "das Protokoll führen",
+      "native": "to take minutes",
+      "pronunciation": "das pro-to-KOL FOO-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wer führt das Protokoll?",
+          "native": "Who takes the minutes?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_913",
+      "target": "der Mentor",
+      "native": "mentor",
+      "pronunciation": "dair MEN-tor",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist mein Mentor.",
+          "native": "He is my mentor."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_915",
+      "target": "der Konkurrent",
+      "native": "competitor",
+      "pronunciation": "dair kon-koor-RENT",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Er ist mein größter Konkurrent.",
+          "native": "He is my biggest competitor."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_917",
+      "target": "das Skelett",
+      "native": "skeleton",
+      "pronunciation": "das ske-LET",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das Skelett besteht aus Knochen.",
+          "native": "The skeleton consists of bones."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_918",
+      "target": "der Knochen",
+      "native": "bone",
+      "pronunciation": "dair KNOKH-en",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Der Knochen ist gebrochen.",
+          "native": "The bone is broken."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_919",
+      "target": "der Nerv",
+      "native": "nerve",
+      "pronunciation": "dair nairf",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Das geht mir auf die Nerven.",
+          "native": "That gets on my nerves."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_923",
+      "target": "die Wurzel",
+      "native": "root",
+      "pronunciation": "dee VOOR-tsel",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Wurzel ist tief.",
+          "native": "The root is deep."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_924",
+      "target": "der Ast",
+      "native": "branch",
+      "pronunciation": "dair ast",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Ast ist hoch.",
+          "native": "The branch is high."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_925",
+      "target": "der Pilz",
+      "native": "mushroom / fungus",
+      "pronunciation": "dair pilts",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Pilz wächst im Wald.",
+          "native": "The mushroom grows in the forest."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_929",
+      "target": "die Paprika",
+      "native": "bell pepper / paprika",
+      "pronunciation": "dee PAP-ree-ka",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Paprika ist rot.",
+          "native": "The bell pepper is red."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_930",
+      "target": "die Gurke",
+      "native": "cucumber",
+      "pronunciation": "dee GOOR-ke",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Gurke ist frisch.",
+          "native": "The cucumber is fresh."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_933",
+      "target": "die Zeitzone",
+      "native": "time zone",
+      "pronunciation": "dee TSYTE-tsoh-ne",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Deutschland liegt in einer Zeitzone.",
+          "native": "Germany is in one time zone."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_934",
+      "target": "die Sommerzeit",
+      "native": "summer time / daylight saving",
+      "pronunciation": "dee ZOM-mer-tsyte",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Die Sommerzeit beginnt im März.",
+          "native": "Summer time starts in March."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_938",
+      "target": "berechnen",
+      "native": "to calculate",
+      "pronunciation": "be-REKH-nen",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Ich berechne die Kosten.",
+          "native": "I calculate the costs."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_939",
+      "target": "die Gleichung",
+      "native": "equation",
+      "pronunciation": "dee GLYSH-oong",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Gleichung ist schwierig.",
+          "native": "The equation is difficult."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_941",
+      "target": "die Deadline",
+      "native": "deadline",
+      "pronunciation": "dee DED-lyne",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Deadline ist morgen.",
+          "native": "The deadline is tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_942",
+      "target": "der Zeitplan",
+      "native": "schedule / timetable",
+      "pronunciation": "dair TSYTE-plahn",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Der Zeitplan ist eng.",
+          "native": "The schedule is tight."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_944",
+      "target": "die Zuversicht",
+      "native": "confidence / optimism",
+      "pronunciation": "dee TSOO-fer-zikht",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich habe Zuversicht.",
+          "native": "I have confidence."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_946",
+      "target": "die Touristenattraktion",
+      "native": "tourist attraction",
+      "pronunciation": "dee too-RIS-ten-at-rak-tsyohn",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Touristenattraktion ist beeindruckend.",
+          "native": "The tourist attraction is impressive."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_948",
+      "target": "die Unterkunft reservieren",
+      "native": "to reserve accommodation",
+      "pronunciation": "dee OON-ter-koonft re-zair-VEE-ren",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich reserviere die Unterkunft.",
+          "native": "I reserve the accommodation."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_955",
+      "target": "das Rechenzentrum",
+      "native": "data center",
+      "pronunciation": "das REKH-en-tsen-troom",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Das Rechenzentrum verarbeitet Daten.",
+          "native": "The data center processes data."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_958",
+      "target": "die Vorspeise",
+      "native": "starter / appetizer",
+      "pronunciation": "dee FOR-shpy-ze",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Die Vorspeise war lecker.",
+          "native": "The starter was delicious."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_960",
+      "target": "der Aperitif",
+      "native": "aperitif",
+      "pronunciation": "dair a-pe-ri-TEEF",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Wir trinken einen Aperitif.",
+          "native": "We drink an aperitif."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_962",
+      "target": "trainieren",
+      "native": "to train / exercise",
+      "pronunciation": "tray-NEE-ren",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich trainiere dreimal die Woche.",
+          "native": "I train three times a week."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_963",
+      "target": "dehnen",
+      "native": "to stretch",
+      "pronunciation": "DAY-nen",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Ich dehne mich nach dem Sport.",
+          "native": "I stretch after sport."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_965",
+      "target": "die Kraft",
+      "native": "strength / power",
+      "pronunciation": "dee kraft",
+      "category": "Body",
+      "examples": [
+        {
+          "target": "Er hat viel Kraft.",
+          "native": "He has a lot of strength."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_967",
+      "target": "sich schämen",
+      "native": "to be ashamed",
+      "pronunciation": "zikh SHAY-men",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er schämt sich.",
+          "native": "He is ashamed."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_968",
+      "target": "neiden",
+      "native": "to envy",
+      "pronunciation": "NY-den",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich beneide ihn um seinen Erfolg.",
+          "native": "I envy him his success."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_971",
+      "target": "zwitschern",
+      "native": "to chirp / tweet",
+      "pronunciation": "TSVI-shern",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Vögel zwitschern morgens.",
+          "native": "The birds chirp in the morning."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_972",
+      "target": "blühen",
+      "native": "to bloom / blossom",
+      "pronunciation": "BLOO-en",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Die Blumen blühen im Frühling.",
+          "native": "The flowers bloom in spring."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_973",
+      "target": "wachsen",
+      "native": "to grow",
+      "pronunciation": "VAK-sen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Baum wächst schnell.",
+          "native": "The tree grows quickly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_974",
+      "target": "fließen",
+      "native": "to flow",
+      "pronunciation": "FLEE-ssen",
+      "category": "Nature",
+      "examples": [
+        {
+          "target": "Der Fluss fließt ins Meer.",
+          "native": "The river flows into the sea."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_976",
+      "target": "erkunden",
+      "native": "to explore",
+      "pronunciation": "air-KOON-den",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir erkunden die Stadt.",
+          "native": "We explore the city."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_977",
+      "target": "besichtigen",
+      "native": "to visit / tour (a sight)",
+      "pronunciation": "be-ZIKH-ti-gen",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Wir besichtigen das Museum.",
+          "native": "We tour the museum."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_978",
+      "target": "fotografieren",
+      "native": "to take photos",
+      "pronunciation": "fo-to-gra-FEE-ren",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Ich fotografiere gerne.",
+          "native": "I like to take photos."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_982",
+      "target": "die Prüfung",
+      "native": "exam / test",
+      "pronunciation": "dee PROO-foong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Die Prüfung war schwer.",
+          "native": "The exam was hard."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_983",
+      "target": "bestehen",
+      "native": "to pass (exam)",
+      "pronunciation": "be-SHTAY-en",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich habe die Prüfung bestanden.",
+          "native": "I passed the exam."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_984",
+      "target": "durchfallen",
+      "native": "to fail (exam)",
+      "pronunciation": "DOORKH-fal-len",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Er ist durch die Prüfung gefallen.",
+          "native": "He failed the exam."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_985",
+      "target": "forschen",
+      "native": "to research",
+      "pronunciation": "FOR-shen",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich forsche auf diesem Gebiet.",
+          "native": "I research in this field."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_989",
+      "target": "vorlesen",
+      "native": "to read aloud",
+      "pronunciation": "FOR-lay-zen",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie liest dem Kind vor.",
+          "native": "She reads aloud to the child."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_990",
+      "target": "korrigieren",
+      "native": "to correct",
+      "pronunciation": "ko-ri-GEE-ren",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Der Lehrer korrigiert die Fehler.",
+          "native": "The teacher corrects the mistakes."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_995",
+      "target": "die Stadtmitte",
+      "native": "city center / downtown",
+      "pronunciation": "dee SHTAT-mit-te",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Die Stadtmitte ist belebt.",
+          "native": "The city center is busy."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_996",
+      "target": "die Formel",
+      "native": "formula",
+      "pronunciation": "dee FOR-mel",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Formel ist komplex.",
+          "native": "The formula is complex."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_998",
+      "target": "der Zeitraum",
+      "native": "period (of time)",
+      "pronunciation": "dair TSYTE-rowm",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "In welchem Zeitraum?",
+          "native": "In what time period?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_999",
+      "target": "die Voraussetzung",
+      "native": "requirement / prerequisite",
+      "pronunciation": "dee FOR-ows-zet-soong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Gute Deutschkenntnisse sind eine wichtige Voraussetzung.",
+          "native": "Good German skills are an important requirement."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1000",
+      "target": "zuständig",
+      "native": "responsible / in charge",
+      "pronunciation": "TSOO-shten-dikh",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Frau Keller ist für dieses Projekt zuständig.",
+          "native": "Ms. Keller is responsible for this project."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1001",
+      "target": "die Rückmeldung",
+      "native": "feedback / response",
+      "pronunciation": "dee RUEK-mel-doong",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Ich warte noch auf die Rückmeldung vom Chef.",
+          "native": "I am still waiting for feedback from the boss."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1002",
+      "target": "vereinbaren",
+      "native": "to arrange / agree on",
+      "pronunciation": "fer-EYN-bah-ren",
+      "category": "Work",
+      "examples": [
+        {
+          "target": "Wir haben einen Termin für nächste Woche vereinbart.",
+          "native": "We arranged an appointment for next week."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1003",
+      "target": "die Herausforderung",
+      "native": "challenge",
+      "pronunciation": "dee her-OUS-for-de-roong",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Die neue Aufgabe ist eine echte Herausforderung.",
+          "native": "The new task is a real challenge."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1004",
+      "target": "überrascht",
+      "native": "surprised",
+      "pronunciation": "ue-ber-RASHT",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Ich war überrascht über die gute Nachricht.",
+          "native": "I was surprised by the good news."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1005",
+      "target": "enttäuscht",
+      "native": "disappointed",
+      "pronunciation": "ent-TOYSHT",
+      "category": "Emotions",
+      "examples": [
+        {
+          "target": "Er war enttäuscht vom Ergebnis.",
+          "native": "He was disappointed with the result."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1006",
+      "target": "die Gewohnheiten",
+      "native": "habits",
+      "pronunciation": "dee ge-VOHN-hy-ten",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Alte Gewohnheiten ändern sich nur langsam.",
+          "native": "Old habits change only slowly."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1007",
+      "target": "rechtzeitig ankommen",
+      "native": "to arrive on time",
+      "pronunciation": "REKHT-tsy-tikh AN-kom-men",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Wenn wir jetzt losfahren, kommen wir rechtzeitig an.",
+          "native": "If we leave now, we will arrive on time."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1008",
+      "target": "der Feierabend",
+      "native": "end of the workday",
+      "pronunciation": "dair FY-er-ah-bent",
+      "category": "Time",
+      "examples": [
+        {
+          "target": "Nach Feierabend gehe ich direkt nach Hause.",
+          "native": "After work I go straight home."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1009",
+      "target": "die Mahlzeit",
+      "native": "meal",
+      "pronunciation": "dee MAHL-tsyte",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Wir bekommen im Hotel drei Mahlzeiten pro Tag.",
+          "native": "We get three meals per day at the hotel."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1010",
+      "target": "würzen",
+      "native": "to season",
+      "pronunciation": "VUER-tsen",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Du solltest die Suppe etwas stärker würzen.",
+          "native": "You should season the soup a bit more."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1011",
+      "target": "das Gericht",
+      "native": "dish / meal",
+      "pronunciation": "das ge-RIKHT",
+      "category": "Food & Drink",
+      "examples": [
+        {
+          "target": "Dieses Gericht ist typisch für die Region.",
+          "native": "This dish is typical for the region."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1012",
+      "target": "die Menge",
+      "native": "quantity / amount",
+      "pronunciation": "dee MEN-ge",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Die Menge an Informationen war zu groß.",
+          "native": "The amount of information was too large."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1013",
+      "target": "schätzen",
+      "native": "to estimate",
+      "pronunciation": "SHETS-en",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Kannst du die Kosten ungefähr schätzen?",
+          "native": "Can you roughly estimate the costs?"
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1014",
+      "target": "der Durchschnitt",
+      "native": "average",
+      "pronunciation": "dair DOORKH-shnit",
+      "category": "Numbers",
+      "examples": [
+        {
+          "target": "Der Durchschnitt liegt bei etwa zehn Prozent.",
+          "native": "The average is about ten percent."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1015",
+      "target": "die Gegend",
+      "native": "area / neighborhood",
+      "pronunciation": "dee GAY-gent",
+      "category": "Places",
+      "examples": [
+        {
+          "target": "Ich kenne diese Gegend noch nicht gut.",
+          "native": "I do not know this area well yet."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1016",
+      "target": "die Unterkunftsmöglichkeiten",
+      "native": "accommodation options",
+      "pronunciation": "dee OON-ter-koonfts-moeg-likh-ky-ten",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Vor der Reise informierten wir uns über die Unterkunftsmöglichkeiten.",
+          "native": "Before the trip we informed ourselves about the accommodation options."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1017",
+      "target": "sich orientieren",
+      "native": "to find one's way / orient oneself",
+      "pronunciation": "zikh o-ri-en-TEE-ren",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "In einer fremden Stadt muss man sich erst orientieren.",
+          "native": "In a foreign city you first have to find your way."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1018",
+      "target": "die Verbindung",
+      "native": "connection",
+      "pronunciation": "dee fer-BIN-doong",
+      "category": "Travel",
+      "examples": [
+        {
+          "target": "Die Verbindung nach Berlin ist heute günstig.",
+          "native": "The connection to Berlin is convenient today."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1019",
+      "target": "die Beziehung",
+      "native": "relationship",
+      "pronunciation": "dee be-TSYOO-hoong",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Sie haben eine gute Beziehung zu ihren Nachbarn.",
+          "native": "They have a good relationship with their neighbors."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1020",
+      "target": "sich verhalten",
+      "native": "to behave",
+      "pronunciation": "zikh fer-HAL-ten",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Kinder sollen sich in der Schule ruhig verhalten.",
+          "native": "Children should behave calmly at school."
+        }
+      ]
+    },
+    {
+      "id": "de_b1_1021",
+      "target": "die Rücksicht",
+      "native": "consideration",
+      "pronunciation": "dee RUEK-zikht",
+      "category": "People & Family",
+      "examples": [
+        {
+          "target": "Im Bus sollte man Rücksicht auf andere nehmen.",
+          "native": "On the bus one should show consideration for others."
+        }
+      ]
+    }
+  ]
+}
