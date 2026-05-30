@@ -57,7 +57,7 @@ flashcard-app/
 
 **No installation needed** — use the app right now on GitHub Pages:
 
-[**→ Open Live Demo**](https://yourusername.github.io/flashcards)
+[**→ Open Live Demo**](https://ehabelrify.github.io/karta)
 
 The app works fully offline after the first load and can be installed on your phone home screen.
 
