@@ -45,6 +45,8 @@ async function boot() {
   }
   bindNav();
   bindAdd();
+  initSwipeGestures();
+  loadStreakData();
 }
 
 // ── Activate a language ──
@@ -54,9 +56,14 @@ function activateLanguage(lang, loadedWords) {
   const custom = SRS.getCustomWords(lang.code);
   State.allWords = [...(loadedWords || []), ...custom];
   document.documentElement.dir = lang.dir || 'ltr';
+  
+  // Hide loading screen
+  document.getElementById('loading-screen').classList.add('hidden');
+  
   renderHome();
   showScreen('home');
   updateNavForHome();
+  updateLanguageIndicator(lang);
 }
 
 // ── Language Picker (shown when >1 language available) ──
@@ -66,7 +73,7 @@ function showLanguagePicker() {
 
   const title = document.createElement('div');
   title.className = 'home-header';
-  title.innerHTML = '<h1>Flashcards</h1><p>Choose a language to study</p>';
+  title.innerHTML = '<h1>Karta</h1><p>Choose a language to study</p>';
   screen.appendChild(title);
 
   const grid = document.createElement('div');
@@ -88,13 +95,16 @@ function showLanguagePicker() {
   }
   screen.appendChild(grid);
   showScreen('lang-pick');
-  document.getElementById('nav-title').textContent = '📚 Flashcards';
+  document.getElementById('nav-title').style.display = 'none';
+  document.getElementById('nav-wordmark').style.display = 'block';
   document.getElementById('nav-back').style.display = 'none';
 }
 
 // Dynamically load a language's JSON data files
 async function loadLanguage(lang) {
   try {
+    // Show loading spinner with language name
+    document.getElementById('loading-text').textContent = `Loading ${lang.name} words…`;
     // Load all JSON files for this language
     const promises = lang.dataFiles.map(file =>
       fetch(file).then(response => {
@@ -160,14 +170,26 @@ function renderHome() {
   const allIds = State.allWords.map(w => w.id);
   const stats = SRS.getStats(allIds, lang.code);
 
-  document.getElementById('nav-title').textContent = `${lang.flag} ${lang.name}`;
+  // Remove skeleton loading state
+  document.getElementById('stat-card-seen').classList.remove('skeleton');
+  document.getElementById('stat-card-mastered').classList.remove('skeleton');
+  document.getElementById('stat-card-due').classList.remove('skeleton');
+
   document.getElementById('stat-total').textContent = stats.seen;
   document.getElementById('stat-mastered').textContent = stats.mastered;
   document.getElementById('stat-due').textContent = stats.due;
 
-  // Subtitle
-  const subtitle = document.getElementById('home-subtitle');
-  subtitle.textContent = `${State.allWords.length} words · ${lang.levelSystem} · Smart review`;
+  // Update "Review All Due" button
+  const reviewDueBtn = document.getElementById('review-due-btn');
+  if (stats.due > 0) {
+    reviewDueBtn.classList.remove('hidden');
+    document.getElementById('review-due-sub').textContent = `${stats.due} words due today`;
+    reviewDueBtn.onclick = () => {
+      startReview(allIds, null, null);
+    };
+  } else {
+    reviewDueBtn.classList.add('hidden');
+  }
 
   const grid = document.getElementById('level-grid');
   grid.innerHTML = '';
@@ -188,6 +210,7 @@ function renderHome() {
         <div class="level-sub">${ids.length} words · ${s.mastered} mastered</div>
         <div class="level-progress">
           <div class="level-progress-fill" style="width:${pct}%"></div>
+          <div class="level-progress-pct">${pct}%</div>
         </div>
       </div>
       ${s.due > 0 ? `<div class="due-badge">${s.due} due</div>` : ''}
@@ -196,6 +219,9 @@ function renderHome() {
     card.addEventListener('click', () => openLevel(lvl));
     grid.appendChild(card);
   }
+  
+  // Update streak display
+  updateStreakDisplay();
 }
 
 // ── Level View ──
@@ -236,14 +262,14 @@ function renderCategories(level) {
     const icon = CAT_ICONS[cat] || CAT_ICONS['default'];
 
     const card = document.createElement('div');
-    card.className = 'category-card';
+    card.className = `category-card ${s.due === 0 ? 'dimmed' : ''}`;
     card.innerHTML = `
       <div class="cat-icon">${icon}</div>
       <div class="cat-info">
         <div class="cat-name">${cat}</div>
         <div class="cat-sub">${ids.length} words · ${s.mastered} mastered</div>
       </div>
-      ${s.due > 0 ? `<div class="cat-due">${s.due} due</div>` : ''}
+      ${s.due > 0 ? `<div class="cat-due">${s.due} due</div>` : '<div class="cat-due" style="opacity:0.3;">0 due</div>'}
       <div class="cat-arrow">›</div>
     `;
     card.addEventListener('click', () => startReview(ids, level, cat));
@@ -263,10 +289,16 @@ function startReview(wordIds, level, category) {
   State.reviewIndex = 0;
   State.sessionStats = { again: 0, good: 0, easy: 0 };
   State.cardRevealed = false;
+  State.swipeShown = false; // Track if swipe hint has been shown
 
   showScreen('review');
-  document.getElementById('nav-title').textContent = category
-    ? `${level} · ${category}` : level;
+  if (category) {
+    document.getElementById('nav-title').textContent = `${level} · ${category}`;
+  } else if (level) {
+    document.getElementById('nav-title').textContent = level;
+  } else {
+    document.getElementById('nav-title').textContent = 'Review All';
+  }
   document.getElementById('nav-back').style.display = '';
   document.getElementById('nav-add').style.display = 'none';
 
@@ -314,10 +346,29 @@ function renderCard() {
 
   const area = document.getElementById('card-area');
   
+  // Show swipe hint on first card
+  if (!State.swipeShown) {
+    const hint = document.getElementById('swipe-instruction');
+    hint.classList.add('visible');
+    State.swipeShown = true;
+    setTimeout(() => hint.classList.remove('visible'), 3000);
+  }
+  
   // Create flashcard structure safely using DOM methods
   const flashcard = document.createElement('div');
   flashcard.className = 'flashcard';
   flashcard.id = 'flashcard';
+  
+  // Add swipe hint overlays
+  const swipeHintLeft = document.createElement('div');
+  swipeHintLeft.className = 'swipe-hint swipe-hint-left';
+  swipeHintLeft.textContent = '↶ Again';
+  flashcard.appendChild(swipeHintLeft);
+  
+  const swipeHintRight = document.createElement('div');
+  swipeHintRight.className = 'swipe-hint swipe-hint-right';
+  swipeHintRight.textContent = 'Easy ↷';
+  flashcard.appendChild(swipeHintRight);
   
   // Card meta
   const cardMeta = document.createElement('div');
@@ -447,21 +498,79 @@ function renderCard() {
   againBtn.className = 'answer-btn btn-again';
   againBtn.setAttribute('data-q', 'again');
   againBtn.innerHTML = 'Again <span class="btn-sub">10 min</span>';
+  againBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    hapticFeedback();
+    handleAnswer('again');
+  });
   answerBtns.appendChild(againBtn);
   
   const goodBtn = document.createElement('button');
   goodBtn.className = 'answer-btn btn-good';
   goodBtn.setAttribute('data-q', 'good');
   goodBtn.innerHTML = `Good <span class="btn-sub">+${getNextInterval(cardState,'good')}d</span>`;
+  goodBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    hapticFeedback();
+    handleAnswer('good');
+  });
   answerBtns.appendChild(goodBtn);
   
   const easyBtn = document.createElement('button');
   easyBtn.className = 'answer-btn btn-easy';
   easyBtn.setAttribute('data-q', 'easy');
   easyBtn.innerHTML = `Easy <span class="btn-sub">+${getNextInterval(cardState,'easy')}d</span>`;
+  easyBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    hapticFeedback();
+    handleAnswer('easy');
+  });
   answerBtns.appendChild(easyBtn);
   
   area.appendChild(answerBtns);
+
+  // Add swipe gesture handling
+  let touchStartX = 0, touchStartY = 0;
+  flashcard.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, false);
+  
+  flashcard.addEventListener('touchmove', (e) => {
+    if (!State.cardRevealed) return;
+    const touchCurrentX = e.touches[0].clientX;
+    const deltaX = touchCurrentX - touchStartX;
+    const deltaY = Math.abs(e.touches[0].clientY - touchStartY);
+    
+    // Only swipe if primarily horizontal
+    if (Math.abs(deltaX) > deltaY * 2) {
+      if (deltaX < -30) {
+        flashcard.classList.add('swiping-left');
+        flashcard.classList.remove('swiping-right');
+      } else if (deltaX > 30) {
+        flashcard.classList.add('swiping-right');
+        flashcard.classList.remove('swiping-left');
+      } else {
+        flashcard.classList.remove('swiping-left', 'swiping-right');
+      }
+    }
+  }, false);
+  
+  flashcard.addEventListener('touchend', (e) => {
+    if (!State.cardRevealed) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+    flashcard.classList.remove('swiping-left', 'swiping-right');
+    
+    if (Math.abs(deltaX) > 80) {
+      hapticFeedback();
+      if (deltaX < 0) {
+        handleAnswer('again');
+      } else {
+        handleAnswer('easy');
+      }
+    }
+  }, false);
 
   document.getElementById('flashcard').addEventListener('click', revealCard);
   document.getElementById('reveal-btn').addEventListener('click', revealCard);
@@ -471,6 +580,7 @@ function renderCard() {
   if (speakBtnElement) {
     speakBtnElement.addEventListener('click', e => {
       e.stopPropagation();
+      hapticFeedback();
       pronounceWord(targetText, lang.code);
     });
   }
@@ -537,6 +647,7 @@ function pronounceWord(word, langCode) {
 function revealCard() {
   if (State.cardRevealed) return;
   State.cardRevealed = true;
+  hapticFeedback();
   document.getElementById('card-back').classList.add('revealed');
   document.getElementById('tap-hint').style.display = 'none';
   document.getElementById('reveal-btn').style.display = 'none';
@@ -560,6 +671,7 @@ function handleAnswer(quality) {
 }
 
 function showDone() {
+  updateStreakOnSessionComplete();
   showScreen('done-view');
   document.getElementById('nav-title').textContent = 'Session Done';
   document.getElementById('nav-add').style.display = '';
@@ -727,6 +839,8 @@ function goHome() {
 function updateNavForHome() {
   const lang = getLang();
   document.getElementById('nav-title').textContent = `${lang.flag} ${lang.name}`;
+  document.getElementById('nav-title').style.display = 'block';
+  document.getElementById('nav-wordmark').style.display = 'none';
   document.getElementById('nav-back').style.display =
     LANGUAGE_REGISTRY.length > 1 ? '' : 'none';
   document.getElementById('nav-add').style.display = '';
@@ -741,6 +855,73 @@ function showError(msg) {
   document.body.innerHTML = `<div style="padding:40px;text-align:center;color:#c0392b;font-family:sans-serif">
     <div style="font-size:32px">⚠️</div><div style="margin-top:12px">${msg}</div>
   </div>`;
+}
+
+// ── Haptic Feedback ──
+function hapticFeedback() {
+  if (navigator.vibrate) {
+    navigator.vibrate(10);
+  }
+}
+
+// ── Streak System ──
+function loadStreakData() {
+  const today = new Date().toDateString();
+  const lastReviewStr = localStorage.getItem('lastReviewDate');
+  const streakCount = parseInt(localStorage.getItem('streakCount') || '0', 10);
+  
+  State.lastReviewDate = lastReviewStr;
+  State.streakCount = streakCount;
+}
+
+function updateStreakDisplay() {
+  const streakBanner = document.getElementById('streak-banner');
+  if (State.streakCount > 0) {
+    streakBanner.classList.add('visible');
+    const countText = State.streakCount === 1 ? 'day' : 'days';
+    document.getElementById('streak-count').textContent = `${State.streakCount} ${countText} streak 🔥`;
+  } else {
+    streakBanner.classList.remove('visible');
+  }
+}
+
+function updateStreakOnSessionComplete() {
+  const today = new Date().toDateString();
+  const lastReviewDate = localStorage.getItem('lastReviewDate');
+  
+  if (lastReviewDate === today) {
+    // Already reviewed today, streak is maintained
+    return;
+  }
+  
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  
+  if (lastReviewDate === yesterday.toDateString()) {
+    // Reviewed yesterday, so continue the streak
+    State.streakCount++;
+  } else {
+    // First review or streak was broken, start new streak
+    State.streakCount = 1;
+  }
+  
+  localStorage.setItem('lastReviewDate', today);
+  localStorage.setItem('streakCount', State.streakCount.toString());
+}
+
+// ── Language Indicator ──
+function updateLanguageIndicator(lang) {
+  const badge = document.getElementById('studying-badge');
+  if (badge) {
+    document.getElementById('studying-flag').textContent = lang.flag;
+    document.getElementById('studying-name').textContent = lang.name;
+    badge.style.display = 'flex';
+  }
+}
+
+// ── Swipe Gesture Initialization (stub for now, actual implementation in renderCard) ──
+function initSwipeGestures() {
+  // Swipe gestures are initialized per-card in renderCard()
 }
 
 // ── Start ──

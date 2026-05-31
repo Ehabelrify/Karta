@@ -1,6 +1,6 @@
 {
-  "name": "Language Flashcards",
-  "short_name": "Flashcards",
+  "name": "Karta",
+  "short_name": "Karta",
   "description": "Multi-language vocabulary flashcards with spaced repetition",
   "start_url": "./index.html",
   "display": "standalone",
