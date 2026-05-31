@@ -6,7 +6,10 @@ const ASSETS = [
   './core/srs.js',
   './core/languages.js',
   './core/app.js',
-  './languages/german/words.js',
+  './languages/german/a1.json',
+  './languages/german/a2.json',
+  './languages/german/b1.json',
+  './languages/german/b2.json',
   './assets/icons/icon-192.svg',
   './assets/icons/icon-512.svg',
 ];
