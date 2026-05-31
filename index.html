@@ -570,6 +570,50 @@
 
   /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width: 0; }
+
+  /* ── RESET / SETTINGS SHEET ── */
+  .reset-sheet-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    z-index: 100; opacity: 0; pointer-events: none;
+    transition: opacity 0.25s;
+  }
+  .reset-sheet-overlay.open { opacity: 1; pointer-events: all; }
+  .reset-sheet {
+    position: fixed; bottom: 0; left: 50%; transform: translateX(-50%) translateY(100%);
+    width: 100%; max-width: 480px;
+    background: var(--surface); border-radius: 22px 22px 0 0;
+    padding: 12px 16px 48px; z-index: 101;
+    transition: transform 0.3s cubic-bezier(0.34, 1.1, 0.64, 1);
+  }
+  .reset-sheet.open { transform: translateX(-50%) translateY(0); }
+  .reset-sheet-handle { width: 36px; height: 4px; background: var(--border-med); border-radius: 2px; margin: 0 auto 16px; }
+  .reset-sheet-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; text-align: center; }
+  .reset-sheet-sub { font-size: 13px; color: var(--text3); text-align: center; margin-bottom: 20px; }
+  .reset-option {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px; border-radius: var(--radius-sm);
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+    margin-bottom: 8px;
+  }
+  .reset-option:active { background: var(--surface2); }
+  .reset-option-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .icon-danger { background: #fde8e8; }
+  .icon-reload { background: var(--accent-light); }
+  .reset-option-info { flex: 1; }
+  .reset-option-title { font-size: 15px; font-weight: 600; }
+  .reset-option-sub { font-size: 12px; color: var(--text3); margin-top: 2px; }
+  .reset-option.danger .reset-option-title { color: var(--danger); }
+  .reset-cancel {
+    background: var(--surface2); color: var(--text); border: none;
+    border-radius: var(--radius); padding: 16px; width: 100%;
+    font-size: 15px; font-weight: 600; cursor: pointer; margin-top: 4px;
+  }
+  .reset-cancel:active { background: var(--surface3); }
+
 </style>
 </head>
 <body>
@@ -591,6 +635,9 @@
     <span class="nav-title" id="nav-title" style="display:none"></span>
     <button class="nav-btn" id="nav-lang" style="display:none" aria-label="Switch language">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </button>
+    <button class="nav-btn" id="nav-reset" aria-label="Settings" title="Settings">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
     </button>
     <button class="nav-btn" id="nav-add" aria-label="Add word">
       <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
@@ -742,6 +789,33 @@
     <button class="home-btn" id="done-home-btn">Back to Home</button>
   </div>
 
+</div>
+
+
+<!-- Reset / Settings bottom sheet -->
+<div class="reset-sheet-overlay" id="reset-overlay"></div>
+<div class="reset-sheet" id="reset-sheet">
+  <div class="reset-sheet-handle"></div>
+  <div class="reset-sheet-title">⚙️ Settings</div>
+  <div class="reset-sheet-sub">Manage your Karta data</div>
+
+  <div class="reset-option" id="reload-app-btn">
+    <div class="reset-option-icon icon-reload">🔄</div>
+    <div class="reset-option-info">
+      <div class="reset-option-title">Reload App</div>
+      <div class="reset-option-sub">Fetch latest words from the repo and restart</div>
+    </div>
+  </div>
+
+  <div class="reset-option danger" id="reset-progress-btn">
+    <div class="reset-option-icon icon-danger">🗑️</div>
+    <div class="reset-option-info">
+      <div class="reset-option-title">Reset All Progress</div>
+      <div class="reset-option-sub">Clears SRS data, custom words, and streak — cannot be undone</div>
+    </div>
+  </div>
+
+  <button class="reset-cancel" id="reset-cancel-btn">Cancel</button>
 </div>
 
 <!-- Language bottom sheet -->

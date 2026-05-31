@@ -1,34 +1,25 @@
-// ── Flashcard App — Language-Agnostic Core ──
-// Language data comes from LANGUAGE_REGISTRY (core/languages.js)
-// Word data comes from the active language's words.js
-// Adding a new language requires zero changes to this file.
+// ── Karta — Flashcard App Core ──
 
 const CAT_ICONS = {
-  'People & Family': '👥',
-  'Food & Drink':    '🍽️',
-  'Travel':          '✈️',
-  'Work':            '💼',
-  'Body':            '🫀',
-  'Nature':          '🌿',
-  'Emotions':        '💭',
-  'Colors':          '🎨',
-  'Places':          '📍',
-  'Numbers':         '🔢',
-  'Time':            '🕐',
-  // Fallback for custom categories in future languages
-  'default':         '📌',
+  'People & Family': '👥', 'Food & Drink': '🍽️', 'Travel': '✈️',
+  'Work': '💼', 'Body': '🫀', 'Nature': '🌿', 'Emotions': '💭',
+  'Colors': '🎨', 'Places': '📍', 'Numbers': '🔢', 'Time': '🕐',
+  'default': '📌',
 };
 
 // ── App State ──
 const State = {
-  activeLang: null,       // language config object from registry
-  allWords: [],           // merged built-in + custom words
+  activeLang: null,
+  allWords: [],
   currentLevel: null,
   currentCategory: null,
   reviewQueue: [],
   reviewIndex: 0,
   sessionStats: { again: 0, good: 0, easy: 0 },
   cardRevealed: false,
+  swipeShown: false,
+  streakCount: 0,
+  lastReviewDate: null,
 };
 
 // ── Boot ──
@@ -37,111 +28,187 @@ async function boot() {
     showError('No languages configured. Check core/languages.js.');
     return;
   }
-  if (LANGUAGE_REGISTRY.length === 1) {
-    // Single language — skip picker, load and activate
-    await loadLanguage(LANGUAGE_REGISTRY[0]);
-  } else {
-    showLanguagePicker();
-  }
+  loadStreakData();
   bindNav();
   bindAdd();
-  initSwipeGestures();
-  loadStreakData();
+  bindLangSheet();
+  bindResetSheet();
+
+  if (LANGUAGE_REGISTRY.length === 1) {
+    await loadLanguage(LANGUAGE_REGISTRY[0]);
+  } else {
+    document.getElementById('loading-screen').classList.add('hidden');
+    showLanguagePicker();
+  }
 }
 
 // ── Activate a language ──
 function activateLanguage(lang, loadedWords) {
   State.activeLang = lang;
-  // loadedWords comes from JSON files
   const custom = SRS.getCustomWords(lang.code);
   State.allWords = [...(loadedWords || []), ...custom];
   document.documentElement.dir = lang.dir || 'ltr';
-  
-  // Hide loading screen
   document.getElementById('loading-screen').classList.add('hidden');
-  
   renderHome();
   showScreen('home');
   updateNavForHome();
-  updateLanguageIndicator(lang);
 }
 
-// ── Language Picker (shown when >1 language available) ──
+// ── Language Picker (full screen, only when >1 language) ──
 function showLanguagePicker() {
   const screen = document.getElementById('lang-pick');
   screen.innerHTML = '';
-
   const title = document.createElement('div');
   title.className = 'home-header';
   title.innerHTML = '<h1>Karta</h1><p>Choose a language to study</p>';
   screen.appendChild(title);
-
   const grid = document.createElement('div');
   grid.className = 'level-grid';
-
   for (const lang of LANGUAGE_REGISTRY) {
     const card = document.createElement('div');
     card.className = 'level-card';
     card.innerHTML = `
-      <div class="level-badge" style="font-size:24px;background:var(--surface2)">${lang.flag}</div>
+      <div class="level-badge" style="font-size:26px;background:var(--surface2)">${lang.flag}</div>
       <div class="level-info">
         <div class="level-name">${lang.name}</div>
         <div class="level-sub">${lang.nativeName} · ${lang.wordCount} words · ${lang.levelSystem}</div>
       </div>
-      <div class="level-arrow">›</div>
-    `;
+      <div class="level-arrow">›</div>`;
     card.addEventListener('click', () => loadLanguage(lang));
     grid.appendChild(card);
   }
   screen.appendChild(grid);
   showScreen('lang-pick');
+  document.getElementById('nav-wordmark').style.display = '';
   document.getElementById('nav-title').style.display = 'none';
-  document.getElementById('nav-wordmark').style.display = 'block';
   document.getElementById('nav-back').style.display = 'none';
+  document.getElementById('nav-lang').style.display = 'none';
 }
 
-// Dynamically load a language's JSON data files
+// ── Language Bottom Sheet ──
+function bindLangSheet() {
+  const overlay = document.getElementById('lang-overlay');
+  const sheet   = document.getElementById('lang-sheet');
+  const list    = document.getElementById('lang-sheet-list');
+  const navLang = document.getElementById('nav-lang');
+
+  function openSheet() {
+    // Populate list fresh every open
+    list.innerHTML = '';
+    for (const lang of LANGUAGE_REGISTRY) {
+      const opt = document.createElement('div');
+      opt.className = `lang-option ${State.activeLang?.code === lang.code ? 'active' : ''}`;
+      opt.innerHTML = `
+        <div class="flag">${lang.flag}</div>
+        <div class="lang-option-info">
+          <div class="lang-option-name">${lang.name}</div>
+          <div class="lang-option-sub">${lang.nativeName} · ${lang.wordCount} words</div>
+        </div>
+        <div class="lang-option-check">✓</div>`;
+      opt.addEventListener('click', async () => {
+        closeSheet();
+        if (State.activeLang?.code !== lang.code) {
+          document.getElementById('loading-screen').classList.remove('hidden');
+          document.getElementById('loading-text').textContent = `Loading ${lang.name}…`;
+          await loadLanguage(lang);
+        }
+      });
+      list.appendChild(opt);
+    }
+    overlay.classList.add('open');
+    sheet.classList.add('open');
+  }
+
+  function closeSheet() {
+    overlay.classList.remove('open');
+    sheet.classList.remove('open');
+  }
+
+  // Only show globe button if >1 language registered
+  if (LANGUAGE_REGISTRY.length > 1) {
+    navLang.style.display = '';
+    navLang.addEventListener('click', openSheet);
+  }
+  overlay.addEventListener('click', closeSheet);
+}
+
+// ── Reset Sheet ──
+function bindResetSheet() {
+  const overlay = document.getElementById('reset-overlay');
+  const sheet   = document.getElementById('reset-sheet');
+  const btn     = document.getElementById('nav-reset');
+
+  function openResetSheet() {
+    overlay.classList.add('open');
+    sheet.classList.add('open');
+  }
+  function closeResetSheet() {
+    overlay.classList.remove('open');
+    sheet.classList.remove('open');
+  }
+
+  btn.addEventListener('click', openResetSheet);
+  overlay.addEventListener('click', closeResetSheet);
+  document.getElementById('reset-cancel-btn').addEventListener('click', closeResetSheet);
+
+  document.getElementById('reset-progress-btn').addEventListener('click', () => {
+    closeResetSheet();
+    const lang = getLang();
+    if (!lang) return;
+    // Clear SRS data for active language only
+    localStorage.removeItem(`srs_v2_${lang.code}`);
+    localStorage.removeItem(`custom_v1_${lang.code}`);
+    localStorage.removeItem('lastReviewDate');
+    localStorage.removeItem('streakCount');
+    State.streakCount = 0;
+    State.lastReviewDate = null;
+    // Reload words fresh
+    loadLanguage(lang);
+  });
+
+  document.getElementById('reload-app-btn').addEventListener('click', () => {
+    closeResetSheet();
+    // Force a hard reload bypassing cache
+    window.location.reload(true);
+  });
+}
+
+// ── Load language JSON ──
 async function loadLanguage(lang) {
   try {
-    // Show loading spinner with language name
     document.getElementById('loading-text').textContent = `Loading ${lang.name} words…`;
-    // Load all JSON files for this language
-    const promises = lang.dataFiles.map(file =>
-      fetch(file).then(response => {
-        if (!response.ok) {
-          throw new Error(`Failed to load ${file}: ${response.statusText}`);
-        }
-        return response.json();
-      })
+    document.getElementById('loading-screen').classList.remove('hidden');
+
+    const levelData = await Promise.all(
+      lang.dataFiles.map(file =>
+        fetch(file + '?v=' + Date.now()).then(res => {
+          if (!res.ok) throw new Error(`${file}: ${res.statusText}`);
+          return res.json();
+        })
+      )
     );
-    
-    const levelData = await Promise.all(promises);
-    
-    // Merge all words from all levels
+
     const allWords = [];
     levelData.forEach(data => {
       data.words.forEach(word => {
-        // Convert new format to internal format
-        const convertedWord = {
-          id: word.id,
-          level: data.level,
-          category: word.category,
+        allWords.push({
+          id:            word.id,
+          level:         data.level,
+          category:      word.category,
           [lang.targetField]: word.target,
           [lang.nativeField]: word.native,
-          pronunciation: word.pronunciation,
-          example: word.examples && word.examples[0] ? word.examples[0].target : '',
-          exampleEn: word.examples && word.examples[0] ? word.examples[0].native : ''
-        };
-        allWords.push(convertedWord);
+          pronunciation: word.pronunciation || '',
+          example:       word.examples?.[0]?.target || '',
+          exampleEn:     word.examples?.[0]?.native || '',
+        });
       });
     });
-    
-    console.log(`[App] Loaded ${allWords.length} words for ${lang.name}`);
+
+    console.log(`[Karta] Loaded ${allWords.length} words for ${lang.name}`);
     activateLanguage(lang, allWords);
-    
-  } catch (error) {
-    console.error(`[App] Failed to load ${lang.name} word list:`, error);
-    showError(`Failed to load ${lang.name} word list. Please check your connection and try again.`);
+  } catch (err) {
+    console.error(`[Karta] Load failed:`, err);
+    showError(`Failed to load ${lang.name}.<br>Check your connection and try again.`);
   }
 }
 
@@ -151,62 +218,58 @@ function filterWords(level, category) {
     .filter(w => (!level || w.level === level) && (!category || w.category === category))
     .map(w => w.id);
 }
-
-function wordById(id) {
-  return State.allWords.find(w => w.id == id);
-}
-
-function getLang() { return State.activeLang; }
-
+function wordById(id) { return State.allWords.find(w => w.id == id); }
+function getLang()    { return State.activeLang; }
 function levelBadgeClass(level) {
-  // Map level codes to CSS classes generically
-  const map = { A1:'a1', A2:'a2', B1:'b1', B2:'b2', N5:'a1', N4:'a2', N3:'b1', N2:'b2', N1:'c1' };
-  return map[level] || 'a1';
+  return { A1:'a1', A2:'a2', B1:'b1', B2:'b2', N5:'a1', N4:'a2', N3:'b1', N2:'b2', N1:'c1' }[level] || 'a1';
 }
 
 // ── Home ──
 function renderHome() {
-  const lang = getLang();
+  const lang   = getLang();
   const allIds = State.allWords.map(w => w.id);
-  const stats = SRS.getStats(allIds, lang.code);
+  const stats  = SRS.getStats(allIds, lang.code);
 
-  // Remove skeleton loading state
-  document.getElementById('stat-card-seen').classList.remove('skeleton');
-  document.getElementById('stat-card-mastered').classList.remove('skeleton');
-  document.getElementById('stat-card-due').classList.remove('skeleton');
+  ['stat-card-seen','stat-card-mastered','stat-card-due'].forEach(id =>
+    document.getElementById(id)?.classList.remove('skeleton')
+  );
 
-  document.getElementById('stat-total').textContent = stats.seen;
+  document.getElementById('stat-total').textContent    = stats.seen;
   document.getElementById('stat-mastered').textContent = stats.mastered;
-  document.getElementById('stat-due').textContent = stats.due;
+  document.getElementById('stat-due').textContent      = stats.due;
 
-  // Update "Review All Due" button
+  // Studying badge
+  const badge = document.getElementById('studying-badge');
+  if (badge) {
+    document.getElementById('studying-flag').textContent = lang.flag;
+    document.getElementById('studying-name').textContent = lang.name;
+    badge.style.display = 'inline-flex';
+  }
+
+  // Review Due button
   const reviewDueBtn = document.getElementById('review-due-btn');
   if (stats.due > 0) {
     reviewDueBtn.classList.remove('hidden');
-    document.getElementById('review-due-sub').textContent = `${stats.due} words due today`;
-    reviewDueBtn.onclick = () => {
-      startReview(allIds, null, null);
-    };
+    document.getElementById('review-due-sub').textContent = `${stats.due} words waiting`;
+    reviewDueBtn.onclick = () => startReview(allIds, null, null);
   } else {
     reviewDueBtn.classList.add('hidden');
   }
 
+  // Level grid
   const grid = document.getElementById('level-grid');
   grid.innerHTML = '';
-
   for (const lvl of lang.levels) {
     const ids = filterWords(lvl, null);
-    if (ids.length === 0) continue;
-    const s = SRS.getStats(ids, lang.code);
-    const pct = ids.length ? Math.round((s.mastered / ids.length) * 100) : 0;
-    const name = lang.levelNames[lvl] || lvl;
-
+    if (!ids.length) continue;
+    const s   = SRS.getStats(ids, lang.code);
+    const pct = Math.round((s.mastered / ids.length) * 100);
     const card = document.createElement('div');
     card.className = 'level-card';
     card.innerHTML = `
       <div class="level-badge badge-${levelBadgeClass(lvl)}">${lvl}</div>
       <div class="level-info">
-        <div class="level-name">${lvl} — ${name}</div>
+        <div class="level-name">${lvl} — ${lang.levelNames[lvl] || lvl}</div>
         <div class="level-sub">${ids.length} words · ${s.mastered} mastered</div>
         <div class="level-progress">
           <div class="level-progress-fill" style="width:${pct}%"></div>
@@ -214,36 +277,30 @@ function renderHome() {
         </div>
       </div>
       ${s.due > 0 ? `<div class="due-badge">${s.due} due</div>` : ''}
-      <div class="level-arrow">›</div>
-    `;
+      <div class="level-arrow">›</div>`;
     card.addEventListener('click', () => openLevel(lvl));
     grid.appendChild(card);
   }
-  
-  // Update streak display
+
   updateStreakDisplay();
 }
 
 // ── Level View ──
 function openLevel(level) {
-  State.currentLevel = level;
+  State.currentLevel    = level;
   State.currentCategory = null;
-  const lang = getLang();
-  const name = lang.levelNames[level] || level;
+  const lang  = getLang();
+  const name  = lang.levelNames[level] || level;
+  const ids   = filterWords(level, null);
+  const s     = SRS.getStats(ids, lang.code);
+  const queue = SRS.buildQueue(ids, lang.code, 40);
 
   showScreen('level-view');
-  document.getElementById('nav-title').textContent = `${level} — ${name}`;
+  setNavTitle(`${level} — ${name}`);
   document.getElementById('nav-back').style.display = '';
-
-  const levelIds = filterWords(level, null);
-  const s = SRS.getStats(levelIds, lang.code);
-  const queue = SRS.buildQueue(levelIds, lang.code, 40);
-
-  const btn = document.getElementById('review-level-btn');
   document.getElementById('review-level-sub').textContent =
     `${queue.length} cards · ${s.due} due · ${s.seen} seen`;
-  btn.onclick = () => startReview(levelIds, level, null);
-
+  document.getElementById('review-level-btn').onclick = () => startReview(ids, level, null);
   renderCategories(level);
 }
 
@@ -251,16 +308,14 @@ function renderCategories(level) {
   const list = document.getElementById('category-list');
   list.innerHTML = '';
   const lang = getLang();
-
   const cats = [...new Set(
     State.allWords.filter(w => w.level === level).map(w => w.category)
   )].sort();
 
   for (const cat of cats) {
-    const ids = filterWords(level, cat);
-    const s = SRS.getStats(ids, lang.code);
+    const ids  = filterWords(level, cat);
+    const s    = SRS.getStats(ids, lang.code);
     const icon = CAT_ICONS[cat] || CAT_ICONS['default'];
-
     const card = document.createElement('div');
     card.className = `category-card ${s.due === 0 ? 'dimmed' : ''}`;
     card.innerHTML = `
@@ -269,9 +324,10 @@ function renderCategories(level) {
         <div class="cat-name">${cat}</div>
         <div class="cat-sub">${ids.length} words · ${s.mastered} mastered</div>
       </div>
-      ${s.due > 0 ? `<div class="cat-due">${s.due} due</div>` : '<div class="cat-due" style="opacity:0.3;">0 due</div>'}
-      <div class="cat-arrow">›</div>
-    `;
+      ${s.due > 0
+        ? `<div class="cat-due">${s.due} due</div>`
+        : `<div class="cat-due" style="opacity:0.3">0 due</div>`}
+      <div class="cat-arrow">›</div>`;
     card.addEventListener('click', () => startReview(ids, level, cat));
     list.appendChild(card);
   }
@@ -279,28 +335,23 @@ function renderCategories(level) {
 
 // ── Review ──
 function startReview(wordIds, level, category) {
-  const lang = getLang();
+  const lang  = getLang();
   const queue = SRS.buildQueue(wordIds, lang.code, 40);
-  if (queue.length === 0) { alert('No words to review right now!'); return; }
+  if (!queue.length) { alert('No words to review right now!'); return; }
 
-  State.currentLevel = level;
+  State.currentLevel    = level;
   State.currentCategory = category;
-  State.reviewQueue = queue;
-  State.reviewIndex = 0;
-  State.sessionStats = { again: 0, good: 0, easy: 0 };
-  State.cardRevealed = false;
-  State.swipeShown = false; // Track if swipe hint has been shown
+  State.reviewQueue     = queue;
+  State.reviewIndex     = 0;
+  State.sessionStats    = { again: 0, good: 0, easy: 0 };
+  State.cardRevealed    = false;
+  State.swipeShown      = false;
 
   showScreen('review');
-  if (category) {
-    document.getElementById('nav-title').textContent = `${level} · ${category}`;
-  } else if (level) {
-    document.getElementById('nav-title').textContent = level;
-  } else {
-    document.getElementById('nav-title').textContent = 'Review All';
-  }
+  setNavTitle(category ? `${level} · ${category}` : level || 'Review All');
   document.getElementById('nav-back').style.display = '';
-  document.getElementById('nav-add').style.display = 'none';
+  document.getElementById('nav-add').style.display  = 'none';
+  document.getElementById('nav-reset').style.display = 'none';
 
   renderCard();
 }
@@ -310,362 +361,300 @@ function renderCard() {
   const { reviewQueue, reviewIndex } = State;
   const total = reviewQueue.length;
 
-  document.getElementById('review-progress-fill').style.width =
-    (total > 0 ? Math.round((reviewIndex / total) * 100) : 0) + '%';
+  // Progress
+  const pct = total > 0 ? Math.round((reviewIndex / total) * 100) : 0;
+  document.getElementById('review-progress-fill').style.width = pct + '%';
   document.getElementById('review-count').textContent = `${reviewIndex} / ${total}`;
 
+  // BUG FIX: check done BEFORE touching the DOM
   if (reviewIndex >= total) { showDone(); return; }
 
   State.cardRevealed = false;
   const wordId = reviewQueue[reviewIndex];
-  const word = wordById(wordId);
+  const word   = wordById(wordId);
   if (!word) { State.reviewIndex++; renderCard(); return; }
 
   const cardState = SRS.getCardState(wordId, lang.code);
-  const isNew = SRS.isNew(cardState);
+  const isNew     = SRS.isNew(cardState);
 
-  // The word in the target language
-  const targetText  = word[lang.targetField] || word.de || '';
-  const nativeText  = word[lang.nativeField] || word.en || '';
-  const pronunciation = word.pronunciation || '';
-  const exampleTarget = word.example || '';
-  const exampleNative = word.exampleEn || '';
+  const targetText   = word[lang.targetField] || '';
+  const nativeText   = word[lang.nativeField]  || '';
+  const pronunciation  = word.pronunciation || '';
+  const exampleTarget  = word.example   || '';
+  const exampleNative  = word.exampleEn || '';
 
-  // Highlight the root word in the example sentence
   function highlightExample(sentence, fullWord) {
-    const clean = fullWord.replace(/^[\w]+\s+/i, '').trim(); // strip article
+    const clean = fullWord.replace(/^[\w\u00C0-\u024F]+\s+/i, '').trim();
     if (!clean || !sentence) return sentence || '';
-    const escaped = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    return sentence.replace(
-      new RegExp(`(${escaped})`, 'gi'),
-      '<span class="highlight-word">$1</span>'
-    );
+    const esc = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return sentence.replace(new RegExp(`(${esc})`, 'gi'),
+      '<span class="highlight-word">$1</span>');
   }
 
   const exHighlighted = highlightExample(exampleTarget, targetText);
 
+  // ── Build DOM ──
   const area = document.getElementById('card-area');
-  
-  // Show swipe hint on first card
+  area.innerHTML = '';
+
+  // Swipe hint (shown once per session, auto-hides)
   if (!State.swipeShown) {
-    const hint = document.getElementById('swipe-instruction');
-    hint.classList.add('visible');
+    const hint = document.createElement('div');
+    hint.className = 'swipe-instruction visible';
+    hint.id = 'swipe-instruction';
+    hint.innerHTML = '← Again &nbsp;·&nbsp; swipe &nbsp;·&nbsp; Easy →';
+    area.appendChild(hint);
     State.swipeShown = true;
     setTimeout(() => hint.classList.remove('visible'), 3000);
   }
-  
-  // Create flashcard structure safely using DOM methods
+
+  // Flashcard
   const flashcard = document.createElement('div');
   flashcard.className = 'flashcard';
   flashcard.id = 'flashcard';
-  
-  // Add swipe hint overlays
-  const swipeHintLeft = document.createElement('div');
-  swipeHintLeft.className = 'swipe-hint swipe-hint-left';
-  swipeHintLeft.textContent = '↶ Again';
-  flashcard.appendChild(swipeHintLeft);
-  
-  const swipeHintRight = document.createElement('div');
-  swipeHintRight.className = 'swipe-hint swipe-hint-right';
-  swipeHintRight.textContent = 'Easy ↷';
-  flashcard.appendChild(swipeHintRight);
-  
-  // Card meta
-  const cardMeta = document.createElement('div');
-  cardMeta.className = 'card-meta';
-  
-  const levelTag = document.createElement('span');
-  levelTag.className = `card-level-tag tag-${levelBadgeClass(word.level)}`;
-  levelTag.textContent = word.level;
-  cardMeta.appendChild(levelTag);
-  
-  const catTag = document.createElement('span');
-  catTag.className = 'card-cat-tag';
-  catTag.textContent = word.category;
-  cardMeta.appendChild(catTag);
-  
+
+  // Swipe overlays
+  const hintL = document.createElement('div');
+  hintL.className = 'swipe-hint swipe-hint-left';
+  hintL.textContent = '↶ Again';
+  flashcard.appendChild(hintL);
+
+  const hintR = document.createElement('div');
+  hintR.className = 'swipe-hint swipe-hint-right';
+  hintR.textContent = 'Easy ↷';
+  flashcard.appendChild(hintR);
+
+  // Meta
+  const meta = document.createElement('div');
+  meta.className = 'card-meta';
+  const lvTag = document.createElement('span');
+  lvTag.className = `card-level-tag tag-${levelBadgeClass(word.level)}`;
+  lvTag.textContent = word.level;
+  meta.appendChild(lvTag);
+  const ctTag = document.createElement('span');
+  ctTag.className = 'card-cat-tag';
+  ctTag.textContent = word.category;
+  meta.appendChild(ctTag);
   if (isNew) {
-    const newTag = document.createElement('span');
-    newTag.className = 'card-cat-tag new-tag';
-    newTag.textContent = 'New';
-    cardMeta.appendChild(newTag);
+    const nTag = document.createElement('span');
+    nTag.className = 'card-cat-tag new-tag';
+    nTag.textContent = 'New';
+    meta.appendChild(nTag);
   }
-  
-  flashcard.appendChild(cardMeta);
-  
-  // Card front
-  const cardFront = document.createElement('div');
-  cardFront.className = 'card-front';
-  
-  const wordContainer = document.createElement('div');
-  wordContainer.className = 'german-word-container';
-  
-  const germanWord = document.createElement('div');
-  germanWord.className = 'german-word';
-  germanWord.id = 'target-word';
-  germanWord.textContent = targetText;
-  wordContainer.appendChild(germanWord);
-  
-  const speakBtn = document.createElement('button');
-  speakBtn.className = 'speak-btn';
-  speakBtn.id = 'speak-btn';
-  speakBtn.title = 'Pronounce';
-  speakBtn.setAttribute('aria-label', 'Pronounce word');
-  speakBtn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  flashcard.appendChild(meta);
+
+  // Front
+  const front = document.createElement('div');
+  front.className = 'card-front';
+  const wc = document.createElement('div');
+  wc.className = 'german-word-container';
+  const wordEl = document.createElement('div');
+  wordEl.className = 'german-word';
+  wordEl.id = 'target-word';
+  wordEl.textContent = targetText;
+  wc.appendChild(wordEl);
+
+  const speakBtnEl = document.createElement('button');
+  speakBtnEl.className = 'speak-btn';
+  speakBtnEl.title = 'Pronounce';
+  speakBtnEl.setAttribute('aria-label', 'Pronounce');
+  speakBtnEl.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
     <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.26 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
   </svg>`;
-  wordContainer.appendChild(speakBtn);
-  
-  cardFront.appendChild(wordContainer);
-  
+  speakBtnEl.addEventListener('click', e => {
+    e.stopPropagation();
+    hapticFeedback('light');
+    pronounceWord(targetText, lang.code, speakBtnEl);
+  });
+  wc.appendChild(speakBtnEl);
+  front.appendChild(wc);
+
   if (pronunciation) {
-    const pronDiv = document.createElement('div');
-    pronDiv.className = 'pronunciation';
-    pronDiv.textContent = pronunciation;
-    cardFront.appendChild(pronDiv);
+    const pd = document.createElement('div');
+    pd.className = 'pronunciation';
+    pd.textContent = pronunciation;
+    front.appendChild(pd);
   }
-  
+
   if (exampleTarget) {
-    const exampleBox = document.createElement('div');
-    exampleBox.className = 'example-box';
-    
-    const exampleDe = document.createElement('div');
-    exampleDe.className = 'example-de';
-    exampleDe.innerHTML = exHighlighted; // This is safe as it's already sanitized by highlightExample
-    exampleBox.appendChild(exampleDe);
-    
-    const exampleEn = document.createElement('div');
-    exampleEn.className = 'example-en';
-    exampleEn.id = 'ex-native';
-    exampleEn.textContent = exampleNative;
-    exampleBox.appendChild(exampleEn);
-    
-    cardFront.appendChild(exampleBox);
+    const exBox = document.createElement('div');
+    exBox.className = 'example-box';
+    const exDe = document.createElement('div');
+    exDe.className = 'example-de';
+    exDe.innerHTML = exHighlighted;
+    exBox.appendChild(exDe);
+    const exEn = document.createElement('div');
+    exEn.className = 'example-en';
+    exEn.id = 'ex-native';
+    exEn.textContent = exampleNative;
+    exBox.appendChild(exEn);
+    front.appendChild(exBox);
   }
-  
-  flashcard.appendChild(cardFront);
-  
-  // Card back
-  const cardBack = document.createElement('div');
-  cardBack.className = 'card-back';
-  cardBack.id = 'card-back';
-  
-  const divider = document.createElement('div');
-  divider.className = 'divider';
-  cardBack.appendChild(divider);
-  
-  const translationHint = document.createElement('div');
-  translationHint.className = 'translation-hint';
-  translationHint.textContent = 'Translation';
-  cardBack.appendChild(translationHint);
-  
-  const translation = document.createElement('div');
-  translation.className = 'translation';
-  translation.textContent = nativeText;
-  cardBack.appendChild(translation);
-  
-  flashcard.appendChild(cardBack);
-  
-  // Clear and append
-  area.innerHTML = '';
-  area.appendChild(flashcard);
+  flashcard.appendChild(front);
+
+  // Back
+  const back = document.createElement('div');
+  back.className = 'card-back';
+  back.id = 'card-back';
+  const div = document.createElement('div'); div.className = 'divider'; back.appendChild(div);
+  const th  = document.createElement('div'); th.className = 'translation-hint'; th.textContent = 'Translation'; back.appendChild(th);
+  const tr  = document.createElement('div'); tr.className = 'translation'; tr.textContent = nativeText; back.appendChild(tr);
+  flashcard.appendChild(back);
 
   // Tap hint
   const tapHint = document.createElement('div');
   tapHint.className = 'tap-hint';
   tapHint.id = 'tap-hint';
-  tapHint.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-    <circle cx="12" cy="12" r="3"/>
-  </svg>
-  Tap to reveal`;
-  area.appendChild(tapHint);
-  
+  tapHint.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+  </svg> Tap to reveal`;
+  flashcard.appendChild(tapHint);
+
+  area.appendChild(flashcard);
+
   // Reveal button
   const revealBtn = document.createElement('button');
   revealBtn.className = 'reveal-btn';
   revealBtn.id = 'reveal-btn';
   revealBtn.textContent = 'Show Answer';
   area.appendChild(revealBtn);
-  
+
   // Answer buttons
   const answerBtns = document.createElement('div');
   answerBtns.className = 'answer-btns';
   answerBtns.id = 'answer-btns';
   answerBtns.style.display = 'none';
-  
-  const againBtn = document.createElement('button');
-  againBtn.className = 'answer-btn btn-again';
-  againBtn.setAttribute('data-q', 'again');
-  againBtn.innerHTML = 'Again <span class="btn-sub">10 min</span>';
-  againBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    hapticFeedback();
-    handleAnswer('again');
+  [
+    { cls:'btn-again', q:'again', label:'Again', sub:'10 min' },
+    { cls:'btn-good',  q:'good',  label:'Good',  sub:`+${getNextInterval(cardState,'good')}d` },
+    { cls:'btn-easy',  q:'easy',  label:'Easy',  sub:`+${getNextInterval(cardState,'easy')}d` },
+  ].forEach(({ cls, q, label, sub }) => {
+    const b = document.createElement('button');
+    b.className = `answer-btn ${cls}`;
+    b.innerHTML = `${label} <span class="btn-sub">${sub}</span>`;
+    b.addEventListener('click', e => {
+      e.stopPropagation();
+      hapticFeedback('medium');
+      handleAnswer(q);
+    });
+    answerBtns.appendChild(b);
   });
-  answerBtns.appendChild(againBtn);
-  
-  const goodBtn = document.createElement('button');
-  goodBtn.className = 'answer-btn btn-good';
-  goodBtn.setAttribute('data-q', 'good');
-  goodBtn.innerHTML = `Good <span class="btn-sub">+${getNextInterval(cardState,'good')}d</span>`;
-  goodBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    hapticFeedback();
-    handleAnswer('good');
-  });
-  answerBtns.appendChild(goodBtn);
-  
-  const easyBtn = document.createElement('button');
-  easyBtn.className = 'answer-btn btn-easy';
-  easyBtn.setAttribute('data-q', 'easy');
-  easyBtn.innerHTML = `Easy <span class="btn-sub">+${getNextInterval(cardState,'easy')}d</span>`;
-  easyBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    hapticFeedback();
-    handleAnswer('easy');
-  });
-  answerBtns.appendChild(easyBtn);
-  
   area.appendChild(answerBtns);
 
-  // Add swipe gesture handling
-  let touchStartX = 0, touchStartY = 0;
-  flashcard.addEventListener('touchstart', (e) => {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-  }, false);
-  
-  flashcard.addEventListener('touchmove', (e) => {
-    if (!State.cardRevealed) return;
-    const touchCurrentX = e.touches[0].clientX;
-    const deltaX = touchCurrentX - touchStartX;
-    const deltaY = Math.abs(e.touches[0].clientY - touchStartY);
-    
-    // Only swipe if primarily horizontal
-    if (Math.abs(deltaX) > deltaY * 2) {
-      if (deltaX < -30) {
-        flashcard.classList.add('swiping-left');
-        flashcard.classList.remove('swiping-right');
-      } else if (deltaX > 30) {
-        flashcard.classList.add('swiping-right');
-        flashcard.classList.remove('swiping-left');
-      } else {
-        flashcard.classList.remove('swiping-left', 'swiping-right');
-      }
-    }
-  }, false);
-  
-  flashcard.addEventListener('touchend', (e) => {
-    if (!State.cardRevealed) return;
-    const touchEndX = e.changedTouches[0].clientX;
-    const deltaX = touchEndX - touchStartX;
-    flashcard.classList.remove('swiping-left', 'swiping-right');
-    
-    if (Math.abs(deltaX) > 80) {
-      hapticFeedback();
-      if (deltaX < 0) {
-        handleAnswer('again');
-      } else {
-        handleAnswer('easy');
-      }
-    }
-  }, false);
+  // ── Events ──
+  flashcard.addEventListener('click', revealCard);
+  revealBtn.addEventListener('click', revealCard);
+  setupWordTooltip(wordEl, nativeText);
 
-  document.getElementById('flashcard').addEventListener('click', revealCard);
-  document.getElementById('reveal-btn').addEventListener('click', revealCard);
-
-  // Speaker button for audio pronunciation
-  const speakBtnElement = document.getElementById('speak-btn');
-  if (speakBtnElement) {
-    speakBtnElement.addEventListener('click', e => {
-      e.stopPropagation();
-      hapticFeedback();
-      pronounceWord(targetText, lang.code);
-    });
-  }
-
-  // Word tooltip (tap/hover shows translation)
-  setupWordTooltip(document.getElementById('target-word'), nativeText);
-
-  // Example sentence highlight toggles native translation
   area.querySelectorAll('.highlight-word').forEach(el => {
-    el.addEventListener('click', e => {
-      e.stopPropagation();
-      document.getElementById('ex-native')?.classList.toggle('visible');
-    });
-    el.addEventListener('mouseenter', e => {
-      e.stopPropagation();
-      document.getElementById('ex-native')?.classList.add('visible');
-    });
-    el.addEventListener('mouseleave', () => {
-      if (!State.cardRevealed)
-        document.getElementById('ex-native')?.classList.remove('visible');
-    });
+    el.addEventListener('click', e => { e.stopPropagation(); document.getElementById('ex-native')?.classList.toggle('visible'); });
+    el.addEventListener('mouseenter', e => { e.stopPropagation(); document.getElementById('ex-native')?.classList.add('visible'); });
+    el.addEventListener('mouseleave', () => { if (!State.cardRevealed) document.getElementById('ex-native')?.classList.remove('visible'); });
   });
 
-  area.querySelectorAll('.answer-btn').forEach(btn => {
-    btn.addEventListener('click', e => {
-      e.stopPropagation();
-      handleAnswer(btn.dataset.q);
-    });
+  // ── Swipe gestures ──
+  let tStartX = 0, tStartY = 0;
+  flashcard.addEventListener('touchstart', e => {
+    tStartX = e.touches[0].clientX;
+    tStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  flashcard.addEventListener('touchmove', e => {
+    if (!State.cardRevealed) return;
+    const dx = e.touches[0].clientX - tStartX;
+    const dy = Math.abs(e.touches[0].clientY - tStartY);
+    if (Math.abs(dx) > dy * 1.5) {
+      flashcard.classList.toggle('swiping-left',  dx < -30);
+      flashcard.classList.toggle('swiping-right', dx > 30);
+      if (Math.abs(dx) > 30) e.preventDefault();
+    }
+  }, { passive: false });
+
+  flashcard.addEventListener('touchend', e => {
+    if (!State.cardRevealed) return;
+    const dx = e.changedTouches[0].clientX - tStartX;
+    flashcard.classList.remove('swiping-left', 'swiping-right');
+    if (Math.abs(dx) > 80) {
+      hapticFeedback('medium');
+      handleAnswer(dx < 0 ? 'again' : 'easy');
+    }
   });
 }
 
 function getNextInterval(state, quality) {
   if (!state || state.reps === 0) return quality === 'good' ? 1 : 3;
-  const interval = state.interval || 1;
-  const ease = state.ease || 2.5;
-  return quality === 'good'
-    ? Math.round(interval * ease)
-    : Math.round(interval * ease * 1.3);
+  const i = state.interval || 1, e = state.ease || 2.5;
+  return quality === 'good' ? Math.round(i * e) : Math.round(i * e * 1.3);
 }
 
-// ── Web Speech API (Text-to-Speech) ──
-function pronounceWord(word, langCode) {
-  // Stop any previous speech
+// ── Text-to-Speech ──
+// BUG FIX: iOS loads voices asynchronously — must wait and pick by lang tag explicitly
+function pronounceWord(text, langCode, btnEl) {
+  if (!('speechSynthesis' in window)) return;
+
+  const langMap = {
+    german: 'de-DE', spanish: 'es-ES', french: 'fr-FR',
+    arabic: 'ar-SA', japanese: 'ja-JP', italian: 'it-IT',
+  };
+  const targetLang = langMap[langCode] || 'de-DE';
+
   speechSynthesis.cancel();
 
-  // Map language codes to IETF language tags
-  const langMap = {
-    german:   'de-DE',
-    spanish:  'es-ES',
-    french:   'fr-FR',
-    arabic:   'ar-SA',
-    japanese: 'ja-JP',
-  };
+  function speak() {
+    const voices  = speechSynthesis.getVoices();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang  = targetLang;
+    utterance.rate  = 0.85;
+    utterance.pitch = 1.0;
+    utterance.volume = 1.0;
 
-  const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = langMap[langCode] || 'en-US';
-  utterance.rate = 0.9; // slightly slower for clarity
-  utterance.pitch = 1.0;
-  utterance.volume = 1.0;
+    // Find an exact voice for the target language
+    // Priority: exact locale match → language prefix match → fallback (browser chooses)
+    const exactVoice  = voices.find(v => v.lang === targetLang);
+    const prefixVoice = voices.find(v => v.lang.startsWith(targetLang.split('-')[0]));
+    if (exactVoice)       utterance.voice = exactVoice;
+    else if (prefixVoice) utterance.voice = prefixVoice;
+    // If neither found, leave unset — browser will try its best
 
-  speechSynthesis.speak(utterance);
+    if (btnEl) {
+      btnEl.classList.add('speaking');
+      utterance.onend = () => btnEl.classList.remove('speaking');
+      utterance.onerror = () => btnEl.classList.remove('speaking');
+    }
+
+    speechSynthesis.speak(utterance);
+  }
+
+  // iOS loads voices lazily — if empty, wait for the event
+  if (speechSynthesis.getVoices().length > 0) {
+    speak();
+  } else {
+    speechSynthesis.onvoiceschanged = () => {
+      speechSynthesis.onvoiceschanged = null;
+      speak();
+    };
+  }
 }
 
 function revealCard() {
   if (State.cardRevealed) return;
   State.cardRevealed = true;
-  hapticFeedback();
+  hapticFeedback('light');
   document.getElementById('card-back').classList.add('revealed');
-  document.getElementById('tap-hint').style.display = 'none';
-  document.getElementById('reveal-btn').style.display = 'none';
-  document.getElementById('answer-btns').style.display = 'grid';
+  document.getElementById('tap-hint').style.display      = 'none';
+  document.getElementById('reveal-btn').style.display    = 'none';
+  document.getElementById('answer-btns').style.display   = 'grid';
   document.getElementById('ex-native')?.classList.add('visible');
 }
 
 function handleAnswer(quality) {
-  const lang = getLang();
   const wordId = State.reviewQueue[State.reviewIndex];
-  SRS.answer(wordId, quality, lang.code);
+  SRS.answer(wordId, quality, getLang().code);
   State.sessionStats[quality]++;
-
   if (quality === 'again') {
     const rest = State.reviewQueue.slice(State.reviewIndex + 1);
     if (!rest.includes(wordId)) State.reviewQueue.push(wordId);
   }
-
   State.reviewIndex++;
   renderCard();
 }
@@ -673,33 +662,56 @@ function handleAnswer(quality) {
 function showDone() {
   updateStreakOnSessionComplete();
   showScreen('done-view');
-  document.getElementById('nav-title').textContent = 'Session Done';
-  document.getElementById('nav-add').style.display = '';
-  document.getElementById('done-again').textContent = State.sessionStats.again;
-  document.getElementById('done-good').textContent = State.sessionStats.good;
-  document.getElementById('done-easy').textContent = State.sessionStats.easy;
+  setNavTitle('Session Done');
+  document.getElementById('nav-add').style.display   = '';
+  document.getElementById('nav-reset').style.display = '';
+  document.getElementById('done-again').textContent  = State.sessionStats.again;
+  document.getElementById('done-good').textContent   = State.sessionStats.good;
+  document.getElementById('done-easy').textContent   = State.sessionStats.easy;
   const total = Object.values(State.sessionStats).reduce((a,b) => a+b, 0);
   document.getElementById('done-sub').textContent = `You reviewed ${total} cards. Keep it up!`;
+}
+
+// ── Haptic Feedback ──
+// BUG FIX: navigator.vibrate is NOT supported on iOS Safari.
+// Use AudioContext to produce a silent click that triggers the Taptic Engine
+// via the audio session (works on iOS 15+).
+// Falls back to navigator.vibrate on Android.
+const _hapticCtx = { ctx: null };
+function hapticFeedback(intensity = 'light') {
+  // Android / non-iOS
+  if (navigator.vibrate) {
+    navigator.vibrate(intensity === 'medium' ? 12 : 6);
+    return;
+  }
+  // iOS — use AudioContext silent oscillator burst
+  try {
+    if (!_hapticCtx.ctx) _hapticCtx.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const ctx = _hapticCtx.ctx;
+    if (ctx.state === 'suspended') ctx.resume();
+    const osc    = ctx.createOscillator();
+    const gain   = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    gain.gain.setValueAtTime(0, ctx.currentTime);          // silent
+    osc.frequency.value = 1;
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.01);
+  } catch (_) { /* silently ignore if AudioContext unavailable */ }
 }
 
 // ── Word Tooltip ──
 function setupWordTooltip(el, label) {
   if (!el) return;
   const tooltip = document.getElementById('word-tooltip');
-
-  const show = e => {
-    tooltip.textContent = label;
-    tooltip.classList.add('show');
-    position(e);
-  };
+  const show = e => { tooltip.textContent = label; tooltip.classList.add('show'); position(e); };
   const hide = () => tooltip.classList.remove('show');
   const position = e => {
     const x = e.touches ? e.touches[0].clientX : e.clientX;
     const y = e.touches ? e.touches[0].clientY : e.clientY;
     tooltip.style.left = Math.min(x - 40, window.innerWidth - 180) + 'px';
-    tooltip.style.top = (y - 44) + 'px';
+    tooltip.style.top  = (y - 44) + 'px';
   };
-
   el.addEventListener('mouseenter', show);
   el.addEventListener('mousemove', position);
   el.addEventListener('mouseleave', hide);
@@ -712,75 +724,34 @@ function bindAdd() {
   document.getElementById('nav-add').addEventListener('click', () => {
     const lang = getLang();
     if (!lang) return;
-
-    // Populate level options from active language
-    const lvlSel = document.getElementById('inp-level');
-    lvlSel.innerHTML = lang.levels.map(l =>
+    document.getElementById('inp-level').innerHTML = lang.levels.map(l =>
       `<option value="${l}">${l} — ${lang.levelNames[l] || l}</option>`
     ).join('');
-
     showScreen('add-view');
-    document.getElementById('nav-title').textContent = 'Add Word';
-    document.getElementById('nav-back').style.display = '';
-    document.getElementById('nav-add').style.display = 'none';
+    setNavTitle('Add Word');
+    document.getElementById('nav-back').style.display  = '';
+    document.getElementById('nav-add').style.display   = 'none';
+    document.getElementById('nav-reset').style.display = 'none';
     document.getElementById('save-feedback').textContent = '';
     document.getElementById('inp-target-label').textContent =
-      `${lang.name} Word ${lang.notes ? '(' + lang.notes + ')' : ''}`;
+      `${lang.name} Word${lang.notes ? ' (' + lang.notes + ')' : ''}`;
   });
 
   document.getElementById('save-btn').addEventListener('click', () => {
-    const lang = getLang();
+    const lang      = getLang();
     const targetVal = document.getElementById('inp-de').value.trim();
     const nativeVal = document.getElementById('inp-en').value.trim();
-    const pron  = document.getElementById('inp-pron').value.trim();
-    const level = document.getElementById('inp-level').value;
-    const cat   = document.getElementById('inp-cat').value;
-    const ex    = document.getElementById('inp-ex').value.trim();
-    const exen  = document.getElementById('inp-exen').value.trim();
-    
-    const feedbackEl = document.getElementById('save-feedback');
+    const pron      = document.getElementById('inp-pron').value.trim();
+    const level     = document.getElementById('inp-level').value;
+    const cat       = document.getElementById('inp-cat').value;
+    const ex        = document.getElementById('inp-ex').value.trim();
+    const exen      = document.getElementById('inp-exen').value.trim();
+    const feedback  = document.getElementById('save-feedback');
 
-    // Validation: Required fields
     if (!targetVal || !nativeVal) {
-      feedbackEl.textContent = '⚠️ Both target and native language fields are required.';
+      feedback.textContent = '⚠️ Word and translation are required.';
       return;
     }
-    
-    // Validation: Length limits (reasonable limits to prevent abuse)
-    const MAX_WORD_LENGTH = 200;
-    const MAX_EXAMPLE_LENGTH = 500;
-    
-    if (targetVal.length > MAX_WORD_LENGTH) {
-      feedbackEl.textContent = `⚠️ Target word too long (max ${MAX_WORD_LENGTH} characters).`;
-      return;
-    }
-    
-    if (nativeVal.length > MAX_WORD_LENGTH) {
-      feedbackEl.textContent = `⚠️ Native word too long (max ${MAX_WORD_LENGTH} characters).`;
-      return;
-    }
-    
-    if (pron && pron.length > MAX_WORD_LENGTH) {
-      feedbackEl.textContent = `⚠️ Pronunciation too long (max ${MAX_WORD_LENGTH} characters).`;
-      return;
-    }
-    
-    if (ex && ex.length > MAX_EXAMPLE_LENGTH) {
-      feedbackEl.textContent = `⚠️ Example too long (max ${MAX_EXAMPLE_LENGTH} characters).`;
-      return;
-    }
-    
-    if (exen && exen.length > MAX_EXAMPLE_LENGTH) {
-      feedbackEl.textContent = `⚠️ Example translation too long (max ${MAX_EXAMPLE_LENGTH} characters).`;
-      return;
-    }
-    
-    // Validation: Check for minimum length
-    if (targetVal.length < 1 || nativeVal.length < 1) {
-      feedbackEl.textContent = '⚠️ Words must be at least 1 character long.';
-      return;
-    }
-
     const word = {
       [lang.targetField]: targetVal,
       [lang.nativeField]: nativeVal,
@@ -789,19 +760,16 @@ function bindAdd() {
       example: ex || `${targetVal}.`,
       exampleEn: exen || `${nativeVal}.`,
     };
-
     try {
       const id = SRS.addCustomWord(word, lang.code);
       State.allWords.push({ ...word, id });
-
-      ['inp-de','inp-en','inp-pron','inp-ex','inp-exen'].forEach(i => {
-        document.getElementById(i).value = '';
-      });
-      feedbackEl.textContent = '✓ Word saved!';
-      setTimeout(() => feedbackEl.textContent = '', 2500);
-    } catch (error) {
-      console.error('[App] Failed to save custom word:', error);
-      feedbackEl.textContent = '⚠️ Failed to save word. Storage may be full.';
+      ['inp-de','inp-en','inp-pron','inp-ex','inp-exen'].forEach(i =>
+        document.getElementById(i).value = ''
+      );
+      feedback.textContent = '✓ Word saved!';
+      setTimeout(() => feedback.textContent = '', 2500);
+    } catch (e) {
+      feedback.textContent = '⚠️ Failed to save. Storage may be full.';
     }
   });
 }
@@ -811,26 +779,26 @@ function bindNav() {
   document.getElementById('nav-back').addEventListener('click', () => {
     const id = document.querySelector('.screen.active')?.id;
     if (!id) return;
-
-    if (id === 'lang-pick') { /* already at root */ }
-    else if (id === 'home') {
-      if (LANGUAGE_REGISTRY.length > 1) showLanguagePicker();
-    }
+    if      (id === 'lang-pick')  { /* root */ }
+    else if (id === 'home')       { if (LANGUAGE_REGISTRY.length > 1) showLanguagePicker(); }
     else if (id === 'level-view') goHome();
-    else if (id === 'review') {
-      document.getElementById('nav-add').style.display = '';
+    else if (id === 'review')     {
+      document.getElementById('nav-add').style.display   = '';
+      document.getElementById('nav-reset').style.display = '';
+      speechSynthesis?.cancel();
       State.currentLevel ? openLevel(State.currentLevel) : goHome();
     }
     else if (id === 'add-view' || id === 'done-view') {
-      document.getElementById('nav-add').style.display = '';
+      document.getElementById('nav-add').style.display   = '';
+      document.getElementById('nav-reset').style.display = '';
       goHome();
     }
   });
-
   document.getElementById('done-home-btn').addEventListener('click', goHome);
 }
 
 function goHome() {
+  speechSynthesis?.cancel();
   renderHome();
   showScreen('home');
   updateNavForHome();
@@ -838,12 +806,20 @@ function goHome() {
 
 function updateNavForHome() {
   const lang = getLang();
-  document.getElementById('nav-title').textContent = `${lang.flag} ${lang.name}`;
-  document.getElementById('nav-title').style.display = 'block';
-  document.getElementById('nav-wordmark').style.display = 'none';
+  setNavTitle(`${lang.flag} ${lang.name}`);
   document.getElementById('nav-back').style.display =
     LANGUAGE_REGISTRY.length > 1 ? '' : 'none';
-  document.getElementById('nav-add').style.display = '';
+  document.getElementById('nav-add').style.display   = '';
+  document.getElementById('nav-reset').style.display = '';
+  // Show globe icon only if >1 language
+  document.getElementById('nav-lang').style.display =
+    LANGUAGE_REGISTRY.length > 1 ? '' : 'none';
+}
+
+function setNavTitle(text) {
+  document.getElementById('nav-title').textContent  = text;
+  document.getElementById('nav-title').style.display = '';
+  document.getElementById('nav-wordmark').style.display = 'none';
 }
 
 function showScreen(id) {
@@ -852,95 +828,50 @@ function showScreen(id) {
 }
 
 function showError(msg) {
-  document.body.innerHTML = `<div style="padding:40px;text-align:center;color:#c0392b;font-family:sans-serif">
-    <div style="font-size:32px">⚠️</div><div style="margin-top:12px">${msg}</div>
+  document.getElementById('loading-screen').classList.add('hidden');
+  document.body.innerHTML = `<div style="padding:48px 24px;text-align:center;font-family:sans-serif;color:var(--text)">
+    <div style="font-size:40px">⚠️</div>
+    <div style="margin-top:16px;font-size:16px;line-height:1.6">${msg}</div>
+    <button onclick="location.reload()" style="margin-top:24px;padding:12px 28px;background:#2d6a4f;color:#fff;border:none;border-radius:12px;font-size:15px;cursor:pointer">Retry</button>
   </div>`;
 }
 
-// ── Haptic Feedback ──
-function hapticFeedback() {
-  if (navigator.vibrate) {
-    navigator.vibrate(10);
-  }
-}
-
-// ── Streak System ──
+// ── Streak ──
 function loadStreakData() {
-  const today = new Date().toDateString();
-  const lastReviewStr = localStorage.getItem('lastReviewDate');
-  const streakCount = parseInt(localStorage.getItem('streakCount') || '0', 10);
-  
-  State.lastReviewDate = lastReviewStr;
-  State.streakCount = streakCount;
+  State.lastReviewDate = localStorage.getItem('lastReviewDate');
+  State.streakCount    = parseInt(localStorage.getItem('streakCount') || '0', 10);
 }
 
 function updateStreakDisplay() {
-  const streakBanner = document.getElementById('streak-banner');
+  const banner = document.getElementById('streak-banner');
   if (State.streakCount > 0) {
-    streakBanner.classList.add('visible');
-    const countText = State.streakCount === 1 ? 'day' : 'days';
-    document.getElementById('streak-count').textContent = `${State.streakCount} ${countText} streak 🔥`;
+    banner.classList.add('visible');
+    document.getElementById('streak-count').textContent =
+      `${State.streakCount} ${State.streakCount === 1 ? 'day' : 'days'} streak 🔥`;
   } else {
-    streakBanner.classList.remove('visible');
+    banner.classList.remove('visible');
   }
 }
 
 function updateStreakOnSessionComplete() {
-  const today = new Date().toDateString();
-  const lastReviewDate = localStorage.getItem('lastReviewDate');
-  
-  if (lastReviewDate === today) {
-    // Already reviewed today, streak is maintained
-    return;
-  }
-  
+  const today     = new Date().toDateString();
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
-  
-  if (lastReviewDate === yesterday.toDateString()) {
-    // Reviewed yesterday, so continue the streak
-    State.streakCount++;
-  } else {
-    // First review or streak was broken, start new streak
-    State.streakCount = 1;
-  }
-  
+  if (State.lastReviewDate === today) return;
+  State.streakCount = State.lastReviewDate === yesterday.toDateString()
+    ? State.streakCount + 1 : 1;
+  State.lastReviewDate = today;
   localStorage.setItem('lastReviewDate', today);
   localStorage.setItem('streakCount', State.streakCount.toString());
-}
-
-// ── Language Indicator ──
-function updateLanguageIndicator(lang) {
-  const badge = document.getElementById('studying-badge');
-  if (badge) {
-    document.getElementById('studying-flag').textContent = lang.flag;
-    document.getElementById('studying-name').textContent = lang.name;
-    badge.style.display = 'flex';
-  }
-}
-
-// ── Swipe Gesture Initialization (stub for now, actual implementation in renderCard) ──
-function initSwipeGestures() {
-  // Swipe gestures are initialized per-card in renderCard()
 }
 
 // ── Start ──
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     boot();
-    // Register Service Worker if available
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').catch(err => {
-        console.warn('[App] Service Worker registration failed:', err);
-      });
-    }
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
   });
 } else {
   boot();
-  // Register Service Worker if available
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').catch(err => {
-      console.warn('[App] Service Worker registration failed:', err);
-    });
-  }
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 }
