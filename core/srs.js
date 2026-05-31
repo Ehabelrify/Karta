@@ -97,14 +97,13 @@ const SRS = (() => {
 
   function buildQueue(wordIds, langCode, maxCards = 40) {
     const data = load(langCode);
-    const due = [], reviewed = [];
+    const due = [], newW = [], reviewed = [];
 
     for (const id of wordIds) {
       const c = data[id];
-      if (!isNew(c)) {
-        if (isDue(c))  due.push(id);
-        else           reviewed.push(id);
-      }
+      if (isNew(c))       newW.push(id);
+      else if (isDue(c))  due.push(id);
+      else                reviewed.push(id);
     }
 
     const shuffle = arr => {
@@ -118,13 +117,13 @@ const SRS = (() => {
     shuffle(reviewed);
     due.sort((a, b) => (data[a]?.due || 0) - (data[b]?.due || 0));
 
-    // Smart review: ~70% due/overdue, ~30% reviewed-but-waiting
-    // Excludes brand-new words entirely
-    const total        = Math.min(maxCards, due.length + reviewed.length);
-    const reviewedCount = Math.max(0, Math.round(total * 0.3));
-    const dueCount     = total - reviewedCount;
+    // Smart review: ~70% due/overdue, ~20% reviewed-but-waiting, ~10% brand-new
+    const total        = Math.min(maxCards, due.length + reviewed.length + newW.length);
+    const newCount     = Math.max(0, Math.round(total * 0.1));
+    const reviewedCount = Math.max(0, Math.round(total * 0.2));
+    const dueCount     = total - reviewedCount - newCount;
 
-    const queue = [...due.slice(0, dueCount), ...reviewed.slice(0, reviewedCount)];
+    const queue = [...due.slice(0, dueCount), ...reviewed.slice(0, reviewedCount), ...newW.slice(0, newCount)];
 
     return shuffle(queue);
   }

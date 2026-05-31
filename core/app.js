@@ -32,14 +32,14 @@ const State = {
 };
 
 // ── Boot ──
-function boot() {
+async function boot() {
   if (LANGUAGE_REGISTRY.length === 0) {
     showError('No languages configured. Check core/languages.js.');
     return;
   }
   if (LANGUAGE_REGISTRY.length === 1) {
     // Single language — skip picker, load and activate
-    loadLanguage(LANGUAGE_REGISTRY[0]);
+    await loadLanguage(LANGUAGE_REGISTRY[0]);
   } else {
     showLanguagePicker();
   }
@@ -52,7 +52,7 @@ function activateLanguage(lang, loadedWords) {
   State.activeLang = lang;
   // loadedWords comes from JSON files
   const custom = SRS.getCustomWords(lang.code);
-  State.allWords = [...loadedWords, ...custom];
+  State.allWords = [...(loadedWords || []), ...custom];
   document.documentElement.dir = lang.dir || 'ltr';
   renderHome();
   showScreen('home');
