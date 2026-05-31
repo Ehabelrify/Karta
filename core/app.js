@@ -467,9 +467,9 @@ function renderCard() {
   document.getElementById('reveal-btn').addEventListener('click', revealCard);
 
   // Speaker button for audio pronunciation
-  const speakBtn = document.getElementById('speak-btn');
-  if (speakBtn) {
-    speakBtn.addEventListener('click', e => {
+  const speakBtnElement = document.getElementById('speak-btn');
+  if (speakBtnElement) {
+    speakBtnElement.addEventListener('click', e => {
       e.stopPropagation();
       pronounceWord(targetText, lang.code);
     });
@@ -744,4 +744,22 @@ function showError(msg) {
 }
 
 // ── Start ──
-boot();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    boot();
+    // Register Service Worker if available
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(err => {
+        console.warn('[App] Service Worker registration failed:', err);
+      });
+    }
+  });
+} else {
+  boot();
+  // Register Service Worker if available
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(err => {
+      console.warn('[App] Service Worker registration failed:', err);
+    });
+  }
+}

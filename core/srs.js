@@ -57,7 +57,7 @@ const SRS = (() => {
 
   function isDue(card) {
     if (!card) return false;
-    if (card.due === 0) return true;
+    if (card.due === 0) return false; // New cards are not due
     return card.due <= Date.now();
   }
   function isNew(card) { return !card || card.due === 0; }
@@ -119,11 +119,23 @@ const SRS = (() => {
 
     // Smart review: ~70% due/overdue, ~20% reviewed-but-waiting, ~10% brand-new
     const total        = Math.min(maxCards, due.length + reviewed.length + newW.length);
-    const newCount     = Math.max(0, Math.round(total * 0.1));
-    const reviewedCount = Math.max(0, Math.round(total * 0.2));
-    const dueCount     = total - reviewedCount - newCount;
+    // Allocate slots based on availability, prioritizing due → reviewed → new
+    const dueCount     = Math.min(Math.round(total * 0.7), due.length);
+    const reviewedCount = Math.min(Math.round(total * 0.2), reviewed.length);
+    const newCount     = Math.min(Math.round(total * 0.1), newW.length);
+    // Fill remaining slots with any available cards
+    const remaining = total - dueCount - reviewedCount - newCount;
+    const extra = remaining > 0 ? {
+      fromDue: Math.min(remaining, due.length - dueCount),
+      fromReviewed: Math.min(Math.max(0, remaining - (due.length - dueCount)), reviewed.length - reviewedCount),
+      fromNew: Math.min(Math.max(0, remaining - (due.length - dueCount) - (reviewed.length - reviewedCount)), newW.length - newCount)
+    } : { fromDue: 0, fromReviewed: 0, fromNew: 0 };
 
-    const queue = [...due.slice(0, dueCount), ...reviewed.slice(0, reviewedCount), ...newW.slice(0, newCount)];
+    const queue = [
+      ...due.slice(0, dueCount + extra.fromDue),
+      ...reviewed.slice(0, reviewedCount + extra.fromReviewed),
+      ...newW.slice(0, newCount + extra.fromNew)
+    ];
 
     return shuffle(queue);
   }
