@@ -1,4 +1,4 @@
-const CACHE = 'flashcards-v1';
+const CACHE = 'karta-p1';
 const ASSETS = [
   './',
   './index.html',
