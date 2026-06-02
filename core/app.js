@@ -392,9 +392,10 @@ function openResetConfirm() {
   overlay.onclick = closeReset;
   document.getElementById('reset-cancel-btn').onclick = closeReset;
 
-  // Remove all stored data for the current language and reset state
-  const lang = getLang();
-  if (lang) {
+  document.getElementById('reset-progress-btn').onclick = () => {
+    closeReset();
+    const lang = getLang();
+    if (!lang) return;
     localStorage.removeItem(`srs_v2_${lang.code}`);
     localStorage.removeItem(`custom_v1_${lang.code}`);
     localStorage.removeItem(`bookmarks_${lang.code}`);
@@ -403,9 +404,8 @@ function openResetConfirm() {
     State.streakCount    = 0;
     State.lastReviewDate = null;
     State.bookmarks      = new Set();
-    loadLanguage(lang); // Reload the language data after reset
-  }
-}
+    loadLanguage(lang);
+  };
 
   document.getElementById('reload-app-btn').onclick = () => {
     closeReset();
