@@ -186,7 +186,7 @@
       "source_file": "core/app.js",
       "source_location": "L1",
       "id": "core_app",
-      "community": 4,
+      "community": 0,
       "norm_label": "app.js"
     },
     {
@@ -231,7 +231,7 @@
       "source_file": "core/app.js",
       "source_location": "L106",
       "id": "core_app_activatelanguage",
-      "community": 3,
+      "community": 0,
       "norm_label": "activatelanguage()"
     },
     {
@@ -276,7 +276,7 @@
       "source_file": "core/app.js",
       "source_location": "L273",
       "id": "core_app_openvoicesheet",
-      "community": 4,
+      "community": 0,
       "norm_label": "openvoicesheet()"
     },
     {
@@ -285,7 +285,7 @@
       "source_file": "core/app.js",
       "source_location": "L375",
       "id": "core_app_closevoicesheet",
-      "community": 4,
+      "community": 0,
       "norm_label": "closevoicesheet()"
     },
     {
@@ -375,7 +375,7 @@
       "source_file": "core/app.js",
       "source_location": "L511",
       "id": "core_app_loadpreferredvoice",
-      "community": 3,
+      "community": 0,
       "norm_label": "loadpreferredvoice()"
     },
     {
@@ -384,7 +384,7 @@
       "source_file": "core/app.js",
       "source_location": "L525",
       "id": "core_app_savepreferredvoice",
-      "community": 4,
+      "community": 0,
       "norm_label": "savepreferredvoice()"
     },
     {
@@ -411,7 +411,7 @@
       "source_file": "core/app.js",
       "source_location": "L664",
       "id": "core_app_browse",
-      "community": 4,
+      "community": 0,
       "norm_label": "_browse"
     },
     {
@@ -438,7 +438,7 @@
       "source_file": "core/app.js",
       "source_location": "L689",
       "id": "core_app_closebrowse",
-      "community": 4,
+      "community": 0,
       "norm_label": "closebrowse()"
     },
     {
@@ -546,7 +546,7 @@
       "source_file": "core/app.js",
       "source_location": "L1346",
       "id": "core_app_revealcard",
-      "community": 4,
+      "community": 2,
       "norm_label": "revealcard()"
     },
     {
@@ -564,7 +564,7 @@
       "source_file": "core/app.js",
       "source_location": "L1369",
       "id": "core_app_showdone",
-      "community": 2,
+      "community": 0,
       "norm_label": "showdone()"
     },
     {
@@ -573,7 +573,7 @@
       "source_file": "core/app.js",
       "source_location": "L1385",
       "id": "core_app_hapticctx",
-      "community": 4,
+      "community": 0,
       "norm_label": "_hapticctx"
     },
     {
@@ -582,7 +582,7 @@
       "source_file": "core/app.js",
       "source_location": "L1386",
       "id": "core_app_hapticfeedback",
-      "community": 4,
+      "community": 2,
       "norm_label": "hapticfeedback()"
     },
     {
@@ -681,7 +681,7 @@
       "source_file": "core/app.js",
       "source_location": "L1569",
       "id": "core_app_updatestreakonsessioncomplete",
-      "community": 2,
+      "community": 0,
       "norm_label": "updatestreakonsessioncomplete()"
     },
     {
@@ -690,7 +690,7 @@
       "source_file": "core/languages.js",
       "source_location": "L1",
       "id": "core_languages",
-      "community": 3,
+      "community": 4,
       "norm_label": "languages.js"
     },
     {
@@ -699,8 +699,26 @@
       "source_file": "core/languages.js",
       "source_location": "L8",
       "id": "core_languages_language_registry",
-      "community": 3,
+      "community": 4,
       "norm_label": "language_registry"
+    },
+    {
+      "label": "srs.js",
+      "file_type": "code",
+      "source_file": "core/srs.js",
+      "source_location": "L1",
+      "id": "core_srs",
+      "community": 3,
+      "norm_label": "srs.js"
+    },
+    {
+      "label": "SRS",
+      "file_type": "code",
+      "source_file": "core/srs.js",
+      "source_location": "L5",
+      "id": "core_srs_srs",
+      "community": 3,
+      "norm_label": "srs"
     },
     {
       "label": "a1.json",
@@ -847,6 +865,96 @@
       "norm_label": "words"
     },
     {
+      "label": "manifest.json",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L1",
+      "id": "manifest",
+      "community": 5,
+      "norm_label": "manifest.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L2",
+      "id": "manifest_name",
+      "community": 5,
+      "norm_label": "name"
+    },
+    {
+      "label": "short_name",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L3",
+      "id": "manifest_short_name",
+      "community": 5,
+      "norm_label": "short_name"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L4",
+      "id": "manifest_description",
+      "community": 5,
+      "norm_label": "description"
+    },
+    {
+      "label": "start_url",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L5",
+      "id": "manifest_start_url",
+      "community": 5,
+      "norm_label": "start_url"
+    },
+    {
+      "label": "display",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L6",
+      "id": "manifest_display",
+      "community": 5,
+      "norm_label": "display"
+    },
+    {
+      "label": "background_color",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L7",
+      "id": "manifest_background_color",
+      "community": 5,
+      "norm_label": "background_color"
+    },
+    {
+      "label": "theme_color",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L8",
+      "id": "manifest_theme_color",
+      "community": 5,
+      "norm_label": "theme_color"
+    },
+    {
+      "label": "orientation",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L9",
+      "id": "manifest_orientation",
+      "community": 5,
+      "norm_label": "orientation"
+    },
+    {
+      "label": "icons",
+      "file_type": "code",
+      "source_file": "manifest.json",
+      "source_location": "L10",
+      "id": "manifest_icons",
+      "community": 5,
+      "norm_label": "icons"
+    },
+    {
       "label": "sw.js",
       "file_type": "code",
       "source_file": "sw.js",
@@ -865,112 +973,17 @@
       "norm_label": "assets"
     },
     {
-      "label": "srs.js",
+      "label": "getSrsStatus",
       "file_type": "code",
-      "source_file": "core/srs.js",
-      "source_location": "L1",
-      "community": 3,
-      "norm_label": "srs.js",
-      "id": "core_srs"
-    },
-    {
-      "label": "SRS",
-      "file_type": "code",
-      "source_file": "core/srs.js",
-      "source_location": "L5",
-      "community": 3,
-      "norm_label": "srs",
-      "id": "core_srs_srs"
-    },
-    {
-      "label": "manifest.json",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L1",
-      "community": 5,
-      "norm_label": "manifest.json",
-      "id": "manifest"
-    },
-    {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L2",
-      "community": 5,
-      "norm_label": "name",
-      "id": "manifest_name"
-    },
-    {
-      "label": "short_name",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L3",
-      "community": 5,
-      "norm_label": "short_name",
-      "id": "manifest_short_name"
-    },
-    {
-      "label": "description",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L4",
-      "community": 5,
-      "norm_label": "description",
-      "id": "manifest_description"
-    },
-    {
-      "label": "start_url",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L5",
-      "community": 5,
-      "norm_label": "start_url",
-      "id": "manifest_start_url"
-    },
-    {
-      "label": "display",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L6",
-      "community": 5,
-      "norm_label": "display",
-      "id": "manifest_display"
-    },
-    {
-      "label": "background_color",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L7",
-      "community": 5,
-      "norm_label": "background_color",
-      "id": "manifest_background_color"
-    },
-    {
-      "label": "theme_color",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L8",
-      "community": 5,
-      "norm_label": "theme_color",
-      "id": "manifest_theme_color"
-    },
-    {
-      "label": "orientation",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L9",
-      "community": 5,
-      "norm_label": "orientation",
-      "id": "manifest_orientation"
-    },
-    {
-      "label": "icons",
-      "file_type": "code",
-      "source_file": "manifest.json",
-      "source_location": "L10",
-      "community": 5,
-      "norm_label": "icons",
-      "id": "manifest_icons"
+      "source_file": "core/app.js",
+      "source_location": "line 712",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "core_app_getgetsrsstatus",
+      "community": 2,
+      "norm_label": "getsrsstatus"
     },
     {
       "label": "SRS.answer",
@@ -981,9 +994,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_answer",
       "community": 3,
-      "norm_label": "srs.answer",
-      "id": "core_srs_answer"
+      "norm_label": "srs.answer"
     },
     {
       "label": "SRS.buildQueue",
@@ -994,9 +1007,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_buildqueue",
       "community": 0,
-      "norm_label": "srs.buildqueue",
-      "id": "core_srs_buildqueue"
+      "norm_label": "srs.buildqueue"
     },
     {
       "label": "SRS.getStats",
@@ -1007,9 +1020,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_getstats",
       "community": 0,
-      "norm_label": "srs.getstats",
-      "id": "core_srs_getstats"
+      "norm_label": "srs.getstats"
     },
     {
       "label": "SRS.getCardState",
@@ -1020,9 +1033,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_getcardstate",
       "community": 2,
-      "norm_label": "srs.getcardstate",
-      "id": "core_srs_getcardstate"
+      "norm_label": "srs.getcardstate"
     },
     {
       "label": "SRS.addCustomWord",
@@ -1033,9 +1046,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_addcustomword",
       "community": 11,
-      "norm_label": "srs.addcustomword",
-      "id": "core_srs_addcustomword"
+      "norm_label": "srs.addcustomword"
     },
     {
       "label": "SRS.getCustomWords",
@@ -1046,9 +1059,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "norm_label": "srs.getcustomwords",
-      "id": "core_srs_getcustomwords"
+      "id": "core_srs_getcustomwords",
+      "community": 0,
+      "norm_label": "srs.getcustomwords"
     },
     {
       "label": "SRS.isNew",
@@ -1059,9 +1072,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_isnew",
       "community": 2,
-      "norm_label": "srs.isnew",
-      "id": "core_srs_isnew"
+      "norm_label": "srs.isnew"
     },
     {
       "label": "SRS.isDue",
@@ -1072,9 +1085,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
-      "norm_label": "srs.isdue",
-      "id": "core_srs_isdue"
+      "id": "core_srs_isdue",
+      "community": 2,
+      "norm_label": "srs.isdue"
     },
     {
       "label": "SRS.load",
@@ -1085,9 +1098,48 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "core_srs_load",
       "community": 0,
-      "norm_label": "srs.load",
-      "id": "core_srs_load"
+      "norm_label": "srs.load"
+    },
+    {
+      "label": "install handler",
+      "file_type": "code",
+      "source_file": "sw.js",
+      "source_location": "line 17",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sw_installhandler",
+      "community": 3,
+      "norm_label": "install handler"
+    },
+    {
+      "label": "activate handler",
+      "file_type": "code",
+      "source_file": "sw.js",
+      "source_location": "line 25",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sw_activatehandler",
+      "community": 12,
+      "norm_label": "activate handler"
+    },
+    {
+      "label": "fetch handler (cache-first)",
+      "file_type": "code",
+      "source_file": "sw.js",
+      "source_location": "line 35",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sw_fetchhandler",
+      "community": 3,
+      "norm_label": "fetch handler (cache-first)"
     },
     {
       "label": "PWA Manifest",
@@ -1098,9 +1150,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "pwa manifest",
-      "id": "manifest_pwa"
+      "id": "manifest_pwa",
+      "community": 3,
+      "norm_label": "pwa manifest"
     },
     {
       "label": "Karta README",
@@ -1111,9 +1163,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "readme_karta",
       "community": 3,
-      "norm_label": "karta readme",
-      "id": "readme_karta"
+      "norm_label": "karta readme"
     },
     {
       "label": "German Vocabulary Dataset",
@@ -1124,9 +1176,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "german_readme_dataset",
       "community": 3,
-      "norm_label": "german vocabulary dataset",
-      "id": "german_readme_dataset"
+      "norm_label": "german vocabulary dataset"
     },
     {
       "label": "Karta 192px Icon - green rounded rect with DE text",
@@ -1137,9 +1189,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "karta 192px icon - green rounded rect with de text",
-      "id": "icon192_karta_icon"
+      "id": "icon192_karta_icon",
+      "community": 3,
+      "norm_label": "karta 192px icon - green rounded rect with de text"
     },
     {
       "label": "SM-2 Style Spaced Repetition Algorithm",
@@ -1151,9 +1203,23 @@
       "author": null,
       "contributor": null,
       "rationale": "Uses SM-2 inspired algorithm (ease factor, interval multiplication) with three ratings: again/good/easy. Prioritizes due cards (70%), then reviewed-but-waiting (20%), then new (10%) in buildQueue. Language-namespaced localStorage keys prevent cross-language data mixing.",
+      "id": "srs_sm2_algorithm",
       "community": 3,
-      "norm_label": "sm-2 style spaced repetition algorithm",
-      "id": "srs_sm2_algorithm"
+      "norm_label": "sm-2 style spaced repetition algorithm"
+    },
+    {
+      "label": "Offline-First PWA Pattern",
+      "file_type": "rationale",
+      "source_file": "sw.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Cache-first strategy: all core assets cached at install. Service worker caches index.html, all JS, manifest, German JSON vocab files and icons so the app works after first load with no connection required.",
+      "id": "offline_first_pwa",
+      "community": 3,
+      "norm_label": "offline-first pwa pattern"
     },
     {
       "label": "localStorage-based Persistence",
@@ -1165,9 +1231,347 @@
       "author": null,
       "contributor": null,
       "rationale": "All SRS progress, custom words, bookmarks, voice preferences and streak data stored in localStorage. No backend required. Keys namespaced by language code (srs_v2_{lang}, custom_v1_{lang}, bookmarks_{lang}, preferred_voice_{lang}).",
+      "id": "localstorage_persistence",
       "community": 3,
-      "norm_label": "localstorage-based persistence",
-      "id": "localstorage_persistence"
+      "norm_label": "localstorage-based persistence"
+    },
+    {
+      "label": "German A1 Vocabulary File",
+      "file_type": "document",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "german_a1_file",
+      "community": 1,
+      "norm_label": "german a1 vocabulary file"
+    },
+    {
+      "label": "German A2 Vocabulary File",
+      "file_type": "document",
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "german_a2_file",
+      "community": 1,
+      "norm_label": "german a2 vocabulary file"
+    },
+    {
+      "label": "German B1 Vocabulary File",
+      "file_type": "document",
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "german_b1_file",
+      "community": 1,
+      "norm_label": "german b1 vocabulary file"
+    },
+    {
+      "label": "German B2 Vocabulary File",
+      "file_type": "document",
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "german_b2_file",
+      "community": 1,
+      "norm_label": "german b2 vocabulary file"
+    },
+    {
+      "label": "CEFR A1 Beginner Level",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cefr_a1",
+      "community": 1,
+      "norm_label": "cefr a1 beginner level"
+    },
+    {
+      "label": "CEFR A2 Elementary Level",
+      "file_type": "concept",
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cefr_a2",
+      "community": 1,
+      "norm_label": "cefr a2 elementary level"
+    },
+    {
+      "label": "CEFR B1 Intermediate Level",
+      "file_type": "concept",
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cefr_b1",
+      "community": 1,
+      "norm_label": "cefr b1 intermediate level"
+    },
+    {
+      "label": "CEFR B2 Upper-Intermediate Level",
+      "file_type": "concept",
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cefr_b2",
+      "community": 1,
+      "norm_label": "cefr b2 upper-intermediate level"
+    },
+    {
+      "label": "People & Family Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_people_family",
+      "community": 1,
+      "norm_label": "people & family category"
+    },
+    {
+      "label": "Food & Drink Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_food_drink",
+      "community": 1,
+      "norm_label": "food & drink category"
+    },
+    {
+      "label": "Numbers Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_numbers",
+      "community": 1,
+      "norm_label": "numbers category"
+    },
+    {
+      "label": "Time Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_time",
+      "community": 1,
+      "norm_label": "time category"
+    },
+    {
+      "label": "Colors Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_colors",
+      "community": 1,
+      "norm_label": "colors category"
+    },
+    {
+      "label": "Body Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_body",
+      "community": 1,
+      "norm_label": "body category"
+    },
+    {
+      "label": "Nature Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_nature",
+      "community": 1,
+      "norm_label": "nature category"
+    },
+    {
+      "label": "Places Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_places",
+      "community": 1,
+      "norm_label": "places category"
+    },
+    {
+      "label": "Work Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_work",
+      "community": 1,
+      "norm_label": "work category"
+    },
+    {
+      "label": "Emotions Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_emotions",
+      "community": 1,
+      "norm_label": "emotions category"
+    },
+    {
+      "label": "Travel Category",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_travel",
+      "community": 1,
+      "norm_label": "travel category"
+    },
+    {
+      "label": "Informal Register (du-form, casual vocabulary)",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_register_informal",
+      "community": 1,
+      "norm_label": "informal register (du-form, casual vocabulary)"
+    },
+    {
+      "label": "Formal Register (Sie-form, professional vocabulary)",
+      "file_type": "concept",
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_register_formal",
+      "community": 1,
+      "norm_label": "formal register (sie-form, professional vocabulary)"
+    },
+    {
+      "label": "Neutral Register (everyday vocabulary)",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_register_neutral",
+      "community": 1,
+      "norm_label": "neutral register (everyday vocabulary)"
+    },
+    {
+      "label": "Core Survival Vocabulary Theme",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_core_vocab",
+      "community": 1,
+      "norm_label": "core survival vocabulary theme"
+    },
+    {
+      "label": "Professional and Academic Vocabulary Theme",
+      "file_type": "concept",
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_professional_vocab",
+      "community": 1,
+      "norm_label": "professional and academic vocabulary theme"
+    },
+    {
+      "label": "Societal and Abstract Concepts Theme",
+      "file_type": "concept",
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_societal_vocab",
+      "community": 1,
+      "norm_label": "societal and abstract concepts theme"
+    },
+    {
+      "label": "Vocabulary Distribution Across CEFR Levels",
+      "file_type": "concept",
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_vocab_distribution",
+      "community": 1,
+      "norm_label": "vocabulary distribution across cefr levels"
     }
   ],
   "links": [
@@ -1177,9 +1581,9 @@
       "source_file": "core/app.js",
       "source_location": "L106",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_activatelanguage"
+      "target": "core_app_activatelanguage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1187,9 +1591,9 @@
       "source_file": "core/app.js",
       "source_location": "L1428",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_bindadd"
+      "target": "core_app_bindadd",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1197,9 +1601,9 @@
       "source_file": "core/app.js",
       "source_location": "L667",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_bindbrowse"
+      "target": "core_app_bindbrowse",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1207,9 +1611,9 @@
       "source_file": "core/app.js",
       "source_location": "L156",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_bindlangsheet"
+      "target": "core_app_bindlangsheet",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1217,9 +1621,9 @@
       "source_file": "core/app.js",
       "source_location": "L1494",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_bindnav"
+      "target": "core_app_bindnav",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1227,9 +1631,9 @@
       "source_file": "core/app.js",
       "source_location": "L213",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_bindsettingssheet"
+      "target": "core_app_bindsettingssheet",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1237,9 +1641,9 @@
       "source_file": "core/app.js",
       "source_location": "L67",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_boot"
+      "target": "core_app_boot",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1247,9 +1651,9 @@
       "source_file": "core/app.js",
       "source_location": "L664",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_browse"
+      "target": "core_app_browse",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1257,9 +1661,9 @@
       "source_file": "core/app.js",
       "source_location": "L769",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_buildbrowseitem"
+      "target": "core_app_buildbrowseitem",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1267,9 +1671,9 @@
       "source_file": "core/app.js",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_cat_icons"
+      "target": "core_app_cat_icons",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1277,9 +1681,9 @@
       "source_file": "core/app.js",
       "source_location": "L689",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_closebrowse"
+      "target": "core_app_closebrowse",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1287,9 +1691,9 @@
       "source_file": "core/app.js",
       "source_location": "L375",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_closevoicesheet"
+      "target": "core_app_closevoicesheet",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1297,9 +1701,9 @@
       "source_file": "core/app.js",
       "source_location": "L482",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_filterwords"
+      "target": "core_app_filterwords",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1307,9 +1711,9 @@
       "source_file": "core/app.js",
       "source_location": "L488",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1317,9 +1721,9 @@
       "source_file": "core/app.js",
       "source_location": "L1286",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_getnextinterval"
+      "target": "core_app_getnextinterval",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1327,9 +1731,9 @@
       "source_file": "core/app.js",
       "source_location": "L712",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_getsrsstatus"
+      "target": "core_app_getsrsstatus",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1337,9 +1741,9 @@
       "source_file": "core/app.js",
       "source_location": "L1516",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_gohome"
+      "target": "core_app_gohome",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1347,9 +1751,9 @@
       "source_file": "core/app.js",
       "source_location": "L1357",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_handleanswer"
+      "target": "core_app_handleanswer",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1357,9 +1761,9 @@
       "source_file": "core/app.js",
       "source_location": "L1385",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_hapticctx"
+      "target": "core_app_hapticctx",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1367,9 +1771,9 @@
       "source_file": "core/app.js",
       "source_location": "L1386",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_hapticfeedback"
+      "target": "core_app_hapticfeedback",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1377,9 +1781,9 @@
       "source_file": "core/app.js",
       "source_location": "L489",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_levelbadgeclass"
+      "target": "core_app_levelbadgeclass",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1387,9 +1791,9 @@
       "source_file": "core/app.js",
       "source_location": "L494",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_loadbookmarks"
+      "target": "core_app_loadbookmarks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1397,9 +1801,9 @@
       "source_file": "core/app.js",
       "source_location": "L419",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_loadlanguage"
+      "target": "core_app_loadlanguage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1407,9 +1811,9 @@
       "source_file": "core/app.js",
       "source_location": "L511",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_loadpreferredvoice"
+      "target": "core_app_loadpreferredvoice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1417,9 +1821,9 @@
       "source_file": "core/app.js",
       "source_location": "L1555",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_loadstreakdata"
+      "target": "core_app_loadstreakdata",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1427,9 +1831,9 @@
       "source_file": "core/app.js",
       "source_location": "L678",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_openbrowse"
+      "target": "core_app_openbrowse",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1437,9 +1841,9 @@
       "source_file": "core/app.js",
       "source_location": "L894",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_openlevel"
+      "target": "core_app_openlevel",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1447,9 +1851,9 @@
       "source_file": "core/app.js",
       "source_location": "L381",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_openresetconfirm"
+      "target": "core_app_openresetconfirm",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1457,9 +1861,9 @@
       "source_file": "core/app.js",
       "source_location": "L273",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_openvoicesheet"
+      "target": "core_app_openvoicesheet",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1467,9 +1871,9 @@
       "source_file": "core/app.js",
       "source_location": "L1295",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_pronounceword"
+      "target": "core_app_pronounceword",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1477,9 +1881,9 @@
       "source_file": "core/app.js",
       "source_location": "L694",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_renderbrowsefilters"
+      "target": "core_app_renderbrowsefilters",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1487,9 +1891,9 @@
       "source_file": "core/app.js",
       "source_location": "L720",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_renderbrowselist"
+      "target": "core_app_renderbrowselist",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1497,9 +1901,9 @@
       "source_file": "core/app.js",
       "source_location": "L974",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_rendercard"
+      "target": "core_app_rendercard",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1507,9 +1911,9 @@
       "source_file": "core/app.js",
       "source_location": "L916",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_rendercategories"
+      "target": "core_app_rendercategories",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1517,9 +1921,9 @@
       "source_file": "core/app.js",
       "source_location": "L533",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_renderhome"
+      "target": "core_app_renderhome",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1527,9 +1931,9 @@
       "source_file": "core/app.js",
       "source_location": "L606",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_renderhomeactions"
+      "target": "core_app_renderhomeactions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1537,9 +1941,9 @@
       "source_file": "core/app.js",
       "source_location": "L256",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_rendersettingssheet"
+      "target": "core_app_rendersettingssheet",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1547,9 +1951,9 @@
       "source_file": "core/app.js",
       "source_location": "L1346",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_revealcard"
+      "target": "core_app_revealcard",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1557,9 +1961,9 @@
       "source_file": "core/app.js",
       "source_location": "L500",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_savebookmarks"
+      "target": "core_app_savebookmarks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1567,9 +1971,9 @@
       "source_file": "core/app.js",
       "source_location": "L525",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_savepreferredvoice"
+      "target": "core_app_savepreferredvoice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1577,9 +1981,9 @@
       "source_file": "core/app.js",
       "source_location": "L1532",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_setnavtitle"
+      "target": "core_app_setnavtitle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1587,9 +1991,9 @@
       "source_file": "core/app.js",
       "source_location": "L1407",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_setupwordtooltip"
+      "target": "core_app_setupwordtooltip",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1597,9 +2001,9 @@
       "source_file": "core/app.js",
       "source_location": "L1369",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_showdone"
+      "target": "core_app_showdone",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1607,9 +2011,9 @@
       "source_file": "core/app.js",
       "source_location": "L1543",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_showerror"
+      "target": "core_app_showerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1617,9 +2021,9 @@
       "source_file": "core/app.js",
       "source_location": "L124",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_showlanguagepicker"
+      "target": "core_app_showlanguagepicker",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1627,9 +2031,9 @@
       "source_file": "core/app.js",
       "source_location": "L1538",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1637,9 +2041,9 @@
       "source_file": "core/app.js",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_speak_lang_map"
+      "target": "core_app_speak_lang_map",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1647,9 +2051,9 @@
       "source_file": "core/app.js",
       "source_location": "L1280",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_speakericon"
+      "target": "core_app_speakericon",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1657,9 +2061,9 @@
       "source_file": "core/app.js",
       "source_location": "L951",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_startreview"
+      "target": "core_app_startreview",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1667,9 +2071,9 @@
       "source_file": "core/app.js",
       "source_location": "L45",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_state"
+      "target": "core_app_state",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1677,9 +2081,9 @@
       "source_file": "core/app.js",
       "source_location": "L503",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_togglebookmark"
+      "target": "core_app_togglebookmark",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1687,9 +2091,9 @@
       "source_file": "core/app.js",
       "source_location": "L1523",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_updatenavforhome"
+      "target": "core_app_updatenavforhome",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1697,9 +2101,9 @@
       "source_file": "core/app.js",
       "source_location": "L1559",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_updatestreakdisplay"
+      "target": "core_app_updatestreakdisplay",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1707,9 +2111,9 @@
       "source_file": "core/app.js",
       "source_location": "L1569",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_updatestreakonsessioncomplete"
+      "target": "core_app_updatestreakonsessioncomplete",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -1717,9 +2121,9 @@
       "source_file": "core/app.js",
       "source_location": "L487",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app",
-      "target": "core_app_wordbyid"
+      "target": "core_app_wordbyid",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -1768,9 +2172,9 @@
       "source_file": "core/app.js",
       "source_location": "L74",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_boot",
-      "target": "core_app_bindadd"
+      "target": "core_app_bindadd",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1779,9 +2183,9 @@
       "source_file": "core/app.js",
       "source_location": "L77",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_boot",
-      "target": "core_app_bindbrowse"
+      "target": "core_app_bindbrowse",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1801,9 +2205,9 @@
       "source_file": "core/app.js",
       "source_location": "L73",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_boot",
-      "target": "core_app_bindnav"
+      "target": "core_app_bindnav",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1845,9 +2249,9 @@
       "source_file": "core/app.js",
       "source_location": "L69",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_boot",
-      "target": "core_app_showerror"
+      "target": "core_app_showerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1910,9 +2314,9 @@
       "source_file": "core/app.js",
       "source_location": "L115",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_activatelanguage",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1921,9 +2325,9 @@
       "source_file": "core/app.js",
       "source_location": "L116",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_activatelanguage",
-      "target": "core_app_updatenavforhome"
+      "target": "core_app_updatenavforhome",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1953,9 +2357,9 @@
       "source_file": "core/app.js",
       "source_location": "L147",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_showlanguagepicker",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -1994,9 +2398,9 @@
       "source_file": "core/app.js",
       "source_location": "L257",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendersettingssheet",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2005,9 +2409,9 @@
       "source_file": "core/app.js",
       "source_location": "L279",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openvoicesheet",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2046,9 +2450,9 @@
       "source_file": "core/app.js",
       "source_location": "L475",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_loadlanguage",
-      "target": "core_app_showerror"
+      "target": "core_app_showerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2067,9 +2471,9 @@
       "source_file": "core/app.js",
       "source_location": "L898",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openlevel",
-      "target": "core_app_filterwords"
+      "target": "core_app_filterwords",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2100,9 +2504,9 @@
       "source_file": "core/app.js",
       "source_location": "L988",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_wordbyid"
+      "target": "core_app_wordbyid",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2111,9 +2515,9 @@
       "source_file": "core/app.js",
       "source_location": "L1359",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_handleanswer",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2122,9 +2526,9 @@
       "source_file": "core/app.js",
       "source_location": "L897",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openlevel",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2133,9 +2537,9 @@
       "source_file": "core/app.js",
       "source_location": "L697",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_renderbrowsefilters",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2144,9 +2548,9 @@
       "source_file": "core/app.js",
       "source_location": "L723",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_renderbrowselist",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2155,9 +2559,9 @@
       "source_file": "core/app.js",
       "source_location": "L975",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2166,9 +2570,9 @@
       "source_file": "core/app.js",
       "source_location": "L919",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercategories",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2177,9 +2581,9 @@
       "source_file": "core/app.js",
       "source_location": "L534",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_renderhome",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2188,9 +2592,9 @@
       "source_file": "core/app.js",
       "source_location": "L952",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_startreview",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2199,9 +2603,9 @@
       "source_file": "core/app.js",
       "source_location": "L504",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_togglebookmark",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2210,9 +2614,9 @@
       "source_file": "core/app.js",
       "source_location": "L1524",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_updatenavforhome",
-      "target": "core_app_getlang"
+      "target": "core_app_getlang",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2221,9 +2625,9 @@
       "source_file": "core/app.js",
       "source_location": "L1046",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_levelbadgeclass"
+      "target": "core_app_levelbadgeclass",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2232,9 +2636,9 @@
       "source_file": "core/app.js",
       "source_location": "L588",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_renderhome",
-      "target": "core_app_levelbadgeclass"
+      "target": "core_app_levelbadgeclass",
+      "confidence_score": 1.0
     },
     {
       "relation": "implements",
@@ -2306,9 +2710,9 @@
       "source_file": "core/app.js",
       "source_location": "L603",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_renderhome",
-      "target": "core_app_updatestreakdisplay"
+      "target": "core_app_updatestreakdisplay",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2357,9 +2761,9 @@
       "source_file": "core/app.js",
       "source_location": "L683",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openbrowse",
-      "target": "core_app_renderbrowsefilters"
+      "target": "core_app_renderbrowsefilters",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2389,9 +2793,9 @@
       "source_file": "core/app.js",
       "source_location": "L770",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_buildbrowseitem",
-      "target": "core_app_getsrsstatus"
+      "target": "core_app_getsrsstatus",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2405,6 +2809,16 @@
       "target": "core_app_buildbrowseitem"
     },
     {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "core/app.js",
+      "source_location": "line 712",
+      "weight": 1.0,
+      "source": "core_app_renderbrowselist",
+      "target": "core_app_getgetsrsstatus"
+    },
+    {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
@@ -2413,6 +2827,16 @@
       "weight": 0.75,
       "source": "core_app_renderbrowselist",
       "target": "core_app_rendercategories"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/app.js",
+      "source_location": "line 713",
+      "weight": 1.0,
+      "source": "core_app_buildbrowseitem",
+      "target": "core_app_getgetsrsstatus"
     },
     {
       "relation": "calls",
@@ -2431,9 +2855,9 @@
       "source_file": "core/app.js",
       "source_location": "L816",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_buildbrowseitem",
-      "target": "core_app_speakericon"
+      "target": "core_app_speakericon",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2453,9 +2877,9 @@
       "source_file": "core/app.js",
       "source_location": "L903",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openlevel",
-      "target": "core_app_setnavtitle"
+      "target": "core_app_setnavtitle",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2464,9 +2888,9 @@
       "source_file": "core/app.js",
       "source_location": "L902",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_openlevel",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2536,9 +2960,9 @@
       "source_file": "core/app.js",
       "source_location": "L966",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_startreview",
-      "target": "core_app_setnavtitle"
+      "target": "core_app_setnavtitle",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2547,9 +2971,9 @@
       "source_file": "core/app.js",
       "source_location": "L964",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_startreview",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2579,9 +3003,9 @@
       "source_file": "core/app.js",
       "source_location": "L1216",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_getnextinterval"
+      "target": "core_app_getnextinterval",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2610,9 +3034,9 @@
       "source_file": "core/app.js",
       "source_location": "L1234",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_setupwordtooltip"
+      "target": "core_app_setupwordtooltip",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2621,9 +3045,9 @@
       "source_file": "core/app.js",
       "source_location": "L984",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_showdone"
+      "target": "core_app_showdone",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2632,9 +3056,9 @@
       "source_file": "core/app.js",
       "source_location": "L1104",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_rendercard",
-      "target": "core_app_speakericon"
+      "target": "core_app_speakericon",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2663,9 +3087,9 @@
       "source_file": "core/app.js",
       "source_location": "L1349",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_revealcard",
-      "target": "core_app_hapticfeedback"
+      "target": "core_app_hapticfeedback",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2684,9 +3108,9 @@
       "source_file": "core/app.js",
       "source_location": "L1372",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_showdone",
-      "target": "core_app_setnavtitle"
+      "target": "core_app_setnavtitle",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2695,9 +3119,9 @@
       "source_file": "core/app.js",
       "source_location": "L1371",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_showdone",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2717,9 +3141,9 @@
       "source_file": "core/app.js",
       "source_location": "L1519",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_gohome",
-      "target": "core_app_showscreen"
+      "target": "core_app_showscreen",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2728,9 +3152,9 @@
       "source_file": "core/app.js",
       "source_location": "L1520",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_gohome",
-      "target": "core_app_updatenavforhome"
+      "target": "core_app_updatenavforhome",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2739,9 +3163,9 @@
       "source_file": "core/app.js",
       "source_location": "L1525",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_app_updatenavforhome",
-      "target": "core_app_setnavtitle"
+      "target": "core_app_setnavtitle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2749,9 +3173,9 @@
       "source_file": "core/languages.js",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_languages",
-      "target": "core_languages_language_registry"
+      "target": "core_languages_language_registry",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2776,142 +3200,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "languages/german/a1.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a1",
-      "target": "german_a1_language"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/a1.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a1",
-      "target": "german_a1_level"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/a1.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a1",
-      "target": "german_a1_words"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/a2.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a2",
-      "target": "german_a2_language"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/a2.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a2",
-      "target": "german_a2_level"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/a2.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_a2",
-      "target": "german_a2_words"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b1.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b1",
-      "target": "german_b1_language"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b1.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b1",
-      "target": "german_b1_level"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b1.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b1",
-      "target": "german_b1_words"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b2.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b2",
-      "target": "german_b2_language"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b2.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b2",
-      "target": "german_b2_level"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "languages/german/b2.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "german_b2",
-      "target": "german_b2_words"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "sw.js",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "sw",
-      "target": "sw_assets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "core/srs.js",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "core_srs",
-      "target": "core_srs_srs"
+      "target": "core_srs_srs",
+      "confidence_score": 1.0
     },
     {
       "relation": "implements",
@@ -2926,12 +3220,132 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "languages/german/a1.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "german_a1",
+      "target": "german_a1_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/a1.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "german_a1",
+      "target": "german_a1_level",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/a1.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "german_a1",
+      "target": "german_a1_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/a2.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "german_a2",
+      "target": "german_a2_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/a2.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "german_a2",
+      "target": "german_a2_level",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/a2.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "german_a2",
+      "target": "german_a2_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b1.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "german_b1",
+      "target": "german_b1_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b1.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "german_b1",
+      "target": "german_b1_level",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b1.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "german_b1",
+      "target": "german_b1_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b2.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "german_b2",
+      "target": "german_b2_language",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b2.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "german_b2",
+      "target": "german_b2_level",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "languages/german/b2.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "german_b2",
+      "target": "german_b2_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "manifest.json",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_background_color"
+      "target": "manifest_background_color",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2939,9 +3353,9 @@
       "source_file": "manifest.json",
       "source_location": "L4",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_description"
+      "target": "manifest_description",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2949,9 +3363,9 @@
       "source_file": "manifest.json",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_display"
+      "target": "manifest_display",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2959,9 +3373,9 @@
       "source_file": "manifest.json",
       "source_location": "L10",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_icons"
+      "target": "manifest_icons",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2969,9 +3383,9 @@
       "source_file": "manifest.json",
       "source_location": "L2",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_name"
+      "target": "manifest_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2979,9 +3393,9 @@
       "source_file": "manifest.json",
       "source_location": "L9",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_orientation"
+      "target": "manifest_orientation",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2989,9 +3403,9 @@
       "source_file": "manifest.json",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_short_name"
+      "target": "manifest_short_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2999,9 +3413,9 @@
       "source_file": "manifest.json",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_start_url"
+      "target": "manifest_start_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3009,9 +3423,49 @@
       "source_file": "manifest.json",
       "source_location": "L8",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "manifest",
-      "target": "manifest_theme_color"
+      "target": "manifest_theme_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sw.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "sw",
+      "target": "sw_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/app.js",
+      "source_location": "line 713",
+      "weight": 1.0,
+      "source": "core_app_getgetsrsstatus",
+      "target": "core_srs_getcardstate"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/app.js",
+      "source_location": "line 715",
+      "weight": 1.0,
+      "source": "core_app_getgetsrsstatus",
+      "target": "core_srs_isdue"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/app.js",
+      "source_location": "line 714",
+      "weight": 1.0,
+      "source": "core_app_getgetsrsstatus",
+      "target": "core_srs_isnew"
     },
     {
       "relation": "implements",
@@ -3034,6 +3488,26 @@
       "target": "srs_sm2_algorithm"
     },
     {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sw.js",
+      "source_location": "line 17",
+      "weight": 1.0,
+      "source": "sw_installhandler",
+      "target": "offline_first_pwa"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sw.js",
+      "source_location": "line 35",
+      "weight": 1.0,
+      "source": "sw_fetchhandler",
+      "target": "offline_first_pwa"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -3042,6 +3516,26 @@
       "weight": 1.0,
       "source": "manifest_pwa",
       "target": "icon192_karta_icon"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "manifest.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "manifest_pwa",
+      "target": "offline_first_pwa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_karta",
+      "target": "offline_first_pwa"
     },
     {
       "relation": "references",
@@ -3072,6 +3566,716 @@
       "weight": 0.8,
       "source": "srs_sm2_algorithm",
       "target": "localstorage_persistence"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "german_a1_file",
+      "target": "concept_cefr_a1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "german_a2_file",
+      "target": "concept_cefr_a2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "german_b1_file",
+      "target": "concept_cefr_b1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "german_b2_file",
+      "target": "concept_cefr_b2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_body"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_cefr_a1",
+      "target": "concept_cefr_a2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_colors"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_emotions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_food_drink"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_numbers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_places"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_time"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_travel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a1",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_core_vocab",
+      "target": "concept_cefr_a1"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "concept_register_informal",
+      "target": "concept_cefr_a1"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "concept_register_neutral",
+      "target": "concept_cefr_a1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_body"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_cefr_a2",
+      "target": "concept_cefr_b1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_colors"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_emotions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_food_drink"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_numbers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_places"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_time"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_travel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_a2",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 0.7,
+      "source": "concept_core_vocab",
+      "target": "concept_cefr_a2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_body"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_cefr_b1",
+      "target": "concept_cefr_b2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_colors"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_emotions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_food_drink"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_numbers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_places"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_time"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_travel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b1",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "concept_professional_vocab",
+      "target": "concept_cefr_b1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_body"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_colors"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_emotions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_food_drink"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_numbers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_places"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_time"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_travel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_cefr_b2",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_professional_vocab",
+      "target": "concept_cefr_b2"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "concept_register_formal",
+      "target": "concept_cefr_b2"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_societal_vocab",
+      "target": "concept_cefr_b2"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.7,
+      "source": "concept_emotions",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/a2.json",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "concept_people_family",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_vocab_distribution",
+      "target": "concept_people_family"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "concept_food_drink",
+      "target": "concept_body"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "concept_food_drink",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 0.5,
+      "source": "concept_body",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "concept_nature",
+      "target": "concept_societal_vocab"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/b1.json",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "concept_travel",
+      "target": "concept_nature"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.7,
+      "source": "concept_travel",
+      "target": "concept_places"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "languages/german/a1.json",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "concept_work",
+      "target": "concept_places"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_vocab_distribution",
+      "target": "concept_work"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "languages/german/b2.json",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "concept_work",
+      "target": "concept_professional_vocab"
     }
   ],
   "hyperedges": [
@@ -3250,5 +4454,5 @@
       "source_file": "languages/german/b2.json"
     }
   ],
-  "built_at_commit": "639ed8fa63f02a18f240e675209da976f2845126"
+  "built_at_commit": "ac7511d27a1169e89ca94422f7242cf566de42b5"
 }

@@ -661,7 +661,7 @@ function renderHomeActions(allIds, stats, reinforcementIds) {
 // ══════════════════════════════════════════════
 //  BROWSE MODE (Phase 3)
 // ══════════════════════════════════════════════
-const _browse = { levelFilter: null, searchQuery: '' };
+const _browse = { levelFilter: null, registerFilter: null, searchQuery: '' };
 let _browseTimer = null;
 
 function bindBrowse() {
@@ -677,6 +677,7 @@ function bindBrowse() {
 
 function openBrowse(initialLevel) {
   _browse.levelFilter = initialLevel || null;
+  _browse.registerFilter = null;
   _browse.searchQuery = '';
   const input = document.getElementById('browse-search-input');
   input.value = '';
@@ -695,6 +696,8 @@ function renderBrowseFilters() {
   const container = document.getElementById('browse-filters');
   container.innerHTML = '';
   const lang = getLang();
+
+  // Level chips
   ['All', ...lang.levels].forEach(lvl => {
     const isActive = lvl === 'All' ? !_browse.levelFilter : _browse.levelFilter === lvl;
     const chip = document.createElement('button');
@@ -702,6 +705,25 @@ function renderBrowseFilters() {
     chip.textContent = lvl;
     chip.addEventListener('click', () => {
       _browse.levelFilter = lvl === 'All' ? null : lvl;
+      renderBrowseFilters();
+      renderBrowseList();
+    });
+    container.appendChild(chip);
+  });
+
+  // Divider
+  const br = document.createElement('div');
+  br.className = 'browse-filter-break';
+  container.appendChild(br);
+
+  // Register chips
+  [['All', null], ['Formal', 'formal'], ['Informal', 'informal']].forEach(([label, val]) => {
+    const isActive = _browse.registerFilter === val;
+    const chip = document.createElement('button');
+    chip.className = `filter-chip ${val ? `filter-chip-${val}` : ''} ${isActive ? 'active' : ''}`;
+    chip.textContent = label;
+    chip.addEventListener('click', () => {
+      _browse.registerFilter = val;
       renderBrowseFilters();
       renderBrowseList();
     });
@@ -725,6 +747,8 @@ function renderBrowseList() {
   let words = [...State.allWords];
   if (_browse.levelFilter)
     words = words.filter(w => w.level === _browse.levelFilter);
+  if (_browse.registerFilter)
+    words = words.filter(w => (w.register || 'neutral') === _browse.registerFilter);
   if (_browse.searchQuery) {
     const q = _browse.searchQuery.toLowerCase();
     words = words.filter(w =>
