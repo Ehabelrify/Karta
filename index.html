@@ -344,7 +344,11 @@ nav {
 .pronunciation { font-size:14px; color:var(--text3); font-style:italic; }
 
 .example-box { background:var(--surface2); border-radius:var(--radius-sm);
-  padding:12px 14px; margin-top:2px; }
+  padding:12px 14px; margin-top:6px; }
+.example-label { font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+  margin-bottom:6px; opacity:.7; }
+.example-label-formal   { color:var(--easy); }
+.example-label-informal { color:var(--warn); }
 /* Row: sentence text + speak button side by side */
 .example-row { display:flex; align-items:flex-start; gap:8px; }
 .example-de  { font-size:14px; color:var(--text); line-height:1.6; flex:1; }
@@ -668,9 +672,6 @@ nav {
     <button class="nav-btn" id="nav-settings" aria-label="Settings">
       <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
     </button>
-    <button class="nav-btn" id="nav-add" aria-label="Add word">
-      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-    </button>
   </nav>
 
   <!-- LANGUAGE PICKER (full screen, multi-lang only) -->
@@ -912,6 +913,9 @@ nav {
     </button>
     <input type="text" class="form-input" id="browse-search-input"
       placeholder="Search words…" autocomplete="off" autocorrect="off" spellcheck="false">
+    <button class="nav-btn" id="browse-add-btn" aria-label="Add word">
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
   </div>
   <div class="browse-filters" id="browse-filters"></div>
   <div class="browse-list" id="browse-list"></div>

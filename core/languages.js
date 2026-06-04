@@ -34,7 +34,7 @@ const LANGUAGE_REGISTRY = [
       B2: 'Upper-Intermediate',
     },
     // Word count (informational only)
-    wordCount: 1000,
+    wordCount: 2000,
     // Optional: grammar notes, article system, etc.
     notes: 'Nouns have grammatical gender (der/die/das)',
   },

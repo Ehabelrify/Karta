@@ -456,6 +456,7 @@ async function loadLanguage(lang) {
           [lang.targetField]: w.target,
           [lang.nativeField]: w.native,
           pronunciation: w.pronunciation || '',
+          examples:      w.examples || [],
           example:       w.examples?.[0]?.target || '',
           exampleEn:     w.examples?.[0]?.native || '',
           // Phase 5 fields — gracefully absent until word list rework
@@ -833,6 +834,8 @@ function buildBrowseItem(w, lang) {
     actions.appendChild(speakExBtn);
   }
 
+  // replaced below by multi-example block — this speak button stays for first example
+
   const bmBtn = document.createElement('button');
   bmBtn.className = `bookmark-btn ${isBookmarked ? 'bookmarked' : ''}`;
   bmBtn.innerHTML = isBookmarked ? '⭐' : '☆';
@@ -847,21 +850,30 @@ function buildBrowseItem(w, lang) {
   actions.appendChild(bmBtn);
   details.appendChild(actions);
 
-  if (w.example) {
+  const browseExamples = w.examples?.length ? w.examples
+    : (w.example ? [{ target: w.example, native: w.exampleEn }] : []);
+  browseExamples.forEach(ex => {
+    if (!ex.target) return;
     const exBox = document.createElement('div');
     exBox.className = 'browse-example';
+    if (ex.label) {
+      const lbl = document.createElement('div');
+      lbl.className = `example-label example-label-${ex.label.toLowerCase().replace(/\s+/g,'-')}`;
+      lbl.textContent = ex.label.charAt(0).toUpperCase() + ex.label.slice(1);
+      exBox.appendChild(lbl);
+    }
     const exDe = document.createElement('div');
     exDe.className = 'browse-example-de';
-    exDe.textContent = w.example;
+    exDe.textContent = ex.target;
     exBox.appendChild(exDe);
-    if (w.exampleEn) {
+    if (ex.native) {
       const exEn = document.createElement('div');
       exEn.className = 'browse-example-en';
-      exEn.textContent = w.exampleEn;
+      exEn.textContent = ex.native;
       exBox.appendChild(exEn);
     }
     details.appendChild(exBox);
-  }
+  });
 
   item.appendChild(details);
 
@@ -984,6 +996,8 @@ function renderCard() {
   const pronunciation = word.pronunciation || '';
   const exampleTarget = word.example    || '';
   const exampleNative = word.exampleEn  || '';
+  const allExamples   = word.examples?.length ? word.examples
+                        : (exampleTarget ? [{ target: exampleTarget, native: exampleNative }] : []);
   // Phase 5 fields — safe defaults already set in loadLanguage
   const register      = word.register   || 'neutral';
   const isBookmarked  = State.bookmarks.has(wordId);
@@ -1103,21 +1117,28 @@ function renderCard() {
     front.appendChild(pd);
   }
 
-  // Example box with sentence speak button
-  if (exampleTarget) {
+  // Example boxes — supports multiple labeled examples (e.g. formal / informal)
+  allExamples.forEach((ex, i) => {
+    if (!ex.target) return;
+    const highlighted = i === 0 ? exHighlighted : highlightExample(ex.target, targetText);
     const exBox = document.createElement('div');
     exBox.className = 'example-box';
 
-    // Sentence row: text + speak button
+    if (ex.label) {
+      const lbl = document.createElement('div');
+      lbl.className = `example-label example-label-${ex.label.toLowerCase().replace(/\s+/g,'-')}`;
+      lbl.textContent = ex.label.charAt(0).toUpperCase() + ex.label.slice(1);
+      exBox.appendChild(lbl);
+    }
+
     const exRow = document.createElement('div');
     exRow.className = 'example-row';
 
     const exDe = document.createElement('div');
     exDe.className = 'example-de';
-    exDe.innerHTML = exHighlighted;
+    exDe.innerHTML = highlighted;
     exRow.appendChild(exDe);
 
-    // ── Sentence audio button (Phase 1 new feature) ──
     const speakExBtn = document.createElement('button');
     speakExBtn.className = 'speak-btn speak-btn-sm';
     speakExBtn.title = 'Pronounce sentence';
@@ -1126,19 +1147,19 @@ function renderCard() {
     speakExBtn.addEventListener('click', e => {
       e.stopPropagation();
       hapticFeedback('light');
-      pronounceWord(exampleTarget, lang.code, speakExBtn);
+      pronounceWord(ex.target, lang.code, speakExBtn);
     });
     exRow.appendChild(speakExBtn);
     exBox.appendChild(exRow);
 
     const exEn = document.createElement('div');
     exEn.className = 'example-en';
-    exEn.id = 'ex-native';
-    exEn.textContent = exampleNative;
+    if (i === 0) exEn.id = 'ex-native';
+    exEn.textContent = ex.native || '';
     exBox.appendChild(exEn);
 
     front.appendChild(exBox);
-  }
+  });
   flashcard.appendChild(front);
 
   // ── Card back ──

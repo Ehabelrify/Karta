@@ -38,4 +38,9 @@ scripts/
 # Plan files
 phases.md
 
+#Claude local files
+CLAUDE.local.md
+.claude
+claude.local.md.example
+claude.md
 
