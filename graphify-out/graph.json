@@ -436,7 +436,7 @@
       "label": "closeBrowse()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L689",
+      "source_location": "L690",
       "id": "core_app_closebrowse",
       "community": 4,
       "norm_label": "closebrowse()"
@@ -445,7 +445,7 @@
       "label": "renderBrowseFilters()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L694",
+      "source_location": "L695",
       "id": "core_app_renderbrowsefilters",
       "community": 0,
       "norm_label": "renderbrowsefilters()"
@@ -454,7 +454,7 @@
       "label": "getSrsStatus()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L712",
+      "source_location": "L734",
       "id": "core_app_getsrsstatus",
       "community": 2,
       "norm_label": "getsrsstatus()"
@@ -463,7 +463,7 @@
       "label": "renderBrowseList()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L720",
+      "source_location": "L742",
       "id": "core_app_renderbrowselist",
       "community": 0,
       "norm_label": "renderbrowselist()"
@@ -472,7 +472,7 @@
       "label": "buildBrowseItem()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L769",
+      "source_location": "L793",
       "id": "core_app_buildbrowseitem",
       "community": 2,
       "norm_label": "buildbrowseitem()"
@@ -481,7 +481,7 @@
       "label": "openLevel()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L894",
+      "source_location": "L918",
       "id": "core_app_openlevel",
       "community": 0,
       "norm_label": "openlevel()"
@@ -490,7 +490,7 @@
       "label": "renderCategories()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L916",
+      "source_location": "L940",
       "id": "core_app_rendercategories",
       "community": 0,
       "norm_label": "rendercategories()"
@@ -499,7 +499,7 @@
       "label": "startReview()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L951",
+      "source_location": "L975",
       "id": "core_app_startreview",
       "community": 0,
       "norm_label": "startreview()"
@@ -508,7 +508,7 @@
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L974",
+      "source_location": "L998",
       "id": "core_app_rendercard",
       "community": 2,
       "norm_label": "rendercard()"
@@ -517,7 +517,7 @@
       "label": "speakerIcon()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1280",
+      "source_location": "L1304",
       "id": "core_app_speakericon",
       "community": 2,
       "norm_label": "speakericon()"
@@ -526,7 +526,7 @@
       "label": "getNextInterval()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1286",
+      "source_location": "L1310",
       "id": "core_app_getnextinterval",
       "community": 2,
       "norm_label": "getnextinterval()"
@@ -535,7 +535,7 @@
       "label": "pronounceWord()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1295",
+      "source_location": "L1319",
       "id": "core_app_pronounceword",
       "community": 2,
       "norm_label": "pronounceword()"
@@ -544,7 +544,7 @@
       "label": "revealCard()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1346",
+      "source_location": "L1370",
       "id": "core_app_revealcard",
       "community": 4,
       "norm_label": "revealcard()"
@@ -553,7 +553,7 @@
       "label": "handleAnswer()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1357",
+      "source_location": "L1381",
       "id": "core_app_handleanswer",
       "community": 3,
       "norm_label": "handleanswer()"
@@ -562,7 +562,7 @@
       "label": "showDone()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1369",
+      "source_location": "L1393",
       "id": "core_app_showdone",
       "community": 2,
       "norm_label": "showdone()"
@@ -571,7 +571,7 @@
       "label": "_hapticCtx",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1385",
+      "source_location": "L1409",
       "id": "core_app_hapticctx",
       "community": 4,
       "norm_label": "_hapticctx"
@@ -580,7 +580,7 @@
       "label": "hapticFeedback()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1386",
+      "source_location": "L1410",
       "id": "core_app_hapticfeedback",
       "community": 4,
       "norm_label": "hapticfeedback()"
@@ -589,7 +589,7 @@
       "label": "setupWordTooltip()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1407",
+      "source_location": "L1431",
       "id": "core_app_setupwordtooltip",
       "community": 2,
       "norm_label": "setupwordtooltip()"
@@ -598,7 +598,7 @@
       "label": "bindAdd()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1428",
+      "source_location": "L1452",
       "id": "core_app_bindadd",
       "community": 4,
       "norm_label": "bindadd()"
@@ -607,7 +607,7 @@
       "label": "bindNav()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1494",
+      "source_location": "L1518",
       "id": "core_app_bindnav",
       "community": 4,
       "norm_label": "bindnav()"
@@ -616,7 +616,7 @@
       "label": "goHome()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1516",
+      "source_location": "L1540",
       "id": "core_app_gohome",
       "community": 0,
       "norm_label": "gohome()"
@@ -625,7 +625,7 @@
       "label": "updateNavForHome()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1523",
+      "source_location": "L1547",
       "id": "core_app_updatenavforhome",
       "community": 0,
       "norm_label": "updatenavforhome()"
@@ -634,7 +634,7 @@
       "label": "setNavTitle()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1532",
+      "source_location": "L1556",
       "id": "core_app_setnavtitle",
       "community": 0,
       "norm_label": "setnavtitle()"
@@ -643,7 +643,7 @@
       "label": "showScreen()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1538",
+      "source_location": "L1562",
       "id": "core_app_showscreen",
       "community": 0,
       "norm_label": "showscreen()"
@@ -652,7 +652,7 @@
       "label": "showError()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1543",
+      "source_location": "L1567",
       "id": "core_app_showerror",
       "community": 4,
       "norm_label": "showerror()"
@@ -661,7 +661,7 @@
       "label": "loadStreakData()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1555",
+      "source_location": "L1579",
       "id": "core_app_loadstreakdata",
       "community": 4,
       "norm_label": "loadstreakdata()"
@@ -670,7 +670,7 @@
       "label": "updateStreakDisplay()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1559",
+      "source_location": "L1583",
       "id": "core_app_updatestreakdisplay",
       "community": 0,
       "norm_label": "updatestreakdisplay()"
@@ -679,7 +679,7 @@
       "label": "updateStreakOnSessionComplete()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1569",
+      "source_location": "L1593",
       "id": "core_app_updatestreakonsessioncomplete",
       "community": 2,
       "norm_label": "updatestreakonsessioncomplete()"
@@ -689,180 +689,180 @@
       "file_type": "code",
       "source_file": "core/languages.js",
       "source_location": "L1",
-      "id": "core_languages",
       "community": 3,
-      "norm_label": "languages.js"
+      "norm_label": "languages.js",
+      "id": "core_languages"
     },
     {
       "label": "LANGUAGE_REGISTRY",
       "file_type": "code",
       "source_file": "core/languages.js",
       "source_location": "L8",
-      "id": "core_languages_language_registry",
       "community": 3,
-      "norm_label": "language_registry"
+      "norm_label": "language_registry",
+      "id": "core_languages_language_registry"
     },
     {
       "label": "a1.json",
       "file_type": "code",
       "source_file": "languages/german/a1.json",
       "source_location": "L1",
-      "id": "german_a1",
       "community": 6,
-      "norm_label": "a1.json"
+      "norm_label": "a1.json",
+      "id": "german_a1"
     },
     {
       "label": "language",
       "file_type": "code",
       "source_file": "languages/german/a1.json",
       "source_location": "L2",
-      "id": "german_a1_language",
       "community": 6,
-      "norm_label": "language"
+      "norm_label": "language",
+      "id": "german_a1_language"
     },
     {
       "label": "level",
       "file_type": "code",
       "source_file": "languages/german/a1.json",
       "source_location": "L3",
-      "id": "german_a1_level",
       "community": 6,
-      "norm_label": "level"
+      "norm_label": "level",
+      "id": "german_a1_level"
     },
     {
       "label": "words",
       "file_type": "code",
       "source_file": "languages/german/a1.json",
       "source_location": "L4",
-      "id": "german_a1_words",
       "community": 6,
-      "norm_label": "words"
+      "norm_label": "words",
+      "id": "german_a1_words"
     },
     {
       "label": "a2.json",
       "file_type": "code",
       "source_file": "languages/german/a2.json",
       "source_location": "L1",
-      "id": "german_a2",
       "community": 7,
-      "norm_label": "a2.json"
+      "norm_label": "a2.json",
+      "id": "german_a2"
     },
     {
       "label": "language",
       "file_type": "code",
       "source_file": "languages/german/a2.json",
       "source_location": "L2",
-      "id": "german_a2_language",
       "community": 7,
-      "norm_label": "language"
+      "norm_label": "language",
+      "id": "german_a2_language"
     },
     {
       "label": "level",
       "file_type": "code",
       "source_file": "languages/german/a2.json",
       "source_location": "L3",
-      "id": "german_a2_level",
       "community": 7,
-      "norm_label": "level"
+      "norm_label": "level",
+      "id": "german_a2_level"
     },
     {
       "label": "words",
       "file_type": "code",
       "source_file": "languages/german/a2.json",
       "source_location": "L4",
-      "id": "german_a2_words",
       "community": 7,
-      "norm_label": "words"
+      "norm_label": "words",
+      "id": "german_a2_words"
     },
     {
       "label": "b1.json",
       "file_type": "code",
       "source_file": "languages/german/b1.json",
       "source_location": "L1",
-      "id": "german_b1",
       "community": 8,
-      "norm_label": "b1.json"
+      "norm_label": "b1.json",
+      "id": "german_b1"
     },
     {
       "label": "language",
       "file_type": "code",
       "source_file": "languages/german/b1.json",
       "source_location": "L2",
-      "id": "german_b1_language",
       "community": 8,
-      "norm_label": "language"
+      "norm_label": "language",
+      "id": "german_b1_language"
     },
     {
       "label": "level",
       "file_type": "code",
       "source_file": "languages/german/b1.json",
       "source_location": "L3",
-      "id": "german_b1_level",
       "community": 8,
-      "norm_label": "level"
+      "norm_label": "level",
+      "id": "german_b1_level"
     },
     {
       "label": "words",
       "file_type": "code",
       "source_file": "languages/german/b1.json",
       "source_location": "L4",
-      "id": "german_b1_words",
       "community": 8,
-      "norm_label": "words"
+      "norm_label": "words",
+      "id": "german_b1_words"
     },
     {
       "label": "b2.json",
       "file_type": "code",
       "source_file": "languages/german/b2.json",
       "source_location": "L1",
-      "id": "german_b2",
       "community": 9,
-      "norm_label": "b2.json"
+      "norm_label": "b2.json",
+      "id": "german_b2"
     },
     {
       "label": "language",
       "file_type": "code",
       "source_file": "languages/german/b2.json",
       "source_location": "L2",
-      "id": "german_b2_language",
       "community": 9,
-      "norm_label": "language"
+      "norm_label": "language",
+      "id": "german_b2_language"
     },
     {
       "label": "level",
       "file_type": "code",
       "source_file": "languages/german/b2.json",
       "source_location": "L3",
-      "id": "german_b2_level",
       "community": 9,
-      "norm_label": "level"
+      "norm_label": "level",
+      "id": "german_b2_level"
     },
     {
       "label": "words",
       "file_type": "code",
       "source_file": "languages/german/b2.json",
       "source_location": "L4",
-      "id": "german_b2_words",
       "community": 9,
-      "norm_label": "words"
+      "norm_label": "words",
+      "id": "german_b2_words"
     },
     {
       "label": "sw.js",
       "file_type": "code",
       "source_file": "sw.js",
       "source_location": "L1",
-      "id": "sw",
       "community": 10,
-      "norm_label": "sw.js"
+      "norm_label": "sw.js",
+      "id": "sw"
     },
     {
       "label": "ASSETS",
       "file_type": "code",
       "source_file": "sw.js",
       "source_location": "L2",
-      "id": "sw_assets",
       "community": 10,
-      "norm_label": "assets"
+      "norm_label": "assets",
+      "id": "sw_assets"
     },
     {
       "label": "srs.js",
@@ -3250,5 +3250,5 @@
       "source_file": "languages/german/b2.json"
     }
   ],
-  "built_at_commit": "639ed8fa63f02a18f240e675209da976f2845126"
+  "built_at_commit": "c7fc270da09df526501b63377587eeeb5ceb275c"
 }

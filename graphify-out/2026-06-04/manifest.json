@@ -1,13 +1,83 @@
 {
-  "C:\\Users\\bebo_\\Desktop\\Karta\\core\\app.js": {
+  "core/app.js": {
     "mtime": 1780521244.218471,
     "ast_hash": "b69ed37afdd5df1a9fe3aa53ee0e5a49",
     "semantic_hash": "b69ed37afdd5df1a9fe3aa53ee0e5a49"
   },
-  "C:\\Users\\bebo_\\Desktop\\Karta\\core\\languages.js": {
+  "core/languages.js": {
+    "mtime": 1780598579.7273858,
+    "ast_hash": "2e4f185612e546c9c3a3d27183136282",
+    "semantic_hash": ""
+  },
+  "core/srs.js": {
     "mtime": 1780311491.0,
-    "ast_hash": "3a1c9770301aa085fd8fbddc6103cee8",
-    "semantic_hash": "3a1c9770301aa085fd8fbddc6103cee8"
+    "ast_hash": "46bd67d27218329efe28e42bcae3a71f",
+    "semantic_hash": "46bd67d27218329efe28e42bcae3a71f"
+  },
+  "languages/german/a1.json": {
+    "mtime": 1780598500.1700263,
+    "ast_hash": "0c294d198f96c1d90bf428a14984bafc",
+    "semantic_hash": ""
+  },
+  "languages/german/a2.json": {
+    "mtime": 1780598500.191736,
+    "ast_hash": "bf53b42ca49118e90e05050f62a9e4f3",
+    "semantic_hash": ""
+  },
+  "languages/german/b1.json": {
+    "mtime": 1780598500.224172,
+    "ast_hash": "33e4ffe80f8a55d975902fd12f54be8e",
+    "semantic_hash": ""
+  },
+  "languages/german/b2.json": {
+    "mtime": 1780598559.6801572,
+    "ast_hash": "bb8bcf6b781fc0e7b1fecad197f32ec7",
+    "semantic_hash": ""
+  },
+  "manifest.json": {
+    "mtime": 1780311491.0,
+    "ast_hash": "0fdf5c0e735cffb4dee499a7007262a1",
+    "semantic_hash": "0fdf5c0e735cffb4dee499a7007262a1"
+  },
+  "sw.js": {
+    "mtime": 1780596398.386683,
+    "ast_hash": "2ebbabc83355a398e023597268d5cd0d",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1780355008.6012907,
+    "ast_hash": "7f877c79d212cd471c858147cd75b78a",
+    "semantic_hash": "7f877c79d212cd471c858147cd75b78a"
+  },
+  "index.html": {
+    "mtime": 1780521255.5542424,
+    "ast_hash": "60285d3a52fe1fb5cf833a4d670d2e19",
+    "semantic_hash": "60285d3a52fe1fb5cf833a4d670d2e19"
+  },
+  "languages/german/README.md": {
+    "mtime": 1780355008.6085162,
+    "ast_hash": "1769b348e8d32f6beee627701d093b2e",
+    "semantic_hash": "1769b348e8d32f6beee627701d093b2e"
+  },
+  "assets/icons/icon-192.svg": {
+    "mtime": 1780311491.0,
+    "ast_hash": "fdec0d756b9831076ec6d72f1fcf91a4",
+    "semantic_hash": "fdec0d756b9831076ec6d72f1fcf91a4"
+  },
+  "assets/icons/icon-512.svg": {
+    "mtime": 1780311491.0,
+    "ast_hash": "decbe3a39be58d9e097a882cb68d7364",
+    "semantic_hash": "decbe3a39be58d9e097a882cb68d7364"
+  },
+  "C:\\Users\\bebo_\\Desktop\\Karta\\core\\app.js": {
+    "mtime": 1780598959.493935,
+    "ast_hash": "46be7fd5eeab4f683a7edcdd8732e4a7",
+    "semantic_hash": "46be7fd5eeab4f683a7edcdd8732e4a7"
+  },
+  "C:\\Users\\bebo_\\Desktop\\Karta\\core\\languages.js": {
+    "mtime": 1780598579.7273858,
+    "ast_hash": "2e4f185612e546c9c3a3d27183136282",
+    "semantic_hash": "2e4f185612e546c9c3a3d27183136282"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\core\\srs.js": {
     "mtime": 1780311491.0,
@@ -15,24 +85,24 @@
     "semantic_hash": "46bd67d27218329efe28e42bcae3a71f"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\languages\\german\\a1.json": {
-    "mtime": 1780311491.0,
-    "ast_hash": "0ce42293012af3eff94fa32c9af5d758",
-    "semantic_hash": "0ce42293012af3eff94fa32c9af5d758"
+    "mtime": 1780598500.1700263,
+    "ast_hash": "0c294d198f96c1d90bf428a14984bafc",
+    "semantic_hash": "0c294d198f96c1d90bf428a14984bafc"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\languages\\german\\a2.json": {
-    "mtime": 1780311491.0,
-    "ast_hash": "6788f9216494dd714c27ec36e24265c0",
-    "semantic_hash": "6788f9216494dd714c27ec36e24265c0"
+    "mtime": 1780598500.191736,
+    "ast_hash": "bf53b42ca49118e90e05050f62a9e4f3",
+    "semantic_hash": "bf53b42ca49118e90e05050f62a9e4f3"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\languages\\german\\b1.json": {
-    "mtime": 1780311491.0,
-    "ast_hash": "aa0c0de5c875021a2fd3c0932108cae1",
-    "semantic_hash": "aa0c0de5c875021a2fd3c0932108cae1"
+    "mtime": 1780598500.224172,
+    "ast_hash": "33e4ffe80f8a55d975902fd12f54be8e",
+    "semantic_hash": "33e4ffe80f8a55d975902fd12f54be8e"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\languages\\german\\b2.json": {
-    "mtime": 1780311491.0,
-    "ast_hash": "1ae92636eabfbe6b745ff23d22f98e58",
-    "semantic_hash": "1ae92636eabfbe6b745ff23d22f98e58"
+    "mtime": 1780598559.6801572,
+    "ast_hash": "bb8bcf6b781fc0e7b1fecad197f32ec7",
+    "semantic_hash": "bb8bcf6b781fc0e7b1fecad197f32ec7"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\manifest.json": {
     "mtime": 1780311491.0,
@@ -40,9 +110,9 @@
     "semantic_hash": "0fdf5c0e735cffb4dee499a7007262a1"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\sw.js": {
-    "mtime": 1780439674.0007503,
-    "ast_hash": "ff1cde62496e57c53bb372c0e4aca6e5",
-    "semantic_hash": "ff1cde62496e57c53bb372c0e4aca6e5"
+    "mtime": 1780596398.386683,
+    "ast_hash": "2ebbabc83355a398e023597268d5cd0d",
+    "semantic_hash": "2ebbabc83355a398e023597268d5cd0d"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\README.md": {
     "mtime": 1780355008.6012907,
@@ -50,9 +120,9 @@
     "semantic_hash": "7f877c79d212cd471c858147cd75b78a"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\index.html": {
-    "mtime": 1780521255.5542424,
-    "ast_hash": "60285d3a52fe1fb5cf833a4d670d2e19",
-    "semantic_hash": "60285d3a52fe1fb5cf833a4d670d2e19"
+    "mtime": 1780598936.150147,
+    "ast_hash": "c1bb5d8c1cdd8321bba121d73b889db4",
+    "semantic_hash": "c1bb5d8c1cdd8321bba121d73b889db4"
   },
   "C:\\Users\\bebo_\\Desktop\\Karta\\languages\\german\\README.md": {
     "mtime": 1780355008.6085162,
