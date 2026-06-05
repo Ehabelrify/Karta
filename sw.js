@@ -1,4 +1,4 @@
-const CACHE = 'karta-p5';
+const CACHE = 'karta-p6';
 const ASSETS = [
   './',
   './index.html',
@@ -17,7 +17,9 @@ const ASSETS = [
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE)
-      .then(c => c.addAll(ASSETS))
+      // allSettled instead of addAll so a single slow/failed asset on a poor
+      // mobile connection doesn't abort the entire cache installation.
+      .then(c => Promise.allSettled(ASSETS.map(url => c.add(url))))
       .then(() => self.skipWaiting())
   );
 });

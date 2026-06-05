@@ -181,138 +181,12 @@
   },
   "nodes": [
     {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "id": "readme",
-      "community": 13,
-      "norm_label": "readme.md"
-    },
-    {
-      "label": "Karta \u2014 Vocabulary Flashcards",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "id": "readme_karta_vocabulary_flashcards",
-      "community": 13,
-      "norm_label": "karta \u2014 vocabulary flashcards"
-    },
-    {
-      "label": "Features",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "id": "readme_features",
-      "community": 13,
-      "norm_label": "features"
-    },
-    {
-      "label": "Project Structure",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L30",
-      "id": "readme_project_structure",
-      "community": 13,
-      "norm_label": "project structure"
-    },
-    {
-      "label": "Live Demo",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L51",
-      "id": "readme_live_demo",
-      "community": 13,
-      "norm_label": "live demo"
-    },
-    {
-      "label": "Run Locally",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L59",
-      "id": "readme_run_locally",
-      "community": 13,
-      "norm_label": "run locally"
-    },
-    {
-      "label": "Install as an App",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L71",
-      "id": "readme_install_as_an_app",
-      "community": 13,
-      "norm_label": "install as an app"
-    },
-    {
-      "label": "How to Use",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L79",
-      "id": "readme_how_to_use",
-      "community": 13,
-      "norm_label": "how to use"
-    },
-    {
-      "label": "Review System",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L101",
-      "id": "readme_review_system",
-      "community": 13,
-      "norm_label": "review system"
-    },
-    {
-      "label": "Available Languages",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L115",
-      "id": "readme_available_languages",
-      "community": 13,
-      "norm_label": "available languages"
-    },
-    {
-      "label": "Adding a Language",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L124",
-      "id": "readme_adding_a_language",
-      "community": 13,
-      "norm_label": "adding a language"
-    },
-    {
-      "label": "Settings",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L156",
-      "id": "readme_settings",
-      "community": 13,
-      "norm_label": "settings"
-    },
-    {
-      "label": "Technology",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L167",
-      "id": "readme_technology",
-      "community": 13,
-      "norm_label": "technology"
-    },
-    {
-      "label": "License",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L177",
-      "id": "readme_license",
-      "community": 13,
-      "norm_label": "license"
-    },
-    {
       "label": "app.js",
       "file_type": "code",
       "source_file": "core/app.js",
       "source_location": "L1",
       "id": "core_app",
-      "community": 2,
+      "community": 4,
       "norm_label": "app.js"
     },
     {
@@ -402,7 +276,7 @@
       "source_file": "core/app.js",
       "source_location": "L273",
       "id": "core_app_openvoicesheet",
-      "community": 2,
+      "community": 4,
       "norm_label": "openvoicesheet()"
     },
     {
@@ -411,7 +285,7 @@
       "source_file": "core/app.js",
       "source_location": "L375",
       "id": "core_app_closevoicesheet",
-      "community": 2,
+      "community": 4,
       "norm_label": "closevoicesheet()"
     },
     {
@@ -436,7 +310,7 @@
       "label": "filterWords()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L479",
+      "source_location": "L482",
       "id": "core_app_filterwords",
       "community": 0,
       "norm_label": "filterwords()"
@@ -445,7 +319,7 @@
       "label": "wordById()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L484",
+      "source_location": "L487",
       "id": "core_app_wordbyid",
       "community": 2,
       "norm_label": "wordbyid()"
@@ -454,7 +328,7 @@
       "label": "getLang()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L485",
+      "source_location": "L488",
       "id": "core_app_getlang",
       "community": 0,
       "norm_label": "getlang()"
@@ -463,7 +337,7 @@
       "label": "levelBadgeClass()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L486",
+      "source_location": "L489",
       "id": "core_app_levelbadgeclass",
       "community": 0,
       "norm_label": "levelbadgeclass()"
@@ -472,7 +346,7 @@
       "label": "loadBookmarks()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L491",
+      "source_location": "L494",
       "id": "core_app_loadbookmarks",
       "community": 3,
       "norm_label": "loadbookmarks()"
@@ -481,7 +355,7 @@
       "label": "saveBookmarks()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L497",
+      "source_location": "L500",
       "id": "core_app_savebookmarks",
       "community": 2,
       "norm_label": "savebookmarks()"
@@ -490,7 +364,7 @@
       "label": "toggleBookmark()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L500",
+      "source_location": "L503",
       "id": "core_app_togglebookmark",
       "community": 2,
       "norm_label": "togglebookmark()"
@@ -499,7 +373,7 @@
       "label": "loadPreferredVoice()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L508",
+      "source_location": "L511",
       "id": "core_app_loadpreferredvoice",
       "community": 3,
       "norm_label": "loadpreferredvoice()"
@@ -508,16 +382,16 @@
       "label": "savePreferredVoice()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L522",
+      "source_location": "L525",
       "id": "core_app_savepreferredvoice",
-      "community": 2,
+      "community": 4,
       "norm_label": "savepreferredvoice()"
     },
     {
       "label": "renderHome()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L530",
+      "source_location": "L533",
       "id": "core_app_renderhome",
       "community": 0,
       "norm_label": "renderhome()"
@@ -526,7 +400,7 @@
       "label": "renderHomeActions()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L603",
+      "source_location": "L606",
       "id": "core_app_renderhomeactions",
       "community": 0,
       "norm_label": "renderhomeactions()"
@@ -535,16 +409,16 @@
       "label": "_browse",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L661",
+      "source_location": "L664",
       "id": "core_app_browse",
-      "community": 2,
+      "community": 4,
       "norm_label": "_browse"
     },
     {
       "label": "bindBrowse()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L664",
+      "source_location": "L667",
       "id": "core_app_bindbrowse",
       "community": 4,
       "norm_label": "bindbrowse()"
@@ -553,7 +427,7 @@
       "label": "openBrowse()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L675",
+      "source_location": "L678",
       "id": "core_app_openbrowse",
       "community": 0,
       "norm_label": "openbrowse()"
@@ -562,16 +436,16 @@
       "label": "closeBrowse()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L687",
+      "source_location": "L690",
       "id": "core_app_closebrowse",
-      "community": 2,
+      "community": 4,
       "norm_label": "closebrowse()"
     },
     {
       "label": "renderBrowseFilters()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L692",
+      "source_location": "L695",
       "id": "core_app_renderbrowsefilters",
       "community": 0,
       "norm_label": "renderbrowsefilters()"
@@ -580,7 +454,7 @@
       "label": "getSrsStatus()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L731",
+      "source_location": "L734",
       "id": "core_app_getsrsstatus",
       "community": 2,
       "norm_label": "getsrsstatus()"
@@ -589,7 +463,7 @@
       "label": "renderBrowseList()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L739",
+      "source_location": "L742",
       "id": "core_app_renderbrowselist",
       "community": 0,
       "norm_label": "renderbrowselist()"
@@ -598,7 +472,7 @@
       "label": "buildBrowseItem()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L790",
+      "source_location": "L793",
       "id": "core_app_buildbrowseitem",
       "community": 2,
       "norm_label": "buildbrowseitem()"
@@ -607,7 +481,7 @@
       "label": "openLevel()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L915",
+      "source_location": "L918",
       "id": "core_app_openlevel",
       "community": 0,
       "norm_label": "openlevel()"
@@ -616,7 +490,7 @@
       "label": "renderCategories()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L937",
+      "source_location": "L940",
       "id": "core_app_rendercategories",
       "community": 0,
       "norm_label": "rendercategories()"
@@ -625,7 +499,7 @@
       "label": "startReview()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L972",
+      "source_location": "L975",
       "id": "core_app_startreview",
       "community": 0,
       "norm_label": "startreview()"
@@ -634,7 +508,7 @@
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L995",
+      "source_location": "L998",
       "id": "core_app_rendercard",
       "community": 2,
       "norm_label": "rendercard()"
@@ -643,7 +517,7 @@
       "label": "speakerIcon()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1301",
+      "source_location": "L1304",
       "id": "core_app_speakericon",
       "community": 2,
       "norm_label": "speakericon()"
@@ -652,7 +526,7 @@
       "label": "getNextInterval()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1307",
+      "source_location": "L1310",
       "id": "core_app_getnextinterval",
       "community": 2,
       "norm_label": "getnextinterval()"
@@ -661,7 +535,7 @@
       "label": "pronounceWord()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1316",
+      "source_location": "L1319",
       "id": "core_app_pronounceword",
       "community": 2,
       "norm_label": "pronounceword()"
@@ -670,16 +544,16 @@
       "label": "revealCard()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1367",
+      "source_location": "L1370",
       "id": "core_app_revealcard",
-      "community": 2,
+      "community": 4,
       "norm_label": "revealcard()"
     },
     {
       "label": "handleAnswer()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1378",
+      "source_location": "L1381",
       "id": "core_app_handleanswer",
       "community": 3,
       "norm_label": "handleanswer()"
@@ -688,34 +562,34 @@
       "label": "showDone()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1390",
+      "source_location": "L1393",
       "id": "core_app_showdone",
-      "community": 0,
+      "community": 2,
       "norm_label": "showdone()"
     },
     {
       "label": "_hapticCtx",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1406",
+      "source_location": "L1409",
       "id": "core_app_hapticctx",
-      "community": 2,
+      "community": 4,
       "norm_label": "_hapticctx"
     },
     {
       "label": "hapticFeedback()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1407",
+      "source_location": "L1410",
       "id": "core_app_hapticfeedback",
-      "community": 2,
+      "community": 4,
       "norm_label": "hapticfeedback()"
     },
     {
       "label": "setupWordTooltip()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1428",
+      "source_location": "L1431",
       "id": "core_app_setupwordtooltip",
       "community": 2,
       "norm_label": "setupwordtooltip()"
@@ -724,7 +598,7 @@
       "label": "bindAdd()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1449",
+      "source_location": "L1452",
       "id": "core_app_bindadd",
       "community": 4,
       "norm_label": "bindadd()"
@@ -733,7 +607,7 @@
       "label": "bindNav()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1515",
+      "source_location": "L1518",
       "id": "core_app_bindnav",
       "community": 4,
       "norm_label": "bindnav()"
@@ -742,7 +616,7 @@
       "label": "goHome()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1537",
+      "source_location": "L1540",
       "id": "core_app_gohome",
       "community": 0,
       "norm_label": "gohome()"
@@ -751,7 +625,7 @@
       "label": "updateNavForHome()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1544",
+      "source_location": "L1547",
       "id": "core_app_updatenavforhome",
       "community": 0,
       "norm_label": "updatenavforhome()"
@@ -760,7 +634,7 @@
       "label": "setNavTitle()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1553",
+      "source_location": "L1556",
       "id": "core_app_setnavtitle",
       "community": 0,
       "norm_label": "setnavtitle()"
@@ -769,7 +643,7 @@
       "label": "showScreen()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1559",
+      "source_location": "L1562",
       "id": "core_app_showscreen",
       "community": 0,
       "norm_label": "showscreen()"
@@ -778,7 +652,7 @@
       "label": "showError()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1564",
+      "source_location": "L1567",
       "id": "core_app_showerror",
       "community": 4,
       "norm_label": "showerror()"
@@ -787,7 +661,7 @@
       "label": "loadStreakData()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1576",
+      "source_location": "L1579",
       "id": "core_app_loadstreakdata",
       "community": 4,
       "norm_label": "loadstreakdata()"
@@ -796,7 +670,7 @@
       "label": "updateStreakDisplay()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1580",
+      "source_location": "L1583",
       "id": "core_app_updatestreakdisplay",
       "community": 0,
       "norm_label": "updatestreakdisplay()"
@@ -805,9 +679,9 @@
       "label": "updateStreakOnSessionComplete()",
       "file_type": "code",
       "source_file": "core/app.js",
-      "source_location": "L1590",
+      "source_location": "L1593",
       "id": "core_app_updatestreakonsessioncomplete",
-      "community": 0,
+      "community": 2,
       "norm_label": "updatestreakonsessioncomplete()"
     },
     {
@@ -815,7 +689,7 @@
       "file_type": "code",
       "source_file": "core/languages.js",
       "source_location": "L1",
-      "community": 4,
+      "community": 3,
       "norm_label": "languages.js",
       "id": "core_languages"
     },
@@ -824,7 +698,7 @@
       "file_type": "code",
       "source_file": "core/languages.js",
       "source_location": "L8",
-      "community": 4,
+      "community": 3,
       "norm_label": "language_registry",
       "id": "core_languages_language_registry"
     },
@@ -1229,6 +1103,19 @@
       "id": "manifest_pwa"
     },
     {
+      "label": "Karta README",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "karta readme",
+      "id": "readme_karta"
+    },
+    {
       "label": "German Vocabulary Dataset",
       "file_type": "document",
       "source_file": "languages/german/README.md",
@@ -1284,136 +1171,6 @@
     }
   ],
   "links": [
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "readme",
-      "target": "readme_karta_vocabulary_flashcards",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L124",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_adding_a_language",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L115",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_available_languages",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_features",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_how_to_use",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L177",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_license",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_live_demo",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_project_structure",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L101",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_review_system",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_run_locally",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L156",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_settings",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L167",
-      "weight": 1.0,
-      "source": "readme_karta_vocabulary_flashcards",
-      "target": "readme_technology",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "source": "readme_run_locally",
-      "target": "readme_install_as_an_app",
-      "confidence_score": 1.0
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -3007,6 +2764,16 @@
       "target": "core_languages_language_registry"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_karta",
+      "target": "core_languages_language_registry"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "languages/german/a1.json",
@@ -3280,6 +3047,16 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_karta",
+      "target": "srs_sm2_algorithm"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "languages/german/README.md",
       "source_location": null,
       "weight": 1.0,
@@ -3473,5 +3250,5 @@
       "source_file": "languages/german/b2.json"
     }
   ],
-  "built_at_commit": "1fcd2e09cb317f2e739a5d8234a4567ee59a4560"
+  "built_at_commit": "c7fc270da09df526501b63377587eeeb5ceb275c"
 }
