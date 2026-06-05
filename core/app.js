@@ -416,12 +416,17 @@ function openResetConfirm() {
 // ══════════════════════════════════════════════
 //  LOAD LANGUAGE
 // ══════════════════════════════════════════════
+function setLoadSub(text) {
+  const el = document.getElementById('load-sub');
+  if (el) el.textContent = text;
+}
+
 function setLoadProgress(pct) {
   const p = Math.min(100, Math.max(0, pct));
   const fill  = document.getElementById('load-progress-fill');
   const label = document.getElementById('load-pct');
-  if (fill)  fill.style.width   = p + '%';
-  if (label) label.textContent  = Math.round(p) + '%';
+  if (fill)  fill.style.width  = p + '%';
+  if (label) label.textContent = Math.round(p) + '%';
 }
 
 function formatBytes(n) {
@@ -433,7 +438,7 @@ function formatBytes(n) {
 async function loadLanguage(lang) {
   try {
     document.getElementById('loading-text').textContent = 'Preparing…';
-    document.getElementById('load-sub').textContent     = '';
+    setLoadSub('');
     setLoadProgress(0);
     document.getElementById('loading-screen').classList.remove('hidden');
 
@@ -456,8 +461,6 @@ async function loadLanguage(lang) {
         const r = await fetch(f, { signal: controller.signal });
         if (!r.ok) throw new Error(`${f}: ${r.statusText}`);
 
-        const sub = document.getElementById('load-sub');
-
         if (r.body?.getReader) {
           // Stream the body so we can show live byte progress
           const reader     = r.body.getReader();
@@ -473,9 +476,9 @@ async function loadLanguage(lang) {
             received += value.length;
             const filePct = total ? received / total : 0;
             setLoadProgress(((i + filePct) / files.length) * 100);
-            sub.textContent = total
+            setLoadSub(total
               ? `${formatBytes(received)} / ${formatBytes(total)}`
-              : `${formatBytes(received)} downloaded`;
+              : `${formatBytes(received)} downloaded`);
           }
 
           const merged = new Uint8Array(received);
@@ -484,7 +487,7 @@ async function loadLanguage(lang) {
           levelData.push(JSON.parse(new TextDecoder().decode(merged)));
         } else {
           // Fallback for environments without ReadableStream
-          sub.textContent = 'Loading…';
+          setLoadSub('Loading…');
           levelData.push(await r.json());
         }
       } finally {
@@ -494,7 +497,7 @@ async function loadLanguage(lang) {
 
     setLoadProgress(100);
     document.getElementById('loading-text').textContent = 'Processing words…';
-    document.getElementById('load-sub').textContent     = '';
+    setLoadSub('');
 
     const allWords = [];
     levelData.forEach(data => {
@@ -1660,12 +1663,12 @@ function updateStreakOnSessionComplete() {
 // ══════════════════════════════════════════════
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    boot();
+    boot().catch(err => showError('App failed to start.<br>' + err.message));
     if ('serviceWorker' in navigator)
       navigator.serviceWorker.register('sw.js').catch(() => {});
   });
 } else {
-  boot();
+  boot().catch(err => showError('App failed to start.<br>' + err.message));
   if ('serviceWorker' in navigator)
     navigator.serviceWorker.register('sw.js').catch(() => {});
 }

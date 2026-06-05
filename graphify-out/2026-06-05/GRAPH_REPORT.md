@@ -1,16 +1,16 @@
-# Graph Report - Karta  (2026-06-04)
+# Graph Report - Karta  (2026-06-05)
 
 ## Corpus Check
-- 11 files · ~102,081 words
+- 11 files · ~102,200 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 103 nodes · 184 edges · 13 communities (9 shown, 4 thin omitted)
+- 116 nodes · 195 edges · 14 communities (10 shown, 4 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c7fc270d`
+- Built from commit: `1fcd2e09`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,30 +28,31 @@
 - [[_COMMUNITY_Service Worker|Service Worker]]
 - [[_COMMUNITY_Custom Word API|Custom Word API]]
 - [[_COMMUNITY_SW Cache Activation|SW Cache Activation]]
+- [[_COMMUNITY_Community 13|Community 13]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `renderCard()` - 15 edges
 2. `getLang()` - 13 edges
-3. `boot()` - 11 edges
-4. `renderHome()` - 10 edges
-5. `openLevel()` - 10 edges
-6. `startReview()` - 9 edges
-7. `activateLanguage()` - 8 edges
-8. `renderCategories()` - 8 edges
-9. `showScreen()` - 7 edges
-10. `loadLanguage()` - 6 edges
+3. `Karta — Vocabulary Flashcards` - 12 edges
+4. `boot()` - 11 edges
+5. `renderHome()` - 10 edges
+6. `openLevel()` - 10 edges
+7. `startReview()` - 9 edges
+8. `activateLanguage()` - 8 edges
+9. `renderCategories()` - 8 edges
+10. `showScreen()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `German Vocabulary Dataset` --references--> `LANGUAGE_REGISTRY`  [EXTRACTED]
   languages/german/README.md → core/languages.js
-- `Karta README` --references--> `LANGUAGE_REGISTRY`  [EXTRACTED]
-  README.md → core/languages.js
 - `German Vocabulary Dataset` --references--> `localStorage-based Persistence`  [EXTRACTED]
   languages/german/README.md → core/srs.js
 - `PWA Manifest` --references--> `Karta 192px Icon - green rounded rect with DE text`  [EXTRACTED]
   manifest.json → assets/icons/icon-192.svg
-- `Karta README` --references--> `SM-2 Style Spaced Repetition Algorithm`  [EXTRACTED]
-  README.md → core/srs.js
+- `State` --shares_data_with--> `localStorage-based Persistence`  [EXTRACTED]
+  core/app.js → core/srs.js
+- `activateLanguage()` --calls--> `SRS.getCustomWords`  [EXTRACTED]
+  core/app.js → core/srs.js
 
 ## Import Cycles
 - None detected.
@@ -68,23 +69,23 @@
 - **Daily Life Vocabulary Cluster** — concept_food_drink, concept_places, concept_work, concept_time, concept_people_family [INFERRED 0.85]
 - **Advanced Thematic Cluster at B1/B2** — concept_professional_vocab, concept_societal_vocab, concept_register_formal, concept_cefr_b1, concept_cefr_b2 [INFERRED 0.85]
 
-## Communities (13 total, 4 thin omitted)
+## Communities (14 total, 4 thin omitted)
 
 ### Community 0 - "App Core & Navigation"
-Cohesion: 0.19
-Nodes (21): CAT_ICONS, filterWords(), getLang(), goHome(), levelBadgeClass(), openBrowse(), openLevel(), renderBrowseFilters() (+13 more)
+Cohesion: 0.17
+Nodes (23): CAT_ICONS, filterWords(), getLang(), goHome(), levelBadgeClass(), openBrowse(), openLevel(), renderBrowseFilters() (+15 more)
 
 ### Community 2 - "Browse & SRS Status UI"
-Cohesion: 0.15
-Nodes (15): buildBrowseItem(), getNextInterval(), getSrsStatus(), pronounceWord(), renderCard(), saveBookmarks(), setupWordTooltip(), showDone() (+7 more)
+Cohesion: 0.16
+Nodes (19): _browse, buildBrowseItem(), getNextInterval(), getSrsStatus(), _hapticCtx, hapticFeedback(), openVoiceSheet(), pronounceWord() (+11 more)
 
 ### Community 3 - "Review Session & SRS Engine"
-Cohesion: 0.14
-Nodes (13): activateLanguage(), handleAnswer(), loadBookmarks(), loadPreferredVoice(), State, LANGUAGE_REGISTRY, SRS.answer, SRS.getCustomWords (+5 more)
+Cohesion: 0.17
+Nodes (11): activateLanguage(), handleAnswer(), loadBookmarks(), loadPreferredVoice(), State, SRS.answer, SRS.getCustomWords, SRS (+3 more)
 
 ### Community 4 - "Event Binding & Settings"
-Cohesion: 0.18
-Nodes (17): bindAdd(), bindBrowse(), bindLangSheet(), bindNav(), bindSettingsSheet(), boot(), _browse, _hapticCtx (+9 more)
+Cohesion: 0.21
+Nodes (12): bindAdd(), bindBrowse(), bindLangSheet(), bindNav(), bindSettingsSheet(), boot(), loadLanguage(), loadStreakData() (+4 more)
 
 ### Community 5 - "PWA Manifest"
 Cohesion: 0.20
@@ -106,19 +107,23 @@ Nodes (3): language, level, words
 Cohesion: 0.50
 Nodes (3): language, level, words
 
+### Community 13 - "Community 13"
+Cohesion: 0.14
+Nodes (13): Adding a Language, Available Languages, Features, How to Use, Install as an App, Karta — Vocabulary Flashcards, License, Live Demo (+5 more)
+
 ## Knowledge Gaps
-- **32 isolated node(s):** `_browse`, `_hapticCtx`, `language`, `level`, `words` (+27 more)
+- **43 isolated node(s):** `Features`, `Project Structure`, `Live Demo`, `Install as an App`, `How to Use` (+38 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `renderCard()` connect `Browse & SRS Status UI` to `App Core & Navigation`, `Review Session & SRS Engine`, `Event Binding & Settings`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
-- **Why does `LANGUAGE_REGISTRY` connect `Review Session & SRS Engine` to `Event Binding & Settings`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **What connects `_browse`, `_hapticCtx`, `language` to the rest of the system?**
-  _32 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Review Session & SRS Engine` be split into smaller, more focused modules?**
+- **Why does `renderCard()` connect `Browse & SRS Status UI` to `App Core & Navigation`, `Review Session & SRS Engine`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `LANGUAGE_REGISTRY` connect `Event Binding & Settings` to `Review Session & SRS Engine`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **What connects `Features`, `Project Structure`, `Live Demo` to the rest of the system?**
+  _43 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 13` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
