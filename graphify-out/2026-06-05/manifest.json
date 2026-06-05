@@ -1,7 +1,7 @@
 {
   "core/app.js": {
-    "mtime": 1780669585.8907251,
-    "ast_hash": "a10fcfa19bcae842685d132734e9ae6a",
+    "mtime": 1780670878.1677532,
+    "ast_hash": "550cbbbb74f6c74609805fc7509b9f87",
     "semantic_hash": ""
   },
   "core/languages.js": {
@@ -40,8 +40,8 @@
     "semantic_hash": "0fdf5c0e735cffb4dee499a7007262a1"
   },
   "sw.js": {
-    "mtime": 1780670365.8345168,
-    "ast_hash": "524b21e50517113a833b750d5ad213fa",
+    "mtime": 1780670882.0522912,
+    "ast_hash": "da8cb7380b05c8a2b99b1064be03156f",
     "semantic_hash": ""
   },
   "README.md": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1780669841.6557684,
-    "ast_hash": "4240fd76c9c4e78410bcb4b6a2b88ceb",
+    "mtime": 1780670856.035727,
+    "ast_hash": "041871b26c3a6a829539c8a1d6d7022f",
     "semantic_hash": ""
   },
   "languages/german/README.md": {

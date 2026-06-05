@@ -10,9 +10,6 @@
 <meta name="apple-mobile-web-app-title" content="Karta">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="assets/icons/icon-192.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Karta</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -966,8 +963,26 @@ nav {
 
 <div class="word-tooltip" id="word-tooltip"></div>
 
-<script src="core/srs.js"></script>
-<script src="core/languages.js"></script>
-<script src="core/app.js"></script>
+<script>
+  // Watchdog: if boot() hasn't fired within 8 s, something failed to load.
+  window._appBooted = false;
+  setTimeout(function() {
+    if (window._appBooted) return;
+    var t = document.getElementById('loading-text');
+    var s = document.getElementById('load-sub');
+    if (t) t.textContent = 'Failed to start';
+    if (s) s.innerHTML = 'A script could not load. '
+      + '<button onclick="location.reload(true)" '
+      + 'style="color:var(--accent);background:none;border:none;'
+      + 'font-size:inherit;cursor:pointer;text-decoration:underline;padding:0">'
+      + 'Tap to reload</button>';
+  }, 8000);
+</script>
+<script src="core/srs.js"
+  onerror="document.getElementById('loading-text').textContent='Error: srs.js failed to load'"></script>
+<script src="core/languages.js"
+  onerror="document.getElementById('loading-text').textContent='Error: languages.js failed to load'"></script>
+<script src="core/app.js"
+  onerror="document.getElementById('loading-text').textContent='Error: app.js failed to load'"></script>
 </body>
 </html>

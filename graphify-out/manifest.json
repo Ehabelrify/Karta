@@ -1,7 +1,7 @@
 {
   "core/app.js": {
-    "mtime": 1780670878.1677532,
-    "ast_hash": "550cbbbb74f6c74609805fc7509b9f87",
+    "mtime": 1780671327.8655658,
+    "ast_hash": "8674ba14b95faa5b502b8de86a77074d",
     "semantic_hash": ""
   },
   "core/languages.js": {
@@ -40,8 +40,8 @@
     "semantic_hash": "0fdf5c0e735cffb4dee499a7007262a1"
   },
   "sw.js": {
-    "mtime": 1780670882.0522912,
-    "ast_hash": "da8cb7380b05c8a2b99b1064be03156f",
+    "mtime": 1780671292.8711708,
+    "ast_hash": "8fc89e755a027fb6df0760f13fa5bdda",
     "semantic_hash": ""
   },
   "README.md": {

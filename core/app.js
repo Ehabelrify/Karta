@@ -65,6 +65,7 @@ const State = {
 
 // ── Boot ──
 async function boot() {
+  window._appBooted = true;
   if (LANGUAGE_REGISTRY.length === 0) {
     showError('No languages configured. Check core/languages.js.');
     return;
@@ -1045,7 +1046,6 @@ function startReview(wordIds, level, category) {
   const modeTitle = { 'smart-start': 'Smart Start', 'smart-review': 'Smart Review', 'bookmarks': 'Starred' };
   setNavTitle(category ? `${level} · ${category}` : level || modeTitle[State.reviewMode] || 'Review');
   document.getElementById('nav-back').style.display    = '';
-  document.getElementById('nav-add').style.display     = 'none';
   document.getElementById('nav-settings').style.display = 'none';
 
   renderCard();
@@ -1450,7 +1450,6 @@ function showDone() {
   updateStreakOnSessionComplete();
   showScreen('done-view');
   setNavTitle('Session Done');
-  document.getElementById('nav-add').style.display      = '';
   document.getElementById('nav-settings').style.display = '';
   document.getElementById('done-again').textContent     = State.sessionStats.again;
   document.getElementById('done-good').textContent      = State.sessionStats.good;
@@ -1506,14 +1505,14 @@ function setupWordTooltip(el, label) {
 //  ADD WORD
 // ══════════════════════════════════════════════
 function bindAdd() {
-  document.getElementById('nav-add').addEventListener('click', () => {
+  // Phase 5 moved the add button from the main nav into the browse overlay header.
+  document.getElementById('browse-add-btn').addEventListener('click', () => {
     const lang = getLang();
     if (!lang) return;
-    // Populate level select from active language
+    closeBrowse();
     document.getElementById('inp-level').innerHTML = lang.levels.map(l =>
       `<option value="${l}">${l} — ${lang.levelNames[l] || l}</option>`
     ).join('');
-    // Populate category select — all 14 Phase-5 categories pre-listed
     document.getElementById('inp-cat').innerHTML = Object.keys(CAT_ICONS)
       .filter(k => k !== 'default')
       .map(c => `<option>${c}</option>`).join('');
@@ -1521,7 +1520,6 @@ function bindAdd() {
     showScreen('add-view');
     setNavTitle('Add Word');
     document.getElementById('nav-back').style.display      = '';
-    document.getElementById('nav-add').style.display       = 'none';
     document.getElementById('nav-settings').style.display  = 'none';
     document.getElementById('save-feedback').textContent   = '';
     document.getElementById('inp-target-label').textContent =
@@ -1579,13 +1577,11 @@ function bindNav() {
     else if (id === 'home')       { if (LANGUAGE_REGISTRY.length > 1) showLanguagePicker(); }
     else if (id === 'level-view') goHome();
     else if (id === 'review')     {
-      document.getElementById('nav-add').style.display      = '';
       document.getElementById('nav-settings').style.display = '';
       speechSynthesis?.cancel();
       State.currentLevel ? openLevel(State.currentLevel) : goHome();
     }
     else if (id === 'add-view' || id === 'done-view') {
-      document.getElementById('nav-add').style.display      = '';
       document.getElementById('nav-settings').style.display = '';
       goHome();
     }
@@ -1605,7 +1601,6 @@ function updateNavForHome() {
   setNavTitle(`${lang.flag} ${lang.name}`);
   document.getElementById('nav-back').style.display =
     LANGUAGE_REGISTRY.length > 1 ? '' : 'none';
-  document.getElementById('nav-add').style.display      = '';
   document.getElementById('nav-settings').style.display = '';
 }
 
@@ -1663,12 +1658,12 @@ function updateStreakOnSessionComplete() {
 // ══════════════════════════════════════════════
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
-    boot().catch(err => showError('App failed to start.<br>' + err.message));
+    boot().catch(err => showError('App failed to start.<br>' + (err?.message || String(err))));
     if ('serviceWorker' in navigator)
       navigator.serviceWorker.register('sw.js').catch(() => {});
   });
 } else {
-  boot().catch(err => showError('App failed to start.<br>' + err.message));
+  boot().catch(err => showError('App failed to start.<br>' + (err?.message || String(err))));
   if ('serviceWorker' in navigator)
     navigator.serviceWorker.register('sw.js').catch(() => {});
 }

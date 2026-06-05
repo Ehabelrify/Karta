@@ -1,4 +1,4 @@
-const CACHE = 'karta-p8';
+const CACHE = 'karta-p10';
 
 // Shell must all cache or the SW won't install — these are required to run the app.
 const SHELL = [
@@ -41,6 +41,10 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Don't intercept cross-origin requests — let the browser handle them normally.
+  // Calling respondWith() for cross-origin fetches that fail has a documented bug
+  // on iOS Safari that can stall subsequent same-origin resource loading.
+  if (!e.request.url.startsWith(self.location.origin)) return;
   e.respondWith(
     caches.match(e.request)
       .then(cached => cached || fetch(e.request))
