@@ -421,24 +421,21 @@ async function loadLanguage(lang) {
     document.getElementById('loading-text').textContent = `Loading ${lang.name} words…`;
     document.getElementById('loading-screen').classList.remove('hidden');
 
-    // Fetch all level files with timeout
-    const fetchWithTimeout = (url, timeout = 10000) => {
-      return Promise.race([
-        fetch(url),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(new Error(`Request to ${url} timed out`)), timeout)
-        )
-      ]);
-    };
-
-    const levelData = await Promise.all(
-      lang.dataFiles.map(f =>
-        fetchWithTimeout(f).then(r => {
-          if (!r.ok) throw new Error(`${f}: ${r.statusText}`);
+    // Fetch all level files with timeout covering both headers and body download.
+    // AbortController is used so the signal cancels body reading too — a plain
+    // Promise.race only guards against slow headers, not the large JSON body.
+    const fetchJSON = (url, timeout = 20000) => {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+      return fetch(url, { signal: controller.signal })
+        .then(r => {
+          if (!r.ok) throw new Error(`${url}: ${r.statusText}`);
           return r.json();
         })
-      )
-    );
+        .finally(() => clearTimeout(id));
+    };
+
+    const levelData = await Promise.all(lang.dataFiles.map(f => fetchJSON(f)));
 
     const allWords = [];
     levelData.forEach(data => {
