@@ -416,36 +416,93 @@ function openResetConfirm() {
 // ══════════════════════════════════════════════
 //  LOAD LANGUAGE
 // ══════════════════════════════════════════════
+function setLoadProgress(pct) {
+  const p = Math.min(100, Math.max(0, pct));
+  const fill  = document.getElementById('load-progress-fill');
+  const label = document.getElementById('load-pct');
+  if (fill)  fill.style.width   = p + '%';
+  if (label) label.textContent  = Math.round(p) + '%';
+}
+
+function formatBytes(n) {
+  if (n < 1024)    return n + ' B';
+  if (n < 1048576) return Math.round(n / 1024) + ' KB';
+  return (n / 1048576).toFixed(1) + ' MB';
+}
+
 async function loadLanguage(lang) {
   try {
-    document.getElementById('loading-text').textContent = `Loading ${lang.name} words…`;
+    document.getElementById('loading-text').textContent = 'Preparing…';
+    document.getElementById('load-sub').textContent     = '';
+    setLoadProgress(0);
     document.getElementById('loading-screen').classList.remove('hidden');
 
-    // Fetch all level files with timeout covering both headers and body download.
-    // AbortController is used so the signal cancels body reading too — a plain
-    // Promise.race only guards against slow headers, not the large JSON body.
-    const fetchJSON = (url, timeout = 20000) => {
-      const controller = new AbortController();
-      const id = setTimeout(() => controller.abort(), timeout);
-      return fetch(url, { signal: controller.signal })
-        .then(r => {
-          if (!r.ok) throw new Error(`${url}: ${r.statusText}`);
-          return r.json();
-        })
-        .finally(() => clearTimeout(id));
-    };
+    const files = lang.dataFiles;
+    const levelData = [];
 
-    const levelData = await Promise.all(lang.dataFiles.map(f => fetchJSON(f)));
+    for (let i = 0; i < files.length; i++) {
+      const f          = files[i];
+      const level      = f.split('/').pop().replace('.json', '').toUpperCase();
+      const levelLabel = lang.levelNames?.[level] || level;
+
+      document.getElementById('loading-text').textContent =
+        `Loading ${levelLabel} words… (${i + 1} / ${files.length})`;
+      setLoadProgress((i / files.length) * 100);
+
+      const controller = new AbortController();
+      const timeoutId  = setTimeout(() => controller.abort(), 30000);
+
+      try {
+        const r = await fetch(f, { signal: controller.signal });
+        if (!r.ok) throw new Error(`${f}: ${r.statusText}`);
+
+        const sub = document.getElementById('load-sub');
+
+        if (r.body?.getReader) {
+          // Stream the body so we can show live byte progress
+          const reader     = r.body.getReader();
+          const contentLen = r.headers.get('content-length');
+          const total      = contentLen ? parseInt(contentLen, 10) : null;
+          const chunks     = [];
+          let received     = 0;
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            chunks.push(value);
+            received += value.length;
+            const filePct = total ? received / total : 0;
+            setLoadProgress(((i + filePct) / files.length) * 100);
+            sub.textContent = total
+              ? `${formatBytes(received)} / ${formatBytes(total)}`
+              : `${formatBytes(received)} downloaded`;
+          }
+
+          const merged = new Uint8Array(received);
+          let pos = 0;
+          for (const c of chunks) { merged.set(c, pos); pos += c.length; }
+          levelData.push(JSON.parse(new TextDecoder().decode(merged)));
+        } else {
+          // Fallback for environments without ReadableStream
+          sub.textContent = 'Loading…';
+          levelData.push(await r.json());
+        }
+      } finally {
+        clearTimeout(timeoutId);
+      }
+    }
+
+    setLoadProgress(100);
+    document.getElementById('loading-text').textContent = 'Processing words…';
+    document.getElementById('load-sub').textContent     = '';
 
     const allWords = [];
     levelData.forEach(data => {
       data.words.forEach(w => {
-        // Validate required fields
         if (!w.target || !w.native) {
           console.warn(`[Karta] Skipping invalid word in ${lang.name}:`, w);
-          return; // Skip invalid words
+          return;
         }
-
         allWords.push({
           id:            w.id,
           level:         data.level,
@@ -456,7 +513,6 @@ async function loadLanguage(lang) {
           examples:      w.examples || [],
           example:       w.examples?.[0]?.target || '',
           exampleEn:     w.examples?.[0]?.native || '',
-          // Phase 5 fields — gracefully absent until word list rework
           register:      w.register     || 'neutral',
           difficulty:    w.difficulty   || 3,
           tags:          w.tags         || [],

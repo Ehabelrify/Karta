@@ -1,4 +1,4 @@
-const CACHE = 'karta-p6';
+const CACHE = 'karta-p7';
 const ASSETS = [
   './',
   './index.html',

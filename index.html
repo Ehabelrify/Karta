@@ -94,10 +94,22 @@ html,body { height:100%; font-family:var(--font); background:var(--bg); color:va
 #loading-screen.hidden { opacity:0; visibility:hidden; pointer-events:none; }
 .loading-logo { font-size:40px; font-weight:700; letter-spacing:-1px; color:var(--accent); }
 .loading-logo span { color:var(--text3); font-weight:400; }
-.spinner { width:32px; height:32px; border:3px solid var(--border-med);
-  border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; }
-.loading-text { font-size:14px; color:var(--text3); }
-@keyframes spin { to { transform:rotate(360deg); } }
+.load-progress-wrap {
+  display:flex; align-items:center; gap:10px; width:220px;
+}
+.load-progress-track {
+  flex:1; height:5px; background:var(--border-med); border-radius:3px; overflow:hidden;
+}
+.load-progress-fill {
+  height:100%; background:var(--accent); border-radius:3px;
+  width:0%; transition:width .25s ease;
+}
+.load-pct {
+  font-size:12px; font-weight:600; color:var(--accent);
+  width:32px; text-align:right; flex-shrink:0;
+}
+.loading-text { font-size:14px; color:var(--text2); font-weight:500; }
+.load-sub { font-size:12px; color:var(--text4); min-height:16px; letter-spacing:.01em; }
 
 /* ── NAV ── */
 nav {
@@ -674,8 +686,14 @@ nav {
 
 <div id="loading-screen">
   <div class="loading-logo">Karta<span>.</span></div>
-  <div class="spinner"></div>
-  <div class="loading-text" id="loading-text">Loading words…</div>
+  <div class="load-progress-wrap">
+    <div class="load-progress-track">
+      <div class="load-progress-fill" id="load-progress-fill"></div>
+    </div>
+    <span class="load-pct" id="load-pct">0%</span>
+  </div>
+  <div class="loading-text" id="loading-text">Starting…</div>
+  <div class="load-sub" id="load-sub"></div>
 </div>
 
 <div id="app">
